@@ -1,0 +1,354 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [
+          "9406dd17d5c41032"
+        ],
+        "groups": [
+          "167d3b7b2f6f548d"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "standard-call"
+      },
+      "id": "09a9d8dd0741d74b",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "dddd3b587c8b7340"
+        ],
+        "groups": [
+          "ec1597e4e7f3530c"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "standard-call"
+      },
+      "id": "09ce49517baf7eda",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "ec1597e4e7f3530c"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "No current note",
+            "shouldExtract": false,
+            "type": "note"
+          }
+        ],
+        "status": "pending",
+        "text": "{{NOTE}}",
+        "type": "reference"
+      },
+      "color": "6",
+      "id": "1097b1b80a3abe81",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "ef3cdc2a117f9156",
+          "82ba7993840f1760",
+          "09a9d8dd0741d74b",
+          "9a309223d6ce3931",
+          "f2d8da368e1c51b6",
+          "cd757b7484ffd798"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Limiting chat messages",
+        "type": "basic"
+      },
+      "id": "167d3b7b2f6f548d",
+      "label": "Limiting chat messages",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "8cc7de72b0881d19"
+        ],
+        "groups": [
+          "167d3b7b2f6f548d"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "standard-call"
+      },
+      "id": "82ba7993840f1760",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "a738da5d15aa4bd8"
+        ],
+        "groups": [
+          "167d3b7b2f6f548d"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "9a309223d6ce3931",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "847946cb0fc14d7a"
+        ],
+        "groups": [
+          "ec1597e4e7f3530c"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "No current note",
+            "shouldExtract": false,
+            "type": "note"
+          }
+        ],
+        "status": "pending",
+        "text": "{{NOTE}}",
+        "type": "reference"
+      },
+      "color": "6",
+      "id": "b90c7fbfa70e4300",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "167d3b7b2f6f548d"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "No current note",
+            "shouldExtract": false,
+            "type": "note"
+          }
+        ],
+        "status": "pending",
+        "text": "{{NOTE}}",
+        "type": "reference"
+      },
+      "color": "6",
+      "id": "cd757b7484ffd798",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "09ce49517baf7eda",
+          "b90c7fbfa70e4300",
+          "1097b1b80a3abe81"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Chat arrows",
+        "type": "basic"
+      },
+      "id": "ec1597e4e7f3530c",
+      "label": "Chat arrows",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "167d3b7b2f6f548d"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "No current note",
+            "shouldExtract": false,
+            "type": "note"
+          }
+        ],
+        "status": "pending",
+        "text": "{{NOTE}}",
+        "type": "reference"
+      },
+      "color": "6",
+      "id": "ef3cdc2a117f9156",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "b2376898a9f7d1f1"
+        ],
+        "groups": [
+          "167d3b7b2f6f548d"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "f2d8da368e1c51b6",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "09ce49517baf7eda"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "chat-response"
+      },
+      "color": "4",
+      "fromNode": "09ce49517baf7eda",
+      "id": "847946cb0fc14d7a",
+      "toNode": "b90c7fbfa70e4300"
+    },
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "ef3cdc2a117f9156"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "2",
+        "type": "chat-converter"
+      },
+      "color": "4",
+      "fromNode": "ef3cdc2a117f9156",
+      "id": "8cc7de72b0881d19",
+      "label": "2",
+      "toNode": "82ba7993840f1760"
+    },
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "cd757b7484ffd798"
+        ],
+        "edgeModifier": "headers",
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "500",
+        "type": "chat-converter"
+      },
+      "color": "4",
+      "fromNode": "cd757b7484ffd798",
+      "id": "9406dd17d5c41032",
+      "label": "#500",
+      "toNode": "09a9d8dd0741d74b"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "82ba7993840f1760"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "82ba7993840f1760",
+      "id": "a738da5d15aa4bd8",
+      "toNode": "9a309223d6ce3931"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "09a9d8dd0741d74b"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "09a9d8dd0741d74b",
+      "id": "b2376898a9f7d1f1",
+      "toNode": "f2d8da368e1c51b6"
+    },
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "1097b1b80a3abe81"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "chat-converter"
+      },
+      "color": "4",
+      "fromNode": "1097b1b80a3abe81",
+      "id": "dddd3b587c8b7340",
+      "toNode": "09ce49517baf7eda"
+    }
+  ]
+}

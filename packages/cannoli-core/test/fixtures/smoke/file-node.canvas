@@ -1,0 +1,49 @@
+{
+	"nodes": [
+		{
+			"id": "note",
+			"type": "file",
+			"file": "Example notes/Apple Trees.md",
+			"x": 0,
+			"y": 0,
+			"width": 260,
+			"height": 120
+		},
+		{
+			"id": "call",
+			"type": "text",
+			"text": "Summarise this note:\n{{note}}",
+			"x": 360,
+			"y": 0,
+			"width": 260,
+			"height": 120
+		},
+		{
+			"id": "output",
+			"type": "text",
+			"text": "",
+			"x": 720,
+			"y": 0,
+			"width": 260,
+			"height": 120,
+			"color": "6"
+		}
+	],
+	"edges": [
+		{
+			"id": "e1",
+			"fromNode": "note",
+			"fromSide": "right",
+			"toNode": "call",
+			"toSide": "left",
+			"label": "note"
+		},
+		{
+			"id": "e2",
+			"fromNode": "call",
+			"fromSide": "right",
+			"toNode": "output",
+			"toSide": "left"
+		}
+	]
+}

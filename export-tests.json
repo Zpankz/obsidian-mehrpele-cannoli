@@ -1,0 +1,69 @@
+{
+  "selected": [
+    "test/bundle.test.ts",
+    "test/confirm.test.ts",
+    "test/connect.test.ts",
+    "test/convert-note.test.ts",
+    "test/egress-llm.test.ts",
+    "test/egress.test.ts",
+    "test/engine.test.ts",
+    "test/golden/golden.test.ts",
+    "test/import-cannoli.test.ts",
+    "test/key-leak.test.ts",
+    "test/lock.test.ts",
+    "test/main.test.ts",
+    "test/normalise.test.ts",
+    "test/note-io-run.test.ts",
+    "test/overlay-persistor.test.ts",
+    "test/redact.test.ts",
+    "test/registry.test.ts",
+    "test/run-flow.test.ts",
+    "test/runtime.test.ts",
+    "test/sdk-bridge.test.ts",
+    "test/secrets.test.ts",
+    "test/semantic.test.ts",
+    "test/store-lint.test.ts",
+    "test/stubs.test.ts",
+    "test/tab.test.ts",
+    "test/tracing.test.ts",
+    "test/vault-file-manager.test.ts"
+  ],
+  "excluded": [
+    {
+      "file": "test/translate.test.ts",
+      "reason": "Uses the development host renderer; required by the full monorepo gate, outside this three-package export."
+    },
+    {
+      "file": "test/canvas-embed.test.ts",
+      "reason": "Uses the development host renderer; required by the full monorepo gate, outside this three-package export."
+    },
+    {
+      "file": "test/lint.test.ts",
+      "reason": "Uses the development host renderer; required by the full monorepo gate, outside this three-package export."
+    },
+    {
+      "file": "test/frame-ui.test.ts",
+      "reason": "Uses the development host renderer; required by the full monorepo gate, outside this three-package export."
+    },
+    {
+      "file": "test/convert-note-integration.test.ts",
+      "reason": "Uses the development host renderer; required by the full monorepo gate, outside this three-package export."
+    },
+    {
+      "file": "test/idmap.test.ts",
+      "reason": "Uses the development host renderer; required by the full monorepo gate, outside this three-package export."
+    },
+    {
+      "file": "test/golden/mermaid-golden.test.ts",
+      "reason": "Uses the development host renderer; required by the full monorepo gate, outside this three-package export."
+    },
+    {
+      "file": "test/workflow.test.ts",
+      "reason": "Requires the real development host renderer to translate nested Pele diagram sources."
+    },
+    {
+      "file": "test/workflow-run.test.ts",
+      "reason": "End-to-end nested Pele execution imports the real development host renderer; required in the monorepo."
+    }
+  ]
+}

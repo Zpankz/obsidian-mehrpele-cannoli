@@ -1,0 +1,10 @@
+{
+  "id": "mehrpele-cannoli",
+  "name": "Mehrpele Flows",
+  "version": "0.1.0",
+  "minAppVersion": "1.13.2",
+  "isDesktopOnly": false,
+  "author": "Zpankz",
+  "authorUrl": "https://github.com/Zpankz",
+  "description": "Run Cannoli-format LLM flows from Mehrpele diagrams and canvases. Unofficial; not affiliated with Cannoli or Obsidian."
+}

@@ -1,0 +1,22 @@
+{
+  "name": "mehrpele-api",
+  "version": "1.1.0",
+  "description": "Types for the Mehrpele host API (MehrpeleApiV1) shared by Mehrpele and its companion plugins, plus in-memory fakes for companion tests (mehrpele-api/testing).",
+  "type": "module",
+  "private": true,
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./testing": "./src/testing/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.4",
+    "obsidian": "1.14.4",
+    "typescript": "5.9.3"
+  },
+  "license": "MIT"
+}

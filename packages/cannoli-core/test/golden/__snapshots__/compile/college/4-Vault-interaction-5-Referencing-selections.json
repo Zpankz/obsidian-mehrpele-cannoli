@@ -1,0 +1,166 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "8c02946171040e71"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "SELECTION",
+            "shouldExtract": false,
+            "type": "selection"
+          }
+        ],
+        "status": "pending",
+        "text": "Respond with a more concise version of this text:\n{{SELECTION}}",
+        "type": "standard-call"
+      },
+      "id": "28278bc5135af80c",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "a0047756f6bf199f"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "SELECTION",
+            "shouldExtract": false,
+            "type": "selection"
+          }
+        ],
+        "status": "pending",
+        "text": "Respond with a more concise version of this text:\n{{SELECTION}}",
+        "type": "standard-call"
+      },
+      "id": "2deb4b62d41bbfb7",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "e6c1d0371468967e"
+        ],
+        "groups": [
+          "a0047756f6bf199f"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "SELECTION",
+            "shouldExtract": false,
+            "type": "selection"
+          }
+        ],
+        "status": "pending",
+        "text": "{{SELECTION}}",
+        "type": "reference"
+      },
+      "color": "6",
+      "id": "880831fc3c8b5e93",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "28278bc5135af80c",
+          "9b5312d8361c2f5e"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Special \"SELECTION\" variable",
+        "type": "basic"
+      },
+      "id": "8c02946171040e71",
+      "label": "Special \"SELECTION\" variable",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "ff57adf1f2f08d4d"
+        ],
+        "groups": [
+          "8c02946171040e71"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "9b5312d8361c2f5e",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "2deb4b62d41bbfb7",
+          "880831fc3c8b5e93"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Replacing selections",
+        "type": "basic"
+      },
+      "id": "a0047756f6bf199f",
+      "label": "Replacing selections",
+      "type": "group"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "2deb4b62d41bbfb7"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "2deb4b62d41bbfb7",
+      "id": "e6c1d0371468967e",
+      "toNode": "880831fc3c8b5e93"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "28278bc5135af80c"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "28278bc5135af80c",
+      "id": "ff57adf1f2f08d4d",
+      "toNode": "9b5312d8361c2f5e"
+    }
+  ]
+}

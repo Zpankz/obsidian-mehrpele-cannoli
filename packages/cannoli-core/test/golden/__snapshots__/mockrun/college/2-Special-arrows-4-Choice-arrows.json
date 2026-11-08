@@ -1,0 +1,896 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 7,
+          "promptTokens": 112.5
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "03f149b198234b2e": "complete",
+    "0d60d2b18558d544": "rejected",
+    "0fd490ac150e0f5e": "complete",
+    "1582d8994ac555e1": "complete",
+    "26d34c5e87e7d03c": "complete",
+    "28786f9598c550d5": "complete",
+    "32b8f51ebe623e94": "complete",
+    "3acf958e2220ce5e": "complete",
+    "46b1cd2114123ac8": "complete",
+    "599128089fbfde0c": "rejected",
+    "5b08fd306da75b91": "rejected",
+    "63096630fb9f2e2e": "rejected",
+    "631691e520dac009": "complete",
+    "676ea6885c79b682": "complete",
+    "6f95f372b461f8d5": "rejected",
+    "7265ecc0e39454b0": "complete",
+    "76252deff058a30b": "rejected",
+    "7db7e2a8fc1e1ef6": "rejected",
+    "82b732c8452c9584": "complete",
+    "96c63376c757dbf0": "complete",
+    "a234933050b99f4f": "rejected",
+    "a5276dfa0b72a1d9": "rejected",
+    "a6599fe712bec80e": "complete",
+    "abc25503ba8076fb": "complete",
+    "ac91698a073fc95c": "complete",
+    "ae2322dc9035b985": "rejected",
+    "b217af764ccecfd0": "rejected",
+    "b4775fe4758dc40d": "complete",
+    "b83dfe178174121d": "rejected",
+    "b95eb36f138e1a24": "complete",
+    "bf13cea8fc4d3ac8": "complete",
+    "c43d38e12b9c16b8": "complete",
+    "c63995fa03f9e524": "complete",
+    "c9dd6d1bd62bafff": "complete",
+    "cd01298f475a3dd6": "complete",
+    "e82cc2675ee6f4ac": "complete",
+    "f22bc7061eff5703": "rejected"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "c9dd6d1bd62bafff"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "What's the most difficult pasta to make?",
+          "type": "choose"
+        },
+        "color": "4",
+        "id": "03f149b198234b2e",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "cd01298f475a3dd6"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Which pasta is better for a red sauce?",
+          "type": "choose"
+        },
+        "color": "4",
+        "id": "0fd490ac150e0f5e",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "a6599fe712bec80e"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Should I make pasta tonight?",
+          "type": "choose"
+        },
+        "color": "4",
+        "id": "28786f9598c550d5",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "7265ecc0e39454b0"
+          ],
+          "groups": [
+            "c9dd6d1bd62bafff"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "rigatoni",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "32b8f51ebe623e94",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "b4775fe4758dc40d"
+          ],
+          "groups": [
+            "a6599fe712bec80e"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "3acf958e2220ce5e",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "bf13cea8fc4d3ac8"
+          ],
+          "groups": [
+            "cd01298f475a3dd6"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Ok I have that. Just respond with the recipe for a simple red sauce.",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "46b1cd2114123ac8",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "5b08fd306da75b91"
+          ],
+          "groups": [
+            "c9dd6d1bd62bafff"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "rejected",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "599128089fbfde0c",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "b83dfe178174121d"
+          ],
+          "groups": [
+            "a6599fe712bec80e"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "rejected",
+          "text": "Ok give me a list of ingredients",
+          "type": "standard-call"
+        },
+        "id": "63096630fb9f2e2e",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "abc25503ba8076fb"
+          ],
+          "groups": [
+            "c9dd6d1bd62bafff"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "#### <u>User</u>:\nIs this my first message?\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "631691e520dac009",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "96c63376c757dbf0"
+          ],
+          "groups": [
+            "cd01298f475a3dd6"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "676ea6885c79b682",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "7db7e2a8fc1e1ef6"
+          ],
+          "groups": [
+            "c9dd6d1bd62bafff"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "rejected",
+          "text": "Is this my first message?",
+          "type": "standard-call"
+        },
+        "id": "76252deff058a30b",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "0d60d2b18558d544"
+          ],
+          "groups": [
+            "cd01298f475a3dd6"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "rejected",
+          "text": "I dont have any orzo. Respond with a recipe for orzo as well as a recipe for a simple red sauce.",
+          "type": "standard-call"
+        },
+        "id": "a234933050b99f4f",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "ae2322dc9035b985"
+          ],
+          "groups": [
+            "a6599fe712bec80e"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "rejected",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "a5276dfa0b72a1d9",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "28786f9598c550d5",
+            "ac91698a073fc95c",
+            "63096630fb9f2e2e",
+            "3acf958e2220ce5e",
+            "a5276dfa0b72a1d9"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Choice arrows",
+          "type": "basic"
+        },
+        "id": "a6599fe712bec80e",
+        "label": "Choice arrows",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "82b732c8452c9584"
+          ],
+          "groups": [
+            "a6599fe712bec80e"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "You sure?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "ac91698a073fc95c",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "6f95f372b461f8d5"
+          ],
+          "groups": [
+            "c9dd6d1bd62bafff"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "rejected",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "b217af764ccecfd0",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "c43d38e12b9c16b8",
+            "f22bc7061eff5703"
+          ],
+          "groups": [
+            "cd01298f475a3dd6"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "a",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "Write a shopping list based on this recipe: {{a}}",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "b95eb36f138e1a24",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "26d34c5e87e7d03c"
+          ],
+          "groups": [
+            "c9dd6d1bd62bafff"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Is this my first message?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "c63995fa03f9e524",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "03f149b198234b2e",
+            "631691e520dac009",
+            "b217af764ccecfd0",
+            "e82cc2675ee6f4ac",
+            "599128089fbfde0c",
+            "76252deff058a30b",
+            "32b8f51ebe623e94",
+            "c63995fa03f9e524"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Chat history",
+          "type": "basic"
+        },
+        "id": "c9dd6d1bd62bafff",
+        "label": "Chat history",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "b95eb36f138e1a24",
+            "0fd490ac150e0f5e",
+            "676ea6885c79b682",
+            "a234933050b99f4f",
+            "46b1cd2114123ac8"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Variables from different choice paths",
+          "type": "basic"
+        },
+        "id": "cd01298f475a3dd6",
+        "label": "Variables from different choice paths",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "1582d8994ac555e1"
+          ],
+          "groups": [
+            "c9dd6d1bd62bafff"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "rigatoni",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "e82cc2675ee6f4ac",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "penne",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "0fd490ac150e0f5e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "Which pasta is better for a red sauce?",
+              "role": "user"
+            },
+            {
+              "content": "",
+              "function_call": {
+                "args": {
+                  "choice": "penne"
+                },
+                "name": "choice"
+              },
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "rejected",
+          "text": "orzo",
+          "type": "choice"
+        },
+        "color": "3",
+        "fromNode": "0fd490ac150e0f5e",
+        "id": "0d60d2b18558d544",
+        "label": "orzo",
+        "toNode": "a234933050b99f4f"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "rigatoni",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "03f149b198234b2e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "03f149b198234b2e",
+        "id": "1582d8994ac555e1",
+        "toNode": "e82cc2675ee6f4ac"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "rigatoni",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "03f149b198234b2e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "rigatoni",
+          "type": "choice"
+        },
+        "color": "3",
+        "fromNode": "03f149b198234b2e",
+        "id": "26d34c5e87e7d03c",
+        "label": "rigatoni~",
+        "toNode": "c63995fa03f9e524"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "rigatoni",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "03f149b198234b2e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "What's the most difficult pasta to make?",
+              "role": "user"
+            },
+            {
+              "content": "",
+              "function_call": {
+                "args": {
+                  "choice": "rigatoni"
+                },
+                "name": "choice"
+              },
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "rejected",
+          "text": "linguini",
+          "type": "choice"
+        },
+        "color": "3",
+        "fromNode": "03f149b198234b2e",
+        "id": "5b08fd306da75b91",
+        "label": "linguini",
+        "toNode": "599128089fbfde0c"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "76252deff058a30b"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "rejected",
+          "text": "",
+          "type": "logging"
+        },
+        "color": "2",
+        "fromNode": "76252deff058a30b",
+        "id": "6f95f372b461f8d5",
+        "toNode": "b217af764ccecfd0"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "rigatoni",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "03f149b198234b2e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "What's the most difficult pasta to make?",
+              "role": "user"
+            },
+            {
+              "content": "",
+              "function_call": {
+                "args": {
+                  "choice": "rigatoni"
+                },
+                "name": "choice"
+              },
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "rigatoni",
+          "type": "choice"
+        },
+        "color": "3",
+        "fromNode": "03f149b198234b2e",
+        "id": "7265ecc0e39454b0",
+        "label": "rigatoni",
+        "toNode": "32b8f51ebe623e94"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "rigatoni",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "03f149b198234b2e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "rejected",
+          "text": "linguini",
+          "type": "choice"
+        },
+        "color": "3",
+        "fromNode": "03f149b198234b2e",
+        "id": "7db7e2a8fc1e1ef6",
+        "label": "linguini~",
+        "toNode": "76252deff058a30b"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "no",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "28786f9598c550d5"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "Should I make pasta tonight?",
+              "role": "user"
+            },
+            {
+              "content": "",
+              "function_call": {
+                "args": {
+                  "choice": "no"
+                },
+                "name": "choice"
+              },
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "no",
+          "type": "choice"
+        },
+        "color": "3",
+        "fromNode": "28786f9598c550d5",
+        "id": "82b732c8452c9584",
+        "label": "no",
+        "toNode": "ac91698a073fc95c"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "b95eb36f138e1a24"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "b95eb36f138e1a24",
+        "id": "96c63376c757dbf0",
+        "toNode": "676ea6885c79b682"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "#### <u>User</u>:\nIs this my first message?\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "c63995fa03f9e524"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "logging"
+        },
+        "color": "2",
+        "fromNode": "c63995fa03f9e524",
+        "id": "abc25503ba8076fb",
+        "toNode": "631691e520dac009"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "63096630fb9f2e2e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "rejected",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "63096630fb9f2e2e",
+        "id": "ae2322dc9035b985",
+        "toNode": "a5276dfa0b72a1d9"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "ac91698a073fc95c"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "ac91698a073fc95c",
+        "id": "b4775fe4758dc40d",
+        "toNode": "3acf958e2220ce5e"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "no",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "28786f9598c550d5"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "Should I make pasta tonight?",
+              "role": "user"
+            },
+            {
+              "content": "",
+              "function_call": {
+                "args": {
+                  "choice": "no"
+                },
+                "name": "choice"
+              },
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "rejected",
+          "text": "yes",
+          "type": "choice"
+        },
+        "color": "3",
+        "fromNode": "28786f9598c550d5",
+        "id": "b83dfe178174121d",
+        "label": "yes",
+        "toNode": "63096630fb9f2e2e"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "penne",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "0fd490ac150e0f5e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "Which pasta is better for a red sauce?",
+              "role": "user"
+            },
+            {
+              "content": "",
+              "function_call": {
+                "args": {
+                  "choice": "penne"
+                },
+                "name": "choice"
+              },
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "penne",
+          "type": "choice"
+        },
+        "color": "3",
+        "fromNode": "0fd490ac150e0f5e",
+        "id": "bf13cea8fc4d3ac8",
+        "label": "penne",
+        "toNode": "46b1cd2114123ac8"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "46b1cd2114123ac8"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "a",
+          "type": "variable"
+        },
+        "fromNode": "46b1cd2114123ac8",
+        "id": "c43d38e12b9c16b8",
+        "label": "a",
+        "toNode": "b95eb36f138e1a24"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "a234933050b99f4f"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "rejected",
+          "text": "a",
+          "type": "variable"
+        },
+        "fromNode": "a234933050b99f4f",
+        "id": "f22bc7061eff5703",
+        "label": "a",
+        "toNode": "b95eb36f138e1a24"
+      }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [
+          "e1"
+        ],
+        "groups": [],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "topic",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "Describe {{topic}} in one short sentence.",
+        "type": "standard-call"
+      },
+      "id": "call",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "e2"
+        ],
+        "groups": [],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "output",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "cannoli",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "topic",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "topic"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "topic",
+        "type": "variable"
+      },
+      "fromNode": "topic",
+      "id": "e1",
+      "label": "topic",
+      "toNode": "call"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "call"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "call",
+      "id": "e2",
+      "toNode": "output"
+    }
+  ]
+}

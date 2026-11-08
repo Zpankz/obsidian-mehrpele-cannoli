@@ -1,0 +1,24 @@
+{
+  "message": null,
+  "objects": {
+    "161279baf7763214": {
+      "status": "complete",
+      "text": "Cannoli"
+    },
+    "23c2d7dffb49bf75": {
+      "status": "complete",
+      "text": ""
+    },
+    "bc1a550bbb4aac7b": {
+      "status": "complete",
+      "text": "Mock response"
+    },
+    "dc3f9351f787531e": {
+      "status": "complete",
+      "text": "Hello world!"
+    }
+  },
+  "reason": "complete",
+  "results": {},
+  "vaultLog": []
+}

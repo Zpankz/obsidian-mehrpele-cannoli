@@ -1,0 +1,10 @@
+// Typecheck tests and the vitest config with the package's compiler settings.
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"baseUrl": "..",
+		"noEmit": true,
+		"types": ["node"]
+	},
+	"include": ["../src/**/*", "./**/*", "../vitest.config.ts"]
+}

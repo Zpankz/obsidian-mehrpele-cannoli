@@ -1,0 +1,12 @@
+import { readFileSync } from "node:fs";
+import { resolve, join } from "node:path";
+const root=resolve(import.meta.dir,"..");
+const json=(file:string)=>JSON.parse(readFileSync(join(root,file),"utf8"));
+const manifest=json("manifest.json"),pkg=json("package.json"),versions=json("versions.json");
+if(manifest.id!=="mehrpele-cannoli"||manifest.id.includes("obsidian")||manifest.minAppVersion!=="1.13.2"||!manifest.description.endsWith(".")||manifest.isDesktopOnly!==false)throw Error("Manifest gate failed");
+if(manifest.version!==pkg.version||versions[manifest.version]!==manifest.minAppVersion||JSON.stringify(manifest)!==JSON.stringify(json("packages/mehrpele-cannoli/manifest.json")))throw Error("Version metadata differs");
+const js=readFileSync(join(root,"main.js"),"utf8"),notice=readFileSync(join(root,"THIRD-PARTY-NOTICES.md"),"utf8").trimEnd();
+if(Buffer.byteLength(js)>1500000||!js.includes(notice))throw Error("Licensed artifact gate failed");
+if(/\b(?:require|__require)\s*\(\s*["'](?:node:|fs["']|electron["']|child_process["'])/.test(js))throw Error("Node require in browser artifact");
+if(/cannoli\.website|esm\.town|val\.town|posthog|segment\.io|segment\.com|api\.segment|mixpanel|\/v1\/traces/i.test(js))throw Error("Forbidden host in browser artifact");
+console.log("artifacts: manifest, versions, licenses, budget and browser gate pass");

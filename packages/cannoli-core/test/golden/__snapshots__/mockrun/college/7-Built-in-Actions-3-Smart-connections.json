@@ -1,0 +1,347 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "error",
+      "message": "Could not get HTTP template with name \"smart-connections\" from floating nodes or pre-set templates.",
+      "results": {},
+      "usage": {}
+    }
+  ],
+  "statuses": {
+    "062536681a6f3d7c": "error",
+    "0f0046972783b7ae": "complete",
+    "337c91c6b1038d20": "complete",
+    "381c8163bec12c57": "complete",
+    "4a6faca7ddcffbfe": "complete",
+    "4b3d5fabd9a12016": "pending",
+    "4f26794b185fb5db": "error",
+    "52b0052571a6eb61": "complete",
+    "77a40e58452bd8b1": "complete",
+    "8486791d9c376c0b": "pending",
+    "8c604bda53107ee1": "pending",
+    "9fef641e0bceee50": "complete",
+    "a60fd5c5154313d4": "pending",
+    "b4439e67ea4fbde8": "complete",
+    "b63496bcc3abd047": "complete",
+    "e0726e65d794c7f3": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "b63496bcc3abd047"
+          ],
+          "groups": [
+            "381c8163bec12c57"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "error",
+          "text": "smart-connections",
+          "type": "http"
+        },
+        "color": "2",
+        "id": "062536681a6f3d7c",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "337c91c6b1038d20"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "1",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "0f0046972783b7ae",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "4f26794b185fb5db",
+            "77a40e58452bd8b1",
+            "0f0046972783b7ae",
+            "4a6faca7ddcffbfe",
+            "8c604bda53107ee1"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Template query",
+          "type": "basic"
+        },
+        "id": "337c91c6b1038d20",
+        "label": "Template query",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "a60fd5c5154313d4",
+            "52b0052571a6eb61",
+            "062536681a6f3d7c"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Standard use",
+          "type": "basic"
+        },
+        "id": "381c8163bec12c57",
+        "label": "Standard use",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "337c91c6b1038d20"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "false",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "4a6faca7ddcffbfe",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "9fef641e0bceee50",
+            "b4439e67ea4fbde8",
+            "e0726e65d794c7f3"
+          ],
+          "groups": [
+            "337c91c6b1038d20"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "person",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "error",
+          "text": "[smart-connections]\nMeeting where {{person}} was present",
+          "type": "http"
+        },
+        "color": "2",
+        "id": "4f26794b185fb5db",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "381c8163bec12c57"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Apples and stuff",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "52b0052571a6eb61",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "337c91c6b1038d20"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Bob",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "77a40e58452bd8b1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "8486791d9c376c0b"
+          ],
+          "groups": [
+            "337c91c6b1038d20"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "pending",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "8c604bda53107ee1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "4b3d5fabd9a12016"
+          ],
+          "groups": [
+            "381c8163bec12c57"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "pending",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "a60fd5c5154313d4",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "062536681a6f3d7c"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "pending",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "062536681a6f3d7c",
+        "id": "4b3d5fabd9a12016",
+        "toNode": "a60fd5c5154313d4"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "4f26794b185fb5db"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "pending",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "4f26794b185fb5db",
+        "id": "8486791d9c376c0b",
+        "toNode": "8c604bda53107ee1"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "1",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "0f0046972783b7ae"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "limit",
+          "type": "variable"
+        },
+        "fromNode": "0f0046972783b7ae",
+        "id": "9fef641e0bceee50",
+        "label": "limit",
+        "toNode": "4f26794b185fb5db"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "false",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "4a6faca7ddcffbfe"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "extract",
+          "type": "variable"
+        },
+        "fromNode": "4a6faca7ddcffbfe",
+        "id": "b4439e67ea4fbde8",
+        "label": "extract",
+        "toNode": "4f26794b185fb5db"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Apples and stuff",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "52b0052571a6eb61"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "query",
+          "type": "variable"
+        },
+        "fromNode": "52b0052571a6eb61",
+        "id": "b63496bcc3abd047",
+        "label": "query",
+        "toNode": "062536681a6f3d7c"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Bob",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "77a40e58452bd8b1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "person",
+          "type": "variable"
+        },
+        "fromNode": "77a40e58452bd8b1",
+        "id": "e0726e65d794c7f3",
+        "label": "person",
+        "toNode": "4f26794b185fb5db"
+      }
+    ]
+  }
+}

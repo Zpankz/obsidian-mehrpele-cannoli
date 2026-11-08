@@ -1,0 +1,358 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [
+          "9ea4603066155724",
+          "9d076987e99ce6a6",
+          "554b1577865f24d4",
+          "35881fd57b1d4269",
+          "fd9b2131408190a4",
+          "e7d78cc1a7a948f8",
+          "e83b4c5b2409b738",
+          "3f724ea642f3f39d",
+          "6b128a864045c0e7",
+          "b6f9f0b26ae8e68e"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Basic Groups",
+        "type": "basic"
+      },
+      "id": "3507f53b8ef19875",
+      "label": "Basic Groups",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "b2ca430257741d71",
+          "b54add99d36d3b53"
+        ],
+        "groups": [
+          "9d076987e99ce6a6",
+          "3507f53b8ef19875"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Actually you don't know that.",
+        "type": "standard-call"
+      },
+      "id": "35881fd57b1d4269",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "3986f98e5c79c58a"
+        ],
+        "groups": [
+          "9ea4603066155724",
+          "3507f53b8ef19875"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "a",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "You can use {{a}} in this node",
+        "type": "standard-call"
+      },
+      "id": "3f724ea642f3f39d",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "b54add99d36d3b53"
+        ],
+        "groups": [
+          "9d076987e99ce6a6",
+          "3507f53b8ef19875"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Hey what model are you?",
+        "type": "standard-call"
+      },
+      "id": "554b1577865f24d4",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "3ec08b096671959f",
+          "3986f98e5c79c58a"
+        ],
+        "groups": [
+          "9ea4603066155724",
+          "3507f53b8ef19875"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "a",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "And you can use {{a}} in this node",
+        "type": "standard-call"
+      },
+      "id": "6b128a864045c0e7",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "b54add99d36d3b53",
+          "554b1577865f24d4",
+          "35881fd57b1d4269"
+        ],
+        "groups": [
+          "3507f53b8ef19875"
+        ],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Group 2",
+        "type": "basic"
+      },
+      "id": "9d076987e99ce6a6",
+      "label": "Group 2",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "3986f98e5c79c58a",
+          "3f724ea642f3f39d",
+          "6b128a864045c0e7"
+        ],
+        "groups": [
+          "3507f53b8ef19875"
+        ],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Group 1",
+        "type": "basic"
+      },
+      "id": "9ea4603066155724",
+      "label": "Group 1",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "71449d8dc3ac9bac"
+        ],
+        "groups": [
+          "3507f53b8ef19875"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "b6f9f0b26ae8e68e",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "3507f53b8ef19875"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "gpt-4",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "e7d78cc1a7a948f8",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "3507f53b8ef19875"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Rubiks cube",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "e83b4c5b2409b738",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "948da6eeffd07b7e"
+        ],
+        "groups": [
+          "3507f53b8ef19875"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "fd9b2131408190a4",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "e83b4c5b2409b738"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "a",
+        "type": "variable"
+      },
+      "fromNode": "e83b4c5b2409b738",
+      "id": "3986f98e5c79c58a",
+      "label": "a",
+      "toNode": "9ea4603066155724"
+    },
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "3f724ea642f3f39d"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "chat"
+      },
+      "fromNode": "3f724ea642f3f39d",
+      "id": "3ec08b096671959f",
+      "toNode": "6b128a864045c0e7"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [
+          "9ea4603066155724"
+        ],
+        "dependencies": [
+          "6b128a864045c0e7",
+          "9ea4603066155724"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "6b128a864045c0e7",
+      "id": "71449d8dc3ac9bac",
+      "toNode": "b6f9f0b26ae8e68e"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [
+          "9d076987e99ce6a6"
+        ],
+        "dependencies": [
+          "35881fd57b1d4269",
+          "9d076987e99ce6a6"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "35881fd57b1d4269",
+      "id": "948da6eeffd07b7e",
+      "toNode": "fd9b2131408190a4"
+    },
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "554b1577865f24d4"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "chat"
+      },
+      "fromNode": "554b1577865f24d4",
+      "id": "b2ca430257741d71",
+      "toNode": "35881fd57b1d4269"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "e7d78cc1a7a948f8"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "model",
+        "type": "config"
+      },
+      "color": "2",
+      "fromNode": "e7d78cc1a7a948f8",
+      "id": "b54add99d36d3b53",
+      "label": "model",
+      "toNode": "9d076987e99ce6a6"
+    }
+  ]
+}

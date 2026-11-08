@@ -1,0 +1,529 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 6,
+          "promptTokens": 144
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "0db897a7e991783c": "complete",
+    "1394a8cbb5db72d9": "complete",
+    "190c7fe39136a4e6": "complete",
+    "1d4638cc848ce883": "complete",
+    "303a7695b62bb265": "complete",
+    "3884a37115998334": "complete",
+    "39b8926cc93a3400": "complete",
+    "3cbecc9da0226b67": "complete",
+    "4e5095e59d3b1f75": "complete",
+    "65d38a62ff03dbfe": "complete",
+    "6b0d63d0cc50d49a": "complete",
+    "6b6b4b634889aad8": "complete",
+    "71fc4d9bcf7e5cef": "complete",
+    "78a31a6b0db6e00a": "complete",
+    "87145bcd5b0ef58a": "complete",
+    "8748f38aca7e3e66": "complete",
+    "8a0e100e00bdcaea": "complete",
+    "a563177e81b5c95e": "complete",
+    "b2e6acd4ac04fdb5": "complete",
+    "cb401d73afd6b5b0": "complete",
+    "d192686ddf19160b": "complete",
+    "d7621f4a15b0b7fb": "complete",
+    "f0ecaa4ebe5d824b": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "cb401d73afd6b5b0"
+          ],
+          "groups": [
+            "1d4638cc848ce883"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "note",
+              "shouldExtract": true,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "What's this about:\n{{@note}}",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "0db897a7e991783c",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "3cbecc9da0226b67"
+          ],
+          "groups": [
+            "3884a37115998334"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "1394a8cbb5db72d9",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "4e5095e59d3b1f75",
+            "78a31a6b0db6e00a",
+            "71fc4d9bcf7e5cef"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Note names as variables",
+          "type": "basic"
+        },
+        "id": "190c7fe39136a4e6",
+        "label": "Note names as variables",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "a563177e81b5c95e",
+            "39b8926cc93a3400",
+            "65d38a62ff03dbfe",
+            "0db897a7e991783c"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Ensuring proper note names",
+          "type": "basic"
+        },
+        "id": "1d4638cc848ce883",
+        "label": "Ensuring proper note names",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "d192686ddf19160b",
+            "6b6b4b634889aad8",
+            "8a0e100e00bdcaea",
+            "1394a8cbb5db72d9"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Dynamic reference nodes",
+          "type": "basic"
+        },
+        "id": "3884a37115998334",
+        "label": "Dynamic reference nodes",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "87145bcd5b0ef58a"
+          ],
+          "groups": [
+            "1d4638cc848ce883"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "#### <u>User</u>:\nWhat's this about:\n# [[Apple Trees]]\nMock note body.\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "39b8926cc93a3400",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "f0ecaa4ebe5d824b"
+          ],
+          "groups": [
+            "190c7fe39136a4e6"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "note",
+              "shouldExtract": true,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "What's this about:\n{{@note}}",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "4e5095e59d3b1f75",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "b2e6acd4ac04fdb5"
+          ],
+          "groups": [
+            "1d4638cc848ce883"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "[[Apple Trees]]",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "65d38a62ff03dbfe",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "3884a37115998334"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Respond with the name of one of these notes:\n[[Apple Trees]],\n[[Lemons for Cleaning]]",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "6b6b4b634889aad8",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "190c7fe39136a4e6"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Respond with the name of one of these notes without square brackets:\n[[Apple Trees]],\n[[Lemons for Cleaning]]",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "71fc4d9bcf7e5cef",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "303a7695b62bb265"
+          ],
+          "groups": [
+            "190c7fe39136a4e6"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "#### <u>User</u>:\nWhat's this about:\n# Mock response\nMock note body.\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "78a31a6b0db6e00a",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "d7621f4a15b0b7fb",
+            "6b0d63d0cc50d49a"
+          ],
+          "groups": [
+            "3884a37115998334"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "note",
+              "shouldExtract": true,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "{{@note}}",
+          "type": "reference"
+        },
+        "color": "6",
+        "id": "8a0e100e00bdcaea",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "1d4638cc848ce883"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Respond with the name of one of these notes:\n[[Apple Trees]],\n[[Lemons for Cleaning]]",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "a563177e81b5c95e",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "8748f38aca7e3e66"
+          ],
+          "groups": [
+            "3884a37115998334"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Write an article with that title.",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "d192686ddf19160b",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "#### <u>User</u>:\nWhat's this about:\n# Mock response\nMock note body.\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "4e5095e59d3b1f75"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "logging"
+        },
+        "color": "2",
+        "fromNode": "4e5095e59d3b1f75",
+        "id": "303a7695b62bb265",
+        "toNode": "78a31a6b0db6e00a"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "8a0e100e00bdcaea"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "8a0e100e00bdcaea",
+        "id": "3cbecc9da0226b67",
+        "toNode": "1394a8cbb5db72d9"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "d192686ddf19160b"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "d192686ddf19160b",
+        "id": "6b0d63d0cc50d49a",
+        "toNode": "8a0e100e00bdcaea"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "#### <u>User</u>:\nWhat's this about:\n# [[Apple Trees]]\nMock note body.\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "0db897a7e991783c"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "logging"
+        },
+        "color": "2",
+        "fromNode": "0db897a7e991783c",
+        "id": "87145bcd5b0ef58a",
+        "toNode": "39b8926cc93a3400"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "[[Apple Trees]]",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "6b6b4b634889aad8"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "Respond with the name of one of these notes:\n[[Apple Trees]],\n[[Lemons for Cleaning]]",
+              "role": "user"
+            },
+            {
+              "content": "",
+              "function_call": {
+                "args": {
+                  "note": "Apple Trees"
+                },
+                "name": "note_select"
+              },
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "6b6b4b634889aad8",
+        "id": "8748f38aca7e3e66",
+        "toNode": "d192686ddf19160b"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "[[Apple Trees]]",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "a563177e81b5c95e"
+          ],
+          "edgeModifier": "note",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "note",
+          "type": "variable"
+        },
+        "fromNode": "a563177e81b5c95e",
+        "id": "b2e6acd4ac04fdb5",
+        "label": "[note",
+        "toNode": "65d38a62ff03dbfe"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "[[Apple Trees]]",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "a563177e81b5c95e"
+          ],
+          "edgeModifier": "note",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "note",
+          "type": "variable"
+        },
+        "fromNode": "a563177e81b5c95e",
+        "id": "cb401d73afd6b5b0",
+        "label": "[note",
+        "toNode": "0db897a7e991783c"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "[[Apple Trees]]",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "6b6b4b634889aad8"
+          ],
+          "edgeModifier": "note",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "note",
+          "type": "variable"
+        },
+        "fromNode": "6b6b4b634889aad8",
+        "id": "d7621f4a15b0b7fb",
+        "label": "[note",
+        "toNode": "8a0e100e00bdcaea"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "71fc4d9bcf7e5cef"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "note",
+          "type": "variable"
+        },
+        "fromNode": "71fc4d9bcf7e5cef",
+        "id": "f0ecaa4ebe5d824b",
+        "label": "note",
+        "toNode": "4e5095e59d3b1f75"
+      }
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 1,
+          "promptTokens": 4.75
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "161279baf7763214": "complete",
+    "23c2d7dffb49bf75": "complete",
+    "bc1a550bbb4aac7b": "complete",
+    "dc3f9351f787531e": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "dc3f9351f787531e",
+            "bc1a550bbb4aac7b"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Cannoli",
+          "type": "basic"
+        },
+        "id": "161279baf7763214",
+        "label": "Cannoli",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "23c2d7dffb49bf75"
+          ],
+          "groups": [
+            "161279baf7763214"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "bc1a550bbb4aac7b",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "161279baf7763214"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Hello world!",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "dc3f9351f787531e",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "dc3f9351f787531e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "dc3f9351f787531e",
+        "id": "23c2d7dffb49bf75",
+        "toNode": "bc1a550bbb4aac7b"
+      }
+    ]
+  }
+}

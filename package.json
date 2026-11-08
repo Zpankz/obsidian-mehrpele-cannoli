@@ -1,0 +1,27 @@
+{
+  "name": "obsidian-mehrpele-cannoli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "bun@1.4.2",
+  "workspaces": [
+    "packages/mehrpele-cannoli",
+    "packages/mehrpele-api",
+    "packages/cannoli-core"
+  ],
+  "scripts": {
+    "check:upstream": "bun scripts/provenance.ts && bun scripts/dependencies.ts",
+    "typecheck": "bun run --cwd packages/mehrpele-api typecheck && bun run --cwd packages/cannoli-core typecheck && bun run --cwd packages/mehrpele-cannoli typecheck",
+    "test": "bun run --cwd packages/mehrpele-api test && bun run --cwd packages/cannoli-core test && bun run --cwd packages/mehrpele-cannoli test",
+    "lint": "eslint packages/mehrpele-cannoli/src packages/mehrpele-api/src",
+    "build": "bun scripts/build.ts",
+    "check": "bun run check:upstream && bun run typecheck && bun run lint && bun run test && bun run build && bun scripts/artifacts.ts"
+  },
+  "devDependencies": {
+    "eslint": "10.14.0",
+    "eslint-plugin-obsidianmd": "0.4.2",
+    "typescript-eslint": "8.72.1",
+    "typescript": "5.9.3"
+  }
+}

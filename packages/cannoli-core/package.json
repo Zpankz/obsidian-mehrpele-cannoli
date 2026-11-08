@@ -1,0 +1,56 @@
+{
+  "//": "Generated standalone dependencies; canonical source provenance is recorded separately.",
+  "name": "@mehrpele/cannoli-core",
+  "version": "0.2.2",
+  "description": "Vendored Cannoli engine (Zpankz/cannoli packages/cannoli-core). See README.md and UPSTREAM.json.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit && tsc --noEmit --project test",
+    "test": "vitest run --config shims/vitest.config.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "4.0.85",
+    "@ai-sdk/google": "4.0.102",
+    "@ai-sdk/openai": "4.0.99",
+    "@ai-sdk/openai-compatible": "3.0.75",
+    "@deablabs/cannoli-server": "file:./shims/cannoli-server",
+    "@langchain/anthropic": "0.3.17",
+    "@langchain/community": "0.3.40",
+    "@langchain/core": "0.3.44",
+    "@langchain/google-genai": "0.2.3",
+    "@langchain/groq": "0.2.2",
+    "@langchain/langgraph": "0.2.64",
+    "@langchain/mcp-adapters": "0.4.2",
+    "@langchain/ollama": "0.2.0",
+    "@langchain/openai": "0.5.5",
+    "@modelcontextprotocol/sdk": "1.9.0",
+    "@openrouter/ai-sdk-provider": "3.1.0",
+    "ai": "7.0.148",
+    "hono": "4.7.6",
+    "js-yaml": "4.3.2",
+    "langchain": "0.3.21",
+    "nanoid": "5.0.7",
+    "openai": "4.104.0",
+    "p-limit": "4.0.0",
+    "remeda": "1.61.0",
+    "tiny-invariant": "1.3.3",
+    "tslib": "2.4.0",
+    "zod": "3.25.76",
+    "zod-to-json-schema": "3.24.5"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "4.0.9",
+    "@types/node": "22.15.0",
+    "@types/uuid": "9.0.8",
+    "builtin-modules": "3.3.0",
+    "esbuild": "0.25.2",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "complete",
+        "text": "[Email Draft]\nLet me get back to you on that",
+        "type": "variable"
+      },
+      "id": "329298ec10140a51",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "bfad0ddbfa29f18f"
+        ],
+        "groups": [
+          "6221f4693ddb3417"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "Email Draft",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "{{Email Draft}}",
+        "type": "reference"
+      },
+      "color": "6",
+      "id": "5246f4d07c4012a8",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "867aca6f08aff01f",
+          "848648ac1ab74998",
+          "5246f4d07c4012a8"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Floating nodes",
+        "type": "basic"
+      },
+      "id": "6221f4693ddb3417",
+      "label": "Floating nodes",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "6221f4693ddb3417"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "Email Draft",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "Please critique and rewrite this email to be a bit more apologetic:\n{{Email Draft}}",
+        "type": "standard-call"
+      },
+      "color": "0",
+      "id": "848648ac1ab74998",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "f33f402d10538f79"
+        ],
+        "groups": [
+          "6221f4693ddb3417"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Now just write the new version by itself in your next response.",
+        "type": "standard-call"
+      },
+      "color": "0",
+      "id": "867aca6f08aff01f",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "867aca6f08aff01f"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "867aca6f08aff01f",
+      "id": "bfad0ddbfa29f18f",
+      "toNode": "5246f4d07c4012a8"
+    },
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "848648ac1ab74998"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "chat"
+      },
+      "fromNode": "848648ac1ab74998",
+      "id": "f33f402d10538f79",
+      "toNode": "867aca6f08aff01f"
+    }
+  ]
+}

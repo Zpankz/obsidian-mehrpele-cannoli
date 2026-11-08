@@ -1,0 +1,188 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 3,
+          "promptTokens": 9.75
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "4a0ba2bef1aa5c20": "complete",
+    "5ec3f63efea0a200": "complete",
+    "76a7b1f7be41b27a": "complete",
+    "791a20c14bc962c7": "complete",
+    "7d4766ac0a8356f2": "complete",
+    "7dd99e00e4b9a462": "complete",
+    "8494f89ecf0405e8": "complete",
+    "92889b47100a022a": "complete",
+    "e9af95fbd2cc5541": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "4a0ba2bef1aa5c20"
+          ],
+          "groups": [],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "5ec3f63efea0a200",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "7dd99e00e4b9a462"
+          ],
+          "groups": [],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "76a7b1f7be41b27a",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "hello!",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "791a20c14bc962c7",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "8494f89ecf0405e8"
+          ],
+          "groups": [],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "7d4766ac0a8356f2",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "hello!",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "92889b47100a022a",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "hello!",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "e9af95fbd2cc5541",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "e9af95fbd2cc5541"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "e9af95fbd2cc5541",
+        "id": "4a0ba2bef1aa5c20",
+        "toNode": "5ec3f63efea0a200"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "791a20c14bc962c7"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "791a20c14bc962c7",
+        "id": "7dd99e00e4b9a462",
+        "toNode": "76a7b1f7be41b27a"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "92889b47100a022a"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "92889b47100a022a",
+        "id": "8494f89ecf0405e8",
+        "toNode": "7d4766ac0a8356f2"
+      }
+    ]
+  }
+}

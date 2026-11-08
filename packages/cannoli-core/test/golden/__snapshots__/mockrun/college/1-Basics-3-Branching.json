@@ -1,0 +1,519 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 6,
+          "promptTokens": 122.25
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "08fda0370caa615e": "complete",
+    "248594446ba6eca2": "complete",
+    "2f59408c2be9b7ae": "complete",
+    "3492caf4ead7f8cb": "complete",
+    "44a20edc995a84d8": "complete",
+    "5a24d53646b10364": "complete",
+    "5d4454ca8f7bdb3a": "complete",
+    "69ab78708b319e8d": "complete",
+    "7b37496e496da827": "complete",
+    "7c382706de4d0696": "complete",
+    "7d1bb4c2b5052c34": "complete",
+    "806865b0c75a6687": "complete",
+    "891f6d7945759cd7": "complete",
+    "8fd655a2583e6f98": "complete",
+    "9f9ba5852d437657": "complete",
+    "aea9dcb543944bb1": "complete",
+    "b59766f15e6812d8": "complete",
+    "bc0b97379618ae28": "complete",
+    "c096758e55238bfe": "complete",
+    "d8d4ab1340924892": "complete",
+    "ddb05069cb9f6f3e": "complete",
+    "e1a68493483394b4": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "7d1bb4c2b5052c34"
+          ],
+          "groups": [
+            "5a24d53646b10364"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Nf3",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "248594446ba6eca2",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "806865b0c75a6687"
+          ],
+          "groups": [
+            "7c382706de4d0696"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Give me a simpler recipe",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "2f59408c2be9b7ae",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "08fda0370caa615e"
+          ],
+          "groups": [
+            "5a24d53646b10364"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "3492caf4ead7f8cb",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "248594446ba6eca2",
+            "891f6d7945759cd7",
+            "5d4454ca8f7bdb3a",
+            "3492caf4ead7f8cb",
+            "9f9ba5852d437657"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Branching chats",
+          "type": "basic"
+        },
+        "id": "5a24d53646b10364",
+        "label": "Branching chats",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "bc0b97379618ae28"
+          ],
+          "groups": [
+            "5a24d53646b10364"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Nc3",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "5d4454ca8f7bdb3a",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "8fd655a2583e6f98"
+          ],
+          "groups": [
+            "7c382706de4d0696"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "69ab78708b319e8d",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "7c382706de4d0696"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "What's the best Italian dessert?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "7b37496e496da827",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "69ab78708b319e8d",
+            "c096758e55238bfe",
+            "7b37496e496da827",
+            "aea9dcb543944bb1",
+            "2f59408c2be9b7ae",
+            "ddb05069cb9f6f3e"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Multiple outgoing arrows",
+          "type": "basic"
+        },
+        "id": "7c382706de4d0696",
+        "label": "Multiple outgoing arrows",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "5a24d53646b10364"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Lets play chess. Here's my first move: e4",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "891f6d7945759cd7",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "e1a68493483394b4"
+          ],
+          "groups": [
+            "5a24d53646b10364"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "9f9ba5852d437657",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "b59766f15e6812d8"
+          ],
+          "groups": [
+            "7c382706de4d0696"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "How do you make it?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "aea9dcb543944bb1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "44a20edc995a84d8"
+          ],
+          "groups": [
+            "7c382706de4d0696"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "c096758e55238bfe",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "d8d4ab1340924892"
+          ],
+          "groups": [
+            "7c382706de4d0696"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "ddb05069cb9f6f3e",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "248594446ba6eca2"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "248594446ba6eca2",
+        "id": "08fda0370caa615e",
+        "toNode": "3492caf4ead7f8cb"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "aea9dcb543944bb1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "aea9dcb543944bb1",
+        "id": "44a20edc995a84d8",
+        "toNode": "c096758e55238bfe"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "891f6d7945759cd7"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "Lets play chess. Here's my first move: e4",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "891f6d7945759cd7",
+        "id": "7d1bb4c2b5052c34",
+        "toNode": "248594446ba6eca2"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "aea9dcb543944bb1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "What's the best Italian dessert?",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            },
+            {
+              "content": "How do you make it?",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "aea9dcb543944bb1",
+        "id": "806865b0c75a6687",
+        "toNode": "2f59408c2be9b7ae"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "7b37496e496da827"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "7b37496e496da827",
+        "id": "8fd655a2583e6f98",
+        "toNode": "69ab78708b319e8d"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "7b37496e496da827"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "What's the best Italian dessert?",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "7b37496e496da827",
+        "id": "b59766f15e6812d8",
+        "toNode": "aea9dcb543944bb1"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "891f6d7945759cd7"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "Lets play chess. Here's my first move: e4",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "891f6d7945759cd7",
+        "id": "bc0b97379618ae28",
+        "toNode": "5d4454ca8f7bdb3a"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "2f59408c2be9b7ae"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "2f59408c2be9b7ae",
+        "id": "d8d4ab1340924892",
+        "toNode": "ddb05069cb9f6f3e"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "5d4454ca8f7bdb3a"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "5d4454ca8f7bdb3a",
+        "id": "e1a68493483394b4",
+        "toNode": "9f9ba5852d437657"
+      }
+    ]
+  }
+}

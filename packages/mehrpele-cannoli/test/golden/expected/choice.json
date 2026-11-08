@@ -1,0 +1,156 @@
+{
+  "message": null,
+  "objects": {
+    "03f149b198234b2e": {
+      "status": "complete",
+      "text": "What's the most difficult pasta to make?"
+    },
+    "0d60d2b18558d544": {
+      "status": "rejected",
+      "text": "orzo"
+    },
+    "0fd490ac150e0f5e": {
+      "status": "complete",
+      "text": "Which pasta is better for a red sauce?"
+    },
+    "1582d8994ac555e1": {
+      "status": "complete",
+      "text": ""
+    },
+    "26d34c5e87e7d03c": {
+      "status": "complete",
+      "text": "rigatoni"
+    },
+    "28786f9598c550d5": {
+      "status": "complete",
+      "text": "Should I make pasta tonight?"
+    },
+    "32b8f51ebe623e94": {
+      "status": "complete",
+      "text": "rigatoni"
+    },
+    "3acf958e2220ce5e": {
+      "status": "complete",
+      "text": "Mock response"
+    },
+    "46b1cd2114123ac8": {
+      "status": "complete",
+      "text": "Ok I have that. Just respond with the recipe for a simple red sauce."
+    },
+    "599128089fbfde0c": {
+      "status": "rejected",
+      "text": ""
+    },
+    "5b08fd306da75b91": {
+      "status": "rejected",
+      "text": "linguini"
+    },
+    "63096630fb9f2e2e": {
+      "status": "rejected",
+      "text": "Ok give me a list of ingredients"
+    },
+    "631691e520dac009": {
+      "status": "complete",
+      "text": "#### <u>User</u>:\nIs this my first message?\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: openai\nmodel: gpt-4o-mini\nenableVision: true\n\n"
+    },
+    "676ea6885c79b682": {
+      "status": "complete",
+      "text": "Mock response"
+    },
+    "6f95f372b461f8d5": {
+      "status": "rejected",
+      "text": ""
+    },
+    "7265ecc0e39454b0": {
+      "status": "complete",
+      "text": "rigatoni"
+    },
+    "76252deff058a30b": {
+      "status": "rejected",
+      "text": "Is this my first message?"
+    },
+    "7db7e2a8fc1e1ef6": {
+      "status": "rejected",
+      "text": "linguini"
+    },
+    "82b732c8452c9584": {
+      "status": "complete",
+      "text": "no"
+    },
+    "96c63376c757dbf0": {
+      "status": "complete",
+      "text": ""
+    },
+    "a234933050b99f4f": {
+      "status": "rejected",
+      "text": "I dont have any orzo. Respond with a recipe for orzo as well as a recipe for a simple red sauce."
+    },
+    "a5276dfa0b72a1d9": {
+      "status": "rejected",
+      "text": ""
+    },
+    "a6599fe712bec80e": {
+      "status": "complete",
+      "text": "Choice arrows"
+    },
+    "abc25503ba8076fb": {
+      "status": "complete",
+      "text": ""
+    },
+    "ac91698a073fc95c": {
+      "status": "complete",
+      "text": "You sure?"
+    },
+    "ae2322dc9035b985": {
+      "status": "rejected",
+      "text": ""
+    },
+    "b217af764ccecfd0": {
+      "status": "rejected",
+      "text": ""
+    },
+    "b4775fe4758dc40d": {
+      "status": "complete",
+      "text": ""
+    },
+    "b83dfe178174121d": {
+      "status": "rejected",
+      "text": "yes"
+    },
+    "b95eb36f138e1a24": {
+      "status": "complete",
+      "text": "Write a shopping list based on this recipe: {{a}}"
+    },
+    "bf13cea8fc4d3ac8": {
+      "status": "complete",
+      "text": "penne"
+    },
+    "c43d38e12b9c16b8": {
+      "status": "complete",
+      "text": "a"
+    },
+    "c63995fa03f9e524": {
+      "status": "complete",
+      "text": "Is this my first message?"
+    },
+    "c9dd6d1bd62bafff": {
+      "status": "complete",
+      "text": "Chat history"
+    },
+    "cd01298f475a3dd6": {
+      "status": "complete",
+      "text": "Variables from different choice paths"
+    },
+    "e82cc2675ee6f4ac": {
+      "status": "complete",
+      "text": "rigatoni"
+    },
+    "f22bc7061eff5703": {
+      "status": "rejected",
+      "text": "a"
+    }
+  },
+  "reason": "complete",
+  "results": {},
+  "vaultLog": []
+}

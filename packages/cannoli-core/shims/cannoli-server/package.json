@@ -1,0 +1,23 @@
+{
+  "name": "@deablabs/cannoli-server",
+  "version": "0.0.0-mehrpele-shim",
+  "description": "Mehrpele shim for @deablabs/cannoli-server: the typed RPC client rejects every call with \"server not available\". Hand-written; not vendored.",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "./rpc": {
+      "types": "./rpc.d.ts",
+      "default": "./rpc.js"
+    },
+    "./schemas": {
+      "types": "./schemas.d.ts",
+      "default": "./schemas.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "zod": "3.23.8"
+  },
+  "license": "MIT"
+}

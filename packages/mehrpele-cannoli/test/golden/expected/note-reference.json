@@ -1,0 +1,205 @@
+{
+  "message": null,
+  "objects": {
+    "063d6d8d083b2666": {
+      "status": "complete",
+      "text": ""
+    },
+    "09ec11f71f736c5a": {
+      "status": "complete",
+      "text": ""
+    },
+    "10439db683a6c0a7": {
+      "status": "complete",
+      "text": "{{[[Meeting Notes]]^}}"
+    },
+    "1bb84d00af5d18f5": {
+      "status": "complete",
+      "text": ""
+    },
+    "1e30c5b622c33707": {
+      "status": "complete",
+      "text": "Reference nodes"
+    },
+    "24fc10789416284c": {
+      "status": "complete",
+      "text": "Check this out:\n{{[[Lemons for Cleaning]]}}"
+    },
+    "2d839e95573e05a0": {
+      "status": "complete",
+      "text": ""
+    },
+    "30afb34c1019f5df": {
+      "status": "complete",
+      "text": "{{[[Meeting Notes]]#}}"
+    },
+    "34ab67ca730bb363": {
+      "status": "complete",
+      "text": "Extraction modifiers"
+    },
+    "37c33e8f19a09beb": {
+      "status": "complete",
+      "text": "Mock response"
+    },
+    "382cdbdf89daa53c": {
+      "status": "complete",
+      "text": "{{[[Meeting Notes]]}}"
+    },
+    "386367aa8acf2917": {
+      "status": "complete",
+      "text": ""
+    },
+    "3c55aea3ab7679cf": {
+      "status": "complete",
+      "text": "Getting properties"
+    },
+    "47f1774a10a6de98": {
+      "status": "complete",
+      "text": "{{[[Meeting Notes]]}}"
+    },
+    "4b47baa584657fc0": {
+      "status": "complete",
+      "text": "Notes as variables"
+    },
+    "570d87dc498def43": {
+      "status": "complete",
+      "text": ""
+    },
+    "62447884955fc816": {
+      "status": "complete",
+      "text": "#### <u>User</u>:\nCheck this out:\n# Lemons for Cleaning\nMock note body.\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: openai\nmodel: gpt-4o-mini\nenableVision: true\n\n"
+    },
+    "6e838ae4192a0925": {
+      "status": "complete",
+      "text": ""
+    },
+    "71f82d60459605e9": {
+      "status": "complete",
+      "text": "Special \"NOTE\" reference"
+    },
+    "7919954c7360c103": {
+      "status": "complete",
+      "text": ""
+    },
+    "7ebbdaba21c78245": {
+      "status": "complete",
+      "text": ""
+    },
+    "7f19194be69549ec": {
+      "status": "complete",
+      "text": "Mock response"
+    },
+    "7f3f25c31ae38f6d": {
+      "status": "complete",
+      "text": ""
+    },
+    "8039b20f5e260110": {
+      "status": "complete",
+      "text": "What's the note above about"
+    },
+    "8af2e272382f3038": {
+      "status": "complete",
+      "text": ""
+    },
+    "919f3852d5538bac": {
+      "status": "complete",
+      "text": "Mock content"
+    },
+    "9967b60050a55863": {
+      "status": "complete",
+      "text": "{{[[Meeting Notes]]}}"
+    },
+    "9bcad28d8d703638": {
+      "status": "complete",
+      "text": "a"
+    },
+    "a149899b3a0f51b7": {
+      "status": "complete",
+      "text": ""
+    },
+    "a96e14fbb7d1265f": {
+      "status": "complete",
+      "text": "Mock response"
+    },
+    "aa6a67a2ff0f2fe8": {
+      "status": "complete",
+      "text": "{{[[Lemons for Cleaning]]}}"
+    },
+    "aba263db1eb0f4b6": {
+      "status": "complete",
+      "text": "Date"
+    },
+    "b63aa69459ed0e33": {
+      "status": "complete",
+      "text": "{{[[Meeting Notes]]}}"
+    },
+    "b7597d6f39e7acc9": {
+      "status": "complete",
+      "text": "{{[[Cannoli College/Example notes/Apple Trees.md]]}}"
+    },
+    "ba5e154b30f8168f": {
+      "status": "complete",
+      "text": ""
+    },
+    "bc6196ed2a59141c": {
+      "status": "complete",
+      "text": "Getting note names"
+    },
+    "cf0cf7433914ad7f": {
+      "status": "complete",
+      "text": "{{[[Meeting Notes]]@}}"
+    },
+    "d19cad0060fcb71c": {
+      "status": "complete",
+      "text": "[[Meeting Notes]]"
+    },
+    "d399962128a18b2e": {
+      "status": "complete",
+      "text": "Mock content"
+    },
+    "dd06bd8ffd8959c3": {
+      "status": "complete",
+      "text": "Mock response"
+    },
+    "dec28b770c6e0601": {
+      "status": "complete",
+      "text": "What's this about:\n{{a}}"
+    },
+    "e137cb2b47fff78e": {
+      "status": "complete",
+      "text": ""
+    },
+    "e62b59877d19a53b": {
+      "status": "complete",
+      "text": "What was in that note?"
+    },
+    "e7990bd20a1a3f11": {
+      "status": "complete",
+      "text": "{{NOTE}}"
+    },
+    "ee4e6166d0ffe43d": {
+      "status": "complete",
+      "text": ""
+    },
+    "f0e0c3d61fe7aca3": {
+      "status": "complete",
+      "text": ""
+    },
+    "f5c0436b8aa42d7f": {
+      "status": "complete",
+      "text": "Getting note path"
+    },
+    "faa26d9da34c53d9": {
+      "status": "complete",
+      "text": "Mock content"
+    }
+  },
+  "reason": "complete",
+  "results": {},
+  "vaultLog": [
+    "getNote Lemons for Cleaning",
+    "getPropertyOfNote Meeting Notes Date",
+    "getAllPropertiesOfNote Meeting Notes",
+    "getNotePath Meeting Notes"
+  ]
+}

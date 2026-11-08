@@ -1,0 +1,30 @@
+{
+  "name": "mehrpele-cannoli",
+  "version": "0.1.0",
+  "description": "Mehrpele Flows: run Cannoli-format LLM flows from Mehrpele diagrams and canvases.",
+  "main": "main.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun esbuild.config.mjs",
+    "build": "bun esbuild.config.mjs production",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test test/bundle.test.ts test/confirm.test.ts test/connect.test.ts test/convert-note.test.ts test/egress-llm.test.ts test/egress.test.ts test/engine.test.ts test/golden/golden.test.ts test/import-cannoli.test.ts test/key-leak.test.ts test/lock.test.ts test/main.test.ts test/normalise.test.ts test/note-io-run.test.ts test/overlay-persistor.test.ts test/redact.test.ts test/registry.test.ts test/run-flow.test.ts test/runtime.test.ts test/sdk-bridge.test.ts test/secrets.test.ts test/semantic.test.ts test/store-lint.test.ts test/stubs.test.ts test/tab.test.ts test/tracing.test.ts test/vault-file-manager.test.ts"
+  },
+  "dependencies": {
+    "@mehrpele/cannoli-core": "workspace:*",
+    "js-yaml": "4.3.2",
+    "markdown-it": "14.3.1",
+    "mehrpele-api": "workspace:*",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.4",
+    "@types/js-yaml": "4.0.9",
+    "@types/markdown-it": "14.2.0",
+    "esbuild": "0.28.2",
+    "obsidian": "1.14.4",
+    "typescript": "5.9.3"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,297 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 3,
+          "promptTokens": 70.75
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "04fc452e98f4b80f": "complete",
+    "2a357972e7682b3d": "complete",
+    "2c1e68fdaf20b936": "complete",
+    "4cfad5a8ec2be98f": "complete",
+    "59b7fc9dda9a50c1": "complete",
+    "606e8b604062817a": "complete",
+    "661a61495dfeaf24": "complete",
+    "9a74aa8d0afdb942": "complete",
+    "b8465e3c0926341e": "complete",
+    "c19d63a0e7873549": "complete",
+    "d005ba1be8656e6e": "complete",
+    "d0edacf3895cacc4": "complete",
+    "ff5fd1f32d515a9f": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "4cfad5a8ec2be98f"
+          ],
+          "groups": [
+            "9a74aa8d0afdb942"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Hey what's a fun outing",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "2c1e68fdaf20b936",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "9a74aa8d0afdb942"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Respond with a description of a very confused AI assistant that can't keep it together. Nothing else should be in your response. It should start with: \"you are a...\"",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "59b7fc9dda9a50c1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "2a357972e7682b3d"
+          ],
+          "groups": [
+            "9a74aa8d0afdb942"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "606e8b604062817a",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "ff5fd1f32d515a9f"
+          ],
+          "groups": [
+            "9a74aa8d0afdb942"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "661a61495dfeaf24",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "d005ba1be8656e6e",
+            "2c1e68fdaf20b936",
+            "606e8b604062817a",
+            "d0edacf3895cacc4",
+            "59b7fc9dda9a50c1",
+            "661a61495dfeaf24",
+            "b8465e3c0926341e"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "System Messages",
+          "type": "basic"
+        },
+        "id": "9a74aa8d0afdb942",
+        "label": "System Messages",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "c19d63a0e7873549"
+          ],
+          "groups": [
+            "9a74aa8d0afdb942"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Who invented mail?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "b8465e3c0926341e",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "9a74aa8d0afdb942"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "You are a silly goofy guy",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "d005ba1be8656e6e",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "04fc452e98f4b80f"
+          ],
+          "groups": [
+            "9a74aa8d0afdb942"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "standard-content"
+        },
+        "color": "6",
+        "id": "d0edacf3895cacc4",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "59b7fc9dda9a50c1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "59b7fc9dda9a50c1",
+        "id": "04fc452e98f4b80f",
+        "toNode": "d0edacf3895cacc4"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "2c1e68fdaf20b936"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "2c1e68fdaf20b936",
+        "id": "2a357972e7682b3d",
+        "toNode": "606e8b604062817a"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "d005ba1be8656e6e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "You are a silly goofy guy",
+              "role": "system"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "system-message"
+        },
+        "fromNode": "d005ba1be8656e6e",
+        "id": "4cfad5a8ec2be98f",
+        "toNode": "2c1e68fdaf20b936"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "d0edacf3895cacc4"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "Mock response",
+              "role": "system"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "system-message"
+        },
+        "fromNode": "d0edacf3895cacc4",
+        "id": "c19d63a0e7873549",
+        "toNode": "b8465e3c0926341e"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "b8465e3c0926341e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "b8465e3c0926341e",
+        "id": "ff5fd1f32d515a9f",
+        "toNode": "661a61495dfeaf24"
+      }
+    ]
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {
+        "anOutput": "Mock response"
+      },
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 1,
+          "promptTokens": 16.5
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "6bb11822c098ccb1": "complete",
+    "6bee83c618f78ec5": "complete",
+    "8ba395f1998b606d": "complete",
+    "a8a224d1d5f64c1a": "complete",
+    "c9de0bf84a78600f": "complete",
+    "ca384210d5b575f9": "complete",
+    "efeeacc5c3428321": "complete",
+    "f067631823623c56": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "c9de0bf84a78600f",
+            "ca384210d5b575f9"
+          ],
+          "groups": [
+            "6bee83c618f78ec5"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "a",
+              "shouldExtract": false,
+              "type": "variable"
+            },
+            {
+              "name": "b",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "Write a sentence using these two words:\n{{a}}\n{{b}}",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "6bb11822c098ccb1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "6bb11822c098ccb1",
+            "f067631823623c56",
+            "a8a224d1d5f64c1a",
+            "8ba395f1998b606d"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Input and output nodes",
+          "type": "basic"
+        },
+        "id": "6bee83c618f78ec5",
+        "label": "Input and output nodes",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "efeeacc5c3428321"
+          ],
+          "groups": [
+            "6bee83c618f78ec5"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "[anOutput]\nMock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "8ba395f1998b606d",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "6bee83c618f78ec5"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "[anInput]\nPajamas",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "a8a224d1d5f64c1a",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "6bee83c618f78ec5"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "[anotherInput]\nIcosahedron",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "f067631823623c56",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Pajamas",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "a8a224d1d5f64c1a"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "a",
+          "type": "variable"
+        },
+        "fromNode": "a8a224d1d5f64c1a",
+        "id": "c9de0bf84a78600f",
+        "label": "a",
+        "toNode": "6bb11822c098ccb1"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Icosahedron",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "f067631823623c56"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "b",
+          "type": "variable"
+        },
+        "fromNode": "f067631823623c56",
+        "id": "ca384210d5b575f9",
+        "label": "b",
+        "toNode": "6bb11822c098ccb1"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "6bb11822c098ccb1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "6bb11822c098ccb1",
+        "id": "efeeacc5c3428321",
+        "toNode": "8ba395f1998b606d"
+      }
+    ]
+  }
+}

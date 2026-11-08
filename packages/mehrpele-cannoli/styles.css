@@ -1,0 +1,295 @@
+/* Mehrpele Flows. Every rule is scoped under .mehrpele-flows-* or the frame overlay layer
+   .mehrpele-overlay-layer[data-layer="mehrpele-cannoli"]. */
+
+.mehrpele-flows-host-status .setting-item-description {
+  color: var(--text-muted);
+}
+
+.mehrpele-flows-host-attached .setting-item-description {
+  color: var(--text-success);
+}
+
+/* Settings: network disclosure and the Cannoli import banner. */
+
+.mehrpele-flows-disclosure {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+  margin-bottom: var(--size-4-4);
+}
+
+.mehrpele-flows-import-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--size-4-3);
+  padding: var(--size-4-2) var(--size-4-3);
+  margin-bottom: var(--size-4-4);
+  border: var(--border-width) solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background-color: var(--background-secondary);
+}
+
+/* Prompts: first-run confirmation, host approval, replace a running flow. */
+
+.mehrpele-flows-ask-section h4 {
+  margin: var(--size-4-3) 0 var(--size-4-1);
+  font-size: var(--font-ui-small);
+  color: var(--text-muted);
+}
+
+.mehrpele-flows-ask-section ul {
+  margin: 0;
+  padding-inline-start: var(--size-4-5);
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+}
+
+/* Run view. */
+
+.mehrpele-flows-run-view .mpc-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4-1);
+  padding-bottom: var(--size-4-3);
+  border-bottom: var(--border-width) solid var(--background-modifier-border);
+}
+
+.mehrpele-flows-run-view .mpc-flow {
+  font-weight: var(--font-semibold);
+  word-break: break-all;
+}
+
+.mehrpele-flows-run-view .mpc-status-line {
+  display: flex;
+  gap: var(--size-4-2);
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+
+.mehrpele-flows-run-view[data-run-status="complete"] .mpc-run-status {
+  color: var(--text-success);
+}
+
+.mehrpele-flows-run-view[data-run-status="error"] .mpc-run-status,
+.mehrpele-flows-run-view[data-run-status="refused"] .mpc-run-status {
+  color: var(--text-error);
+}
+
+.mehrpele-flows-run-view[data-run-status="stopped"] .mpc-run-status {
+  color: var(--text-warning);
+}
+
+.mehrpele-flows-run-view .mpc-stop {
+  align-self: flex-start;
+}
+
+.mehrpele-flows-run-view .mpc-reason,
+.mehrpele-flows-run-view .mpc-empty {
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+
+.mehrpele-flows-run-view .mpc-nodes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2-2);
+  padding-top: var(--size-4-2);
+}
+
+.mehrpele-flows-run-view .mpc-node {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: var(--size-4-2);
+  padding: var(--size-2-2) var(--size-4-2);
+  border-inline-start: 3px solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+}
+
+.mehrpele-flows-run-view .mpc-node-status {
+  color: var(--text-faint);
+  font-size: var(--font-ui-smaller);
+  min-width: 5em;
+}
+
+.mehrpele-flows-run-view .mpc-node-message {
+  grid-column: 1 / -1;
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  white-space: pre-wrap;
+}
+
+.mehrpele-flows-run-view .mpc-s-executing {
+  border-inline-start-color: var(--interactive-accent);
+  background-color: var(--background-modifier-hover);
+}
+
+.mehrpele-flows-run-view .mpc-s-complete,
+.mehrpele-flows-run-view .mpc-s-version-complete {
+  border-inline-start-color: var(--color-green);
+}
+
+.mehrpele-flows-run-view .mpc-s-rejected {
+  border-inline-start-color: var(--text-faint);
+  opacity: 0.6;
+}
+
+.mehrpele-flows-run-view .mpc-s-warning {
+  border-inline-start-color: var(--color-orange);
+}
+
+.mehrpele-flows-run-view .mpc-s-error {
+  border-inline-start-color: var(--color-red);
+}
+
+.mehrpele-flows-run-view .mpc-s-error .mpc-node-message {
+  color: var(--text-error);
+}
+
+/* Flow frame overlay (C4). The host layer passes clicks through; only the dots and chips take
+   the pointer. Geometry comes from --mpc-x/-y/-w/-h. */
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-badge {
+  position: absolute;
+  left: var(--mpc-x);
+  top: var(--mpc-y);
+  width: var(--mpc-w);
+  height: var(--mpc-h);
+  box-sizing: border-box;
+  border-radius: var(--radius-s);
+  pointer-events: none;
+  --mpc-color: var(--background-modifier-border);
+  box-shadow: 0 0 0 2px var(--mpc-color);
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-s-pending {
+  --mpc-color: transparent;
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-s-executing {
+  --mpc-color: var(--interactive-accent);
+  animation: mpc-pulse 1.2s ease-in-out infinite;
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-s-complete,
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-s-version-complete {
+  --mpc-color: var(--color-green);
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-s-rejected {
+  --mpc-color: var(--text-faint);
+  opacity: 0.6;
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-s-warning {
+  --mpc-color: var(--color-orange);
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-s-error {
+  --mpc-color: var(--color-red);
+}
+
+@keyframes mpc-pulse {
+  50% {
+    box-shadow: 0 0 0 4px var(--mpc-color);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-s-executing {
+    animation: none;
+    box-shadow: 0 0 0 3px var(--mpc-color);
+  }
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-dot {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--mpc-color);
+  pointer-events: auto;
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-s-pending .mpc-dot {
+  display: none;
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-card {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  min-width: 12em;
+  max-width: 24em;
+  padding: var(--size-2-3) var(--size-4-2);
+  border: var(--border-width) solid var(--background-modifier-border);
+  border-radius: var(--radius-s);
+  background-color: var(--background-primary);
+  box-shadow: var(--shadow-s);
+  color: var(--text-normal);
+  font-size: var(--font-ui-smaller);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-dot .mpc-card {
+  top: 12px;
+  left: 0;
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-lint .mpc-card {
+  bottom: calc(100% + 4px);
+  left: 0;
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-dot:hover .mpc-card,
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-lint:hover .mpc-card {
+  display: block;
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-footer {
+  position: absolute;
+  left: var(--size-4-2);
+  bottom: var(--size-4-2);
+  display: flex;
+  gap: var(--size-4-2);
+  align-items: center;
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-chip,
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-lint {
+  position: relative;
+  padding: var(--size-2-1) var(--size-4-2);
+  border: var(--border-width) solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  background-color: var(--background-secondary);
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  font-variant-numeric: tabular-nums;
+  pointer-events: auto;
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-chip[data-run-status="running"] {
+  color: var(--text-accent);
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-chip[data-run-status="complete"] {
+  color: var(--text-success);
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-chip[data-run-status="error"],
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-chip[data-run-status="refused"],
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-lint.mpc-lint-error {
+  color: var(--text-error);
+}
+
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-chip[data-run-status="stopped"],
+.mehrpele-overlay-layer[data-layer="mehrpele-cannoli"] .mpc-lint {
+  color: var(--text-warning);
+}
+
+.mehrpele-flows-args {
+  width: 100%;
+  font-family: var(--font-monospace);
+}

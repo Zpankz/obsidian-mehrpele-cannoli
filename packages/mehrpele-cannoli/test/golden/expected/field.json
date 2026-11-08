@@ -1,0 +1,120 @@
+{
+  "message": null,
+  "objects": {
+    "0d6c132ba45af90d": {
+      "status": "complete",
+      "text": ""
+    },
+    "19acdf8c5139a403": {
+      "status": "complete",
+      "text": "lunch"
+    },
+    "1a9662bf2fcaaeca": {
+      "status": "complete",
+      "text": ""
+    },
+    "303f2609904e9a78": {
+      "status": "complete",
+      "text": "Mock answer"
+    },
+    "33807cb64cdd9cac": {
+      "status": "complete",
+      "text": "Who are the most popular authors in each of these categories?"
+    },
+    "355f89d3338915a0": {
+      "status": "complete",
+      "text": "What makes the {{battle 2}} famous?"
+    },
+    "3e455995e5dff301": {
+      "status": "complete",
+      "text": "battle 1"
+    },
+    "49bb3c2aaf878ecc": {
+      "status": "complete",
+      "text": "Multi-arrows"
+    },
+    "602c0eb10399429c": {
+      "status": "complete",
+      "text": "{\"battle 1\":\"Battle of Waterloo\",\"battle 2\":\"Battle of Gettysburg\"}"
+    },
+    "7f6b2d929334d325": {
+      "status": "complete",
+      "text": ""
+    },
+    "7fcb2dd5de840465": {
+      "status": "complete",
+      "text": "#### <u>User</u>:\nWhat makes the {{battle 1}} famous?\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: openai\nmodel: gpt-4o-mini\nenableVision: true\n\n"
+    },
+    "84cfedc9449f5d42-biography": {
+      "status": "complete",
+      "text": "biography"
+    },
+    "84cfedc9449f5d42-historical fiction": {
+      "status": "complete",
+      "text": "historical fiction"
+    },
+    "84cfedc9449f5d42-sci-fi": {
+      "status": "complete",
+      "text": "sci-fi"
+    },
+    "8eb5818084414bdc": {
+      "status": "complete",
+      "text": "Sci-fi: {{sci-fi}}\nHistorical fiction: {{historical fiction}}\nBiography: Mock answer\n"
+    },
+    "8eee16509fba3a49": {
+      "status": "complete",
+      "text": "Mock answer"
+    },
+    "912a11d4e1afa3c1": {
+      "status": "complete",
+      "text": "Rank the top 2 most famous historical battles"
+    },
+    "9ada88b3cfd1c1a1": {
+      "status": "complete",
+      "text": ""
+    },
+    "a36d2f1233705b2d": {
+      "status": "complete",
+      "text": "\"\"Sci-fi: {{sci-fi}}\nHistorical fiction: {{historical fiction}}\nBiography: {{biography}}\n\"\""
+    },
+    "ac03334c4c9efbbf": {
+      "status": "complete",
+      "text": "Other details"
+    },
+    "b58f716ac95e1bd3": {
+      "status": "complete",
+      "text": "#### <u>User</u>:\nWhat makes the {{battle 2}} famous?\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: openai\nmodel: gpt-4o-mini\nenableVision: true\n\n"
+    },
+    "b9016ed068d8f3df": {
+      "status": "complete",
+      "text": "What makes the {{battle 1}} famous?"
+    },
+    "bb74df853c72868d": {
+      "status": "complete",
+      "text": "Field arrows"
+    },
+    "bf2f302f415a57a7": {
+      "status": "complete",
+      "text": "What's a good fruit to eat for each meal?"
+    },
+    "de82f8c9cc47e515": {
+      "status": "complete",
+      "text": "battle 2"
+    },
+    "eea5e61d628a1f37": {
+      "status": "complete",
+      "text": "dinner"
+    },
+    "f243e7ecc26dddf0": {
+      "status": "complete",
+      "text": "breakfast"
+    },
+    "fc3f0539962083c5": {
+      "status": "complete",
+      "text": "Mock answer"
+    }
+  },
+  "reason": "complete",
+  "results": {},
+  "vaultLog": []
+}

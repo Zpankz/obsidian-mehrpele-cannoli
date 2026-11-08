@@ -1,0 +1,292 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "error",
+      "message": "Could not get HTTP template with name \"[valtown-email]\nHey,\nLemme know when you're free.\n\nSee you when I see you,\nTony\" from floating nodes or pre-set templates.",
+      "results": {},
+      "usage": {}
+    }
+  ],
+  "statuses": {
+    "096fe78f8953a6c7": "error",
+    "15f3a210252c5f5b": "executing",
+    "7f1cf8283ccfede1": "pending",
+    "8834acb33b5b05a2": "complete",
+    "8c5767aa3f7ca516": "complete",
+    "913b0d8d220c7bd0": "pending",
+    "9479867c29fc61c3-body": "pending",
+    "9479867c29fc61c3-subject": "pending",
+    "a5620842eb411ddb": "complete",
+    "b65bae1aca259538": "complete",
+    "bd1323cef1df06fa": "complete",
+    "c3f31ca08528ffd9": "complete",
+    "d4e9920a5aaaae47": "pending"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "c3f31ca08528ffd9",
+            "a5620842eb411ddb"
+          ],
+          "groups": [
+            "8c5767aa3f7ca516"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "content",
+              "shouldExtract": false,
+              "type": "variable"
+            },
+            {
+              "name": "signoff",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "error",
+          "text": "[valtown-email]\nHey,\n{{content}}\n\n{{signoff}},\nTony",
+          "type": "http"
+        },
+        "color": "2",
+        "id": "096fe78f8953a6c7",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "bd1323cef1df06fa"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "executing",
+          "text": "Write a brief email of greeting in Swahili",
+          "type": "form"
+        },
+        "color": "3",
+        "id": "15f3a210252c5f5b",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "d4e9920a5aaaae47"
+          ],
+          "groups": [
+            "bd1323cef1df06fa"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "pending",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "7f1cf8283ccfede1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "8c5767aa3f7ca516"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Lemme know when you're free.",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "8834acb33b5b05a2",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "096fe78f8953a6c7",
+            "8834acb33b5b05a2",
+            "b65bae1aca259538"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Template code",
+          "type": "basic"
+        },
+        "id": "8c5767aa3f7ca516",
+        "label": "Template code",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "9479867c29fc61c3-body",
+            "9479867c29fc61c3-subject"
+          ],
+          "groups": [
+            "bd1323cef1df06fa"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "pending",
+          "text": "valtown-email",
+          "type": "http"
+        },
+        "color": "2",
+        "id": "913b0d8d220c7bd0",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "8c5767aa3f7ca516"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "See you when I see you",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "b65bae1aca259538",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "913b0d8d220c7bd0",
+            "7f1cf8283ccfede1",
+            "15f3a210252c5f5b"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Standard use",
+          "type": "basic"
+        },
+        "id": "bd1323cef1df06fa",
+        "label": "Standard use",
+        "type": "group"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "15f3a210252c5f5b"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "pending",
+          "text": "body",
+          "type": "field"
+        },
+        "color": "6",
+        "fromNode": "15f3a210252c5f5b",
+        "id": "9479867c29fc61c3-body",
+        "label": "body",
+        "toNode": "913b0d8d220c7bd0"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "15f3a210252c5f5b"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "pending",
+          "text": "subject",
+          "type": "field"
+        },
+        "color": "6",
+        "fromNode": "15f3a210252c5f5b",
+        "id": "9479867c29fc61c3-subject",
+        "label": "subject",
+        "toNode": "913b0d8d220c7bd0"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Lemme know when you're free.",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "8834acb33b5b05a2"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "content",
+          "type": "variable"
+        },
+        "fromNode": "8834acb33b5b05a2",
+        "id": "a5620842eb411ddb",
+        "label": "content",
+        "toNode": "096fe78f8953a6c7"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "See you when I see you",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "b65bae1aca259538"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "signoff",
+          "type": "variable"
+        },
+        "fromNode": "b65bae1aca259538",
+        "id": "c3f31ca08528ffd9",
+        "label": "signoff",
+        "toNode": "096fe78f8953a6c7"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "913b0d8d220c7bd0"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "pending",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "913b0d8d220c7bd0",
+        "id": "d4e9920a5aaaae47",
+        "toNode": "7f1cf8283ccfede1"
+      }
+    ]
+  }
+}

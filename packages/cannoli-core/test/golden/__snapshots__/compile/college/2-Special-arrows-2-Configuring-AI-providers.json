@@ -1,0 +1,159 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "b51e8860282e437b"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "probablyDontUseThisFeature",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "320b6f5ddfd0549d",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "b51e8860282e437b"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "gemini",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "acca6afbde7b5906",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "387af49c4e0bf24e"
+        ],
+        "groups": [
+          "b51e8860282e437b"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "ad935f27d0760630",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "b8a20b0a3f4583a7",
+          "ad935f27d0760630",
+          "acca6afbde7b5906",
+          "320b6f5ddfd0549d"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Configuring AI providers",
+        "type": "basic"
+      },
+      "id": "b51e8860282e437b",
+      "label": "Configuring AI providers",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "ac0063c71becd7de",
+          "74cf2aa488454e8e"
+        ],
+        "groups": [
+          "b51e8860282e437b"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Which AI company is best?",
+        "type": "standard-call"
+      },
+      "id": "b8a20b0a3f4583a7",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "b8a20b0a3f4583a7"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "b8a20b0a3f4583a7",
+      "id": "387af49c4e0bf24e",
+      "toNode": "ad935f27d0760630"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "320b6f5ddfd0549d"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "apiKey",
+        "type": "config"
+      },
+      "color": "2",
+      "fromNode": "320b6f5ddfd0549d",
+      "id": "74cf2aa488454e8e",
+      "label": "apiKey",
+      "toNode": "b8a20b0a3f4583a7"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "acca6afbde7b5906"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "provider",
+        "type": "config"
+      },
+      "color": "2",
+      "fromNode": "acca6afbde7b5906",
+      "id": "ac0063c71becd7de",
+      "label": "provider",
+      "toNode": "b8a20b0a3f4583a7"
+    }
+  ]
+}

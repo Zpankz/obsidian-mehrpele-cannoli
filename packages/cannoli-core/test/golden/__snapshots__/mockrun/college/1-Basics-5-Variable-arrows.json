@@ -1,0 +1,568 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 6,
+          "promptTokens": 73.75
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "0d48f7722e5db52e": "complete",
+    "0fa4378c8752aca4": "complete",
+    "10cedae5ccf81664": "complete",
+    "139dad9317421572": "complete",
+    "13cde1cb12272304": "complete",
+    "1714bc9f52099a91": "complete",
+    "25d842fe884f4e78": "complete",
+    "26d4da45eb95d333": "complete",
+    "3a41dc5849268edf": "complete",
+    "3b347865a761d32b": "complete",
+    "44d0ee25c2f23e66": "complete",
+    "4dd63eded63256f2": "complete",
+    "4f84654825f9df4c": "complete",
+    "5cf958d72a55d52d": "complete",
+    "7cf5bbc070866504": "complete",
+    "84fb2c8243704c1a": "complete",
+    "b2aa8b695a7b7774": "complete",
+    "b9eadfcbf2c54fe1": "complete",
+    "c23271f22630c4a9": "complete",
+    "c409a28317a5ae26": "complete",
+    "d83444fe5b49fb2c": "complete",
+    "ece89fb689451485": "complete",
+    "f93a6b2b699a1bf6": "complete",
+    "fa1b26557addc3e5": "complete",
+    "fe8260fd047fe01a": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "c409a28317a5ae26"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Pannetone",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "0d48f7722e5db52e",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "139dad9317421572"
+          ],
+          "groups": [
+            "c409a28317a5ae26"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "dessert",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "How do you make {{dessert}}?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "10cedae5ccf81664",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "7cf5bbc070866504"
+          ],
+          "groups": [
+            "d83444fe5b49fb2c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "13cde1cb12272304",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "d83444fe5b49fb2c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Respond with a limerick about Cannolis",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "1714bc9f52099a91",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "3b347865a761d32b"
+          ],
+          "groups": [
+            "d83444fe5b49fb2c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "limerick",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "Rate this limerick:\n{{limerick}}",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "25d842fe884f4e78",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "0fa4378c8752aca4"
+          ],
+          "groups": [
+            "d83444fe5b49fb2c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "26d4da45eb95d333",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "d83444fe5b49fb2c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "What's the capital of Italy?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "44d0ee25c2f23e66",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "b2aa8b695a7b7774",
+            "c23271f22630c4a9",
+            "4f84654825f9df4c",
+            "84fb2c8243704c1a"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Multiple variables",
+          "type": "basic"
+        },
+        "id": "4dd63eded63256f2",
+        "label": "Multiple variables",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "fa1b26557addc3e5",
+            "ece89fb689451485"
+          ],
+          "groups": [
+            "4dd63eded63256f2"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "a",
+              "shouldExtract": false,
+              "type": "variable"
+            },
+            {
+              "name": "b",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "What connects {{a}} and {{b}}?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "4f84654825f9df4c",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "b9eadfcbf2c54fe1"
+          ],
+          "groups": [
+            "c409a28317a5ae26"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "5cf958d72a55d52d",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "3a41dc5849268edf"
+          ],
+          "groups": [
+            "4dd63eded63256f2"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "84fb2c8243704c1a",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "4dd63eded63256f2"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Hannibal",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "b2aa8b695a7b7774",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "4dd63eded63256f2"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Elephants",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "c23271f22630c4a9",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "0d48f7722e5db52e",
+            "10cedae5ccf81664",
+            "5cf958d72a55d52d"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Variables",
+          "type": "basic"
+        },
+        "id": "c409a28317a5ae26",
+        "label": "Variables",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "25d842fe884f4e78",
+            "1714bc9f52099a91",
+            "13cde1cb12272304",
+            "fe8260fd047fe01a",
+            "26d4da45eb95d333",
+            "44d0ee25c2f23e66"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Between call nodes",
+          "type": "basic"
+        },
+        "id": "d83444fe5b49fb2c",
+        "label": "Between call nodes",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "f93a6b2b699a1bf6"
+          ],
+          "groups": [
+            "d83444fe5b49fb2c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "city",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "Are you sure its {{city}}?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "fe8260fd047fe01a",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "fe8260fd047fe01a"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "fe8260fd047fe01a",
+        "id": "0fa4378c8752aca4",
+        "toNode": "26d4da45eb95d333"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Pannetone",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "0d48f7722e5db52e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "dessert",
+          "type": "variable"
+        },
+        "fromNode": "0d48f7722e5db52e",
+        "id": "139dad9317421572",
+        "label": "dessert",
+        "toNode": "10cedae5ccf81664"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "4f84654825f9df4c"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "4f84654825f9df4c",
+        "id": "3a41dc5849268edf",
+        "toNode": "84fb2c8243704c1a"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "1714bc9f52099a91"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "limerick",
+          "type": "variable"
+        },
+        "fromNode": "1714bc9f52099a91",
+        "id": "3b347865a761d32b",
+        "label": "limerick",
+        "toNode": "25d842fe884f4e78"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "25d842fe884f4e78"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "25d842fe884f4e78",
+        "id": "7cf5bbc070866504",
+        "toNode": "13cde1cb12272304"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "10cedae5ccf81664"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "10cedae5ccf81664",
+        "id": "b9eadfcbf2c54fe1",
+        "toNode": "5cf958d72a55d52d"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Elephants",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "c23271f22630c4a9"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "b",
+          "type": "variable"
+        },
+        "fromNode": "c23271f22630c4a9",
+        "id": "ece89fb689451485",
+        "label": "b",
+        "toNode": "4f84654825f9df4c"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "44d0ee25c2f23e66"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "What's the capital of Italy?",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "city",
+          "type": "variable"
+        },
+        "fromNode": "44d0ee25c2f23e66",
+        "id": "f93a6b2b699a1bf6",
+        "label": "city|",
+        "toNode": "fe8260fd047fe01a"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Hannibal",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "b2aa8b695a7b7774"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "a",
+          "type": "variable"
+        },
+        "fromNode": "b2aa8b695a7b7774",
+        "id": "fa1b26557addc3e5",
+        "label": "a",
+        "toNode": "4f84654825f9df4c"
+      }
+    ]
+  }
+}

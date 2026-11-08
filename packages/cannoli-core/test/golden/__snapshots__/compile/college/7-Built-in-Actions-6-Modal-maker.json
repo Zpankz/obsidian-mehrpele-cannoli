@@ -1,0 +1,313 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [
+          "8faee503bb993fc0"
+        ],
+        "groups": [
+          "c44e5acaab6c078d"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "1ff553b1f86e103f",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "c44e5acaab6c078d"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "# Modal Layout Syntax\n\n  \n\n## Title\n\n- First line: modal title (if not an input field)\n\n- Default: \"Cannoli modal\"\n\n  \n\n## Structure\n\n- Plain text: Rendered as-is\n\n- Input fields: ==Field Name(field_type) options==\n\n- Newlines create paragraphs\n\n  \n\n## Input Fields\n\n- Field Name: Required, used as placeholder text\n\n- (field_type): Optional (default: text)\n\n- options: For dropdowns/date formats\n\n  \n\n## Field Types\n\n1. text: Single-line input\n\n2. textarea: Multi-line input\n\n3. toggle: Boolean switch (default: false)\n\n4. dropdown: Option selection (first is default)\n\n5. date: Date picker (default: today)\n\n6. time: Time picker (default: now)\n\n7. datetime: Date and time picker (default: now)\n\n  \n\n## Examples\n\nText input: ==User Name==\n\nTextarea: ==Comments(textarea)==\n\nToggle: ==Enable Feature(toggle)==\n\nDropdown: ==Select Option(dropdown) Option1, Option2==\n\nDate: ==Select Date(date) YYYY-MM-DD==\n\n  \n\n## Important Notes\n\n- Field names are not automatically displayed in the modal\n\n- Add explicit field labels/descriptions as plain text before each input\n\n- Example:\n\nEnter your name: ==User Name==\n\nSelect a color: ==Color(dropdown) Red, Green, Blue==\n\n- Whitespace before == is preserved in layout\n\n- Empty text inputs default to \"No input\"\n\n- Date/time formats are customizable (e.g., YYYY-MM-DD, HH:mm)\n\n- Dropdown options: Use comma-separated list or JSON array\n\n- Markdown formatting is not supported in the modal",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "44d26a1390cef81a",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "da8d006d9c506316",
+          "63a29488761470bd",
+          "83801bea07140e30",
+          "978ff46d7aede680"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Templated ",
+        "type": "basic"
+      },
+      "id": "4dbad7a5011269a5",
+      "label": "Templated ",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "8b1ff6c7a0fc0d69"
+        ],
+        "groups": [
+          "4dbad7a5011269a5"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "intro",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "[modal]\nA modal!\n{{intro}}\n\nHere's a text box: ==heya==\n\nhere's a toggle: ==yo (toggle)==\n\na textarea (for multiline text):\n==longText (textarea)==\n\nHere's a dropdown:\n==color (dropdown) red, blue, green==\n\nA time, default formatting: ==a time (time)==\n\nA datetime, weird custom formatting:\n==moment (datetime) YYYY-[Day]DDD [at] HH:mm:ss.SSS [in the] A==\n\nA date, custom formatting: ==someDay (date) MM/DD/YY==",
+        "type": "http"
+      },
+      "color": "2",
+      "id": "63a29488761470bd",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "7b43add0e05eb2da"
+        ],
+        "groups": [
+          "c44e5acaab6c078d"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Respond with the layout of a modal that asks for a user's pizza order, including when they'd like it delivered.",
+        "type": "standard-call"
+      },
+      "id": "6a75473410518f98",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "fe8aa0d0d919f994"
+        ],
+        "groups": [
+          "c44e5acaab6c078d"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "modal",
+        "type": "http"
+      },
+      "color": "2",
+      "id": "75c101099767d0ab",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "4dbad7a5011269a5"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Write three sentences begging the user to fill out this modal.",
+        "type": "standard-call"
+      },
+      "id": "83801bea07140e30",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "03c59e6894a798a9"
+        ],
+        "groups": [
+          "4dbad7a5011269a5"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "978ff46d7aede680",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "44d26a1390cef81a",
+          "6a75473410518f98",
+          "75c101099767d0ab",
+          "1ff553b1f86e103f"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Non-templated",
+        "type": "basic"
+      },
+      "id": "c44e5acaab6c078d",
+      "label": "Non-templated",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "62433987bedc07fd"
+        ],
+        "groups": [
+          "4dbad7a5011269a5"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "da8d006d9c506316",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "63a29488761470bd"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "63a29488761470bd",
+      "id": "03c59e6894a798a9",
+      "toNode": "978ff46d7aede680"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "63a29488761470bd"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "heya",
+        "type": "variable"
+      },
+      "fromNode": "63a29488761470bd",
+      "id": "62433987bedc07fd",
+      "label": "heya",
+      "toNode": "da8d006d9c506316"
+    },
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "44d26a1390cef81a"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "system-message"
+      },
+      "fromNode": "44d26a1390cef81a",
+      "id": "7b43add0e05eb2da",
+      "toNode": "6a75473410518f98"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "83801bea07140e30"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "intro",
+        "type": "variable"
+      },
+      "fromNode": "83801bea07140e30",
+      "id": "8b1ff6c7a0fc0d69",
+      "label": "intro",
+      "toNode": "63a29488761470bd"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "75c101099767d0ab"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "75c101099767d0ab",
+      "id": "8faee503bb993fc0",
+      "toNode": "1ff553b1f86e103f"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "6a75473410518f98"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "layout",
+        "type": "variable"
+      },
+      "fromNode": "6a75473410518f98",
+      "id": "fe8aa0d0d919f994",
+      "label": "layout",
+      "toNode": "75c101099767d0ab"
+    }
+  ]
+}

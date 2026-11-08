@@ -1,0 +1,194 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 2,
+          "promptTokens": 40
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "2a451cf329dad9eb": "complete",
+    "321db5e7d72b0151": "complete",
+    "3e2d98fc5ddeb168": "complete",
+    "78cc7edc0acf7754": "complete",
+    "d08c98406e290f66": "complete",
+    "e77c462deb61200c": "complete",
+    "f20327851c3175bd": "complete",
+    "ffdc926f780c7c6f": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "321db5e7d72b0151"
+          ],
+          "groups": [
+            "e77c462deb61200c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "2a451cf329dad9eb",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "d08c98406e290f66"
+          ],
+          "groups": [
+            "e77c462deb61200c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "This is the second user message, after an LLM response",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "78cc7edc0acf7754",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "78cc7edc0acf7754",
+            "f20327851c3175bd",
+            "ffdc926f780c7c6f",
+            "2a451cf329dad9eb"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Blank Arrows",
+          "type": "basic"
+        },
+        "id": "e77c462deb61200c",
+        "label": "Blank Arrows",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "e77c462deb61200c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "This is the first user message",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "f20327851c3175bd",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "3e2d98fc5ddeb168"
+          ],
+          "groups": [
+            "e77c462deb61200c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "standard-content"
+        },
+        "color": "6",
+        "id": "ffdc926f780c7c6f",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "ffdc926f780c7c6f"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "ffdc926f780c7c6f",
+        "id": "321db5e7d72b0151",
+        "toNode": "2a451cf329dad9eb"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "78cc7edc0acf7754"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "78cc7edc0acf7754",
+        "id": "3e2d98fc5ddeb168",
+        "toNode": "ffdc926f780c7c6f"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "f20327851c3175bd"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "This is the first user message",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "f20327851c3175bd",
+        "id": "d08c98406e290f66",
+        "toNode": "78cc7edc0acf7754"
+      }
+    ]
+  }
+}

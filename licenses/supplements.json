@@ -1,0 +1,10 @@
+{
+  "@ai-sdk/provider-utils@5.0.65": {
+    "license": "Apache-2.0",
+    "source": "https://raw.githubusercontent.com/vercel/ai/e6230e43ba9def164550eea562c457e23be9efa6/LICENSE",
+    "files": {
+      "Apache-2.0.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "vercel-ai-LICENSE": "b4f9adb7c568904834d0dd6cc98d16c390d21ca32fc17ae7a267715269bd5529"
+    }
+  }
+}

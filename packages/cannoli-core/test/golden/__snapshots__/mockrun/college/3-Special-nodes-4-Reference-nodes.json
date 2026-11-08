@@ -1,0 +1,560 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 2,
+          "promptTokens": 21.5
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "06d6a4450c69c049": "complete",
+    "079588e3f7e0afa0": "complete",
+    "1566407420c6d37d": "complete",
+    "20b93bd61e36c19f": "complete",
+    "28a0281c87a0c588": "complete",
+    "344bb3da359269a4": "complete",
+    "4320417bc6736dd9": "complete",
+    "546578b6fae29490": "complete",
+    "68e42dd6d4721f26": "complete",
+    "8c0fb44530075f7d": "complete",
+    "8d414d7be725ce11": "complete",
+    "8fd4e3f6e22304ba": "complete",
+    "963eacfd11f92b34": "complete",
+    "babacacceece0d0f": "complete",
+    "bc3f3aa5abc3914d": "complete",
+    "c98efd6bf2dff5d4": "complete",
+    "d0e83b31dc2a1576": "complete",
+    "d1ab9632f705d309": "complete",
+    "da10ade6ef9ec7fb": "complete",
+    "e08885cd2f146f7d": "complete",
+    "e56ac04c2a7ef6da": "complete",
+    "e8e998b3d784e3a1": "complete",
+    "e9768515f6295d9b": "complete",
+    "ef10f47160ceb92a": "complete",
+    "fba8c017a84a0a74": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "546578b6fae29490"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "Current state",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "{{Current state}}",
+          "type": "reference"
+        },
+        "color": "6",
+        "id": "079588e3f7e0afa0",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "4320417bc6736dd9"
+          ],
+          "groups": [
+            "8d414d7be725ce11"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "1566407420c6d37d",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "8c0fb44530075f7d"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "Meeting Notes",
+              "shouldExtract": true,
+              "type": "note"
+            }
+          ],
+          "status": "complete",
+          "text": "{{[[Meeting Notes]]}}",
+          "type": "reference"
+        },
+        "color": "6",
+        "id": "28a0281c87a0c588",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "d1ab9632f705d309"
+          ],
+          "groups": [
+            "546578b6fae29490"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "#### <u>User</u>:\nDoes this change our plan at all:\nMock content\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "344bb3da359269a4",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "079588e3f7e0afa0",
+            "fba8c017a84a0a74",
+            "e8e998b3d784e3a1",
+            "344bb3da359269a4",
+            "e9768515f6295d9b"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Reference nodes",
+          "type": "basic"
+        },
+        "id": "546578b6fae29490",
+        "label": "Reference nodes",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "e56ac04c2a7ef6da"
+          ],
+          "groups": [
+            "8d414d7be725ce11"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "68e42dd6d4721f26",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "28a0281c87a0c588",
+            "babacacceece0d0f"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Getting note path",
+          "type": "basic"
+        },
+        "id": "8c0fb44530075f7d",
+        "label": "Getting note path",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "da10ade6ef9ec7fb",
+            "d0e83b31dc2a1576",
+            "1566407420c6d37d",
+            "68e42dd6d4721f26"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Getting properties",
+          "type": "basic"
+        },
+        "id": "8d414d7be725ce11",
+        "label": "Getting properties",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "963eacfd11f92b34",
+            "ef10f47160ceb92a"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Getting note name",
+          "type": "basic"
+        },
+        "id": "8fd4e3f6e22304ba",
+        "label": "Getting note name",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "8fd4e3f6e22304ba"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "[[Meeting Notes]]",
+              "shouldExtract": true,
+              "type": "note"
+            }
+          ],
+          "status": "complete",
+          "text": "{{[[Meeting Notes]]}}",
+          "type": "reference"
+        },
+        "color": "6",
+        "id": "963eacfd11f92b34",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "06d6a4450c69c049"
+          ],
+          "groups": [
+            "8c0fb44530075f7d"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "babacacceece0d0f",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "8d414d7be725ce11"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "Meeting Notes",
+              "shouldExtract": true,
+              "type": "note"
+            }
+          ],
+          "status": "complete",
+          "text": "{{[[Meeting Notes]]}}",
+          "type": "reference"
+        },
+        "color": "6",
+        "id": "d0e83b31dc2a1576",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "8d414d7be725ce11"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "Meeting Notes",
+              "shouldExtract": true,
+              "type": "note"
+            }
+          ],
+          "status": "complete",
+          "text": "{{[[Meeting Notes]]}}",
+          "type": "reference"
+        },
+        "color": "6",
+        "id": "da10ade6ef9ec7fb",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "[Current state]\nNot much going on",
+          "type": "variable"
+        },
+        "id": "e08885cd2f146f7d",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "bc3f3aa5abc3914d"
+          ],
+          "groups": [
+            "546578b6fae29490"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "Walking Poem",
+              "shouldExtract": true,
+              "type": "note"
+            }
+          ],
+          "status": "complete",
+          "text": "{{[[Walking Poem]]}}",
+          "type": "reference"
+        },
+        "color": "6",
+        "id": "e8e998b3d784e3a1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "c98efd6bf2dff5d4"
+          ],
+          "groups": [
+            "546578b6fae29490"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "a",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "Does this change our plan at all:\n{{a}}",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "e9768515f6295d9b",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "20b93bd61e36c19f"
+          ],
+          "groups": [
+            "8fd4e3f6e22304ba"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "[[Meeting Notes]]",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "ef10f47160ceb92a",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "546578b6fae29490"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Write a poem about walking",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "fba8c017a84a0a74",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Meeting Notes.md",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "28a0281c87a0c588"
+          ],
+          "edgeModifier": "folder",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "variable"
+        },
+        "fromNode": "28a0281c87a0c588",
+        "id": "06d6a4450c69c049",
+        "label": "/",
+        "toNode": "babacacceece0d0f"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "[[Meeting Notes]]",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "963eacfd11f92b34"
+          ],
+          "edgeModifier": "note",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "variable"
+        },
+        "fromNode": "963eacfd11f92b34",
+        "id": "20b93bd61e36c19f",
+        "label": "[",
+        "toNode": "ef10f47160ceb92a"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "da10ade6ef9ec7fb"
+          ],
+          "edgeModifier": "property",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Date",
+          "type": "variable"
+        },
+        "fromNode": "da10ade6ef9ec7fb",
+        "id": "4320417bc6736dd9",
+        "label": ":Date",
+        "toNode": "1566407420c6d37d"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "fba8c017a84a0a74"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "fba8c017a84a0a74",
+        "id": "bc3f3aa5abc3914d",
+        "toNode": "e8e998b3d784e3a1"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock content",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "079588e3f7e0afa0"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "a",
+          "type": "variable"
+        },
+        "fromNode": "079588e3f7e0afa0",
+        "id": "c98efd6bf2dff5d4",
+        "label": "a",
+        "toNode": "e9768515f6295d9b"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "#### <u>User</u>:\nDoes this change our plan at all:\nMock content\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "e9768515f6295d9b"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "logging"
+        },
+        "color": "2",
+        "fromNode": "e9768515f6295d9b",
+        "id": "d1ab9632f705d309",
+        "toNode": "344bb3da359269a4"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "d0e83b31dc2a1576"
+          ],
+          "edgeModifier": "property",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "variable"
+        },
+        "fromNode": "d0e83b31dc2a1576",
+        "id": "e56ac04c2a7ef6da",
+        "label": ":",
+        "toNode": "68e42dd6d4721f26"
+      }
+    ]
+  }
+}

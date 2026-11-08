@@ -1,0 +1,598 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [
+          "09153b08d8afc249"
+        ],
+        "groups": [
+          "b41f5d77d2587137"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "0209622577e4d8e4",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "4705bd8c3ac7a1dd"
+        ],
+        "groups": [
+          "308eacb6bc673cc4",
+          "b41f5d77d2587137"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Respond with a rewrite. Nothing else should be in your response.",
+        "type": "standard-call"
+      },
+      "id": "08d62752b952d1b9",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "currentLoop": 0,
+        "dependencies": [
+          "98bface3c4272939",
+          "4522c0d5f13ecbf2",
+          "08d62752b952d1b9"
+        ],
+        "groups": [
+          "b41f5d77d2587137"
+        ],
+        "kind": "group",
+        "maxLoops": 3,
+        "originalObject": null,
+        "status": "pending",
+        "text": "3",
+        "type": "repeat"
+      },
+      "id": "308eacb6bc673cc4",
+      "label": "3",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "cb414a8bed4cab51"
+        ],
+        "groups": [
+          "a8db6171d1ed7037",
+          "cd5aefdec24485a6"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "What would you change?",
+        "type": "standard-call"
+      },
+      "id": "42e65836e7bc0d2d",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "01117e93ffd16810"
+        ],
+        "groups": [
+          "308eacb6bc673cc4",
+          "b41f5d77d2587137"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "a",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "Critique this haiku:\n{{a}}",
+        "type": "standard-call"
+      },
+      "id": "4522c0d5f13ecbf2",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "8e14d432eb6409d9"
+        ],
+        "groups": [
+          "a8db6171d1ed7037",
+          "cd5aefdec24485a6"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "65d12403b1902562",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "b41f5d77d2587137"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Crisp shell, sweet delight, Ricotta whispers within, Sicily's soft night.",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "8bd344c2d351a946",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "e151468f90fae46f"
+        ],
+        "groups": [
+          "a8db6171d1ed7037",
+          "cd5aefdec24485a6"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Respond with a rewrite based on your feedback.",
+        "type": "standard-call"
+      },
+      "id": "92dee3525bb5528a",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "a8db6171d1ed7037",
+          "cd5aefdec24485a6"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "Cannoli College/Example notes/Lemons for Cleaning",
+            "shouldExtract": true,
+            "type": "note"
+          }
+        ],
+        "status": "pending",
+        "text": "{{[[Cannoli College/Example notes/Lemons for Cleaning.md]]}}",
+        "type": "reference"
+      },
+      "file": "Cannoli College/Example notes/Lemons for Cleaning.md",
+      "id": "9b09ade8a96fdc49",
+      "type": "file"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "e9279e94dd7a9109"
+        ],
+        "groups": [
+          "a8db6171d1ed7037",
+          "cd5aefdec24485a6"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "Cannoli College/Example notes/Lemons for Cleaning",
+            "shouldExtract": true,
+            "type": "note"
+          }
+        ],
+        "status": "pending",
+        "text": "{{[[Cannoli College/Example notes/Lemons for Cleaning.md]]}}",
+        "type": "reference"
+      },
+      "file": "Cannoli College/Example notes/Lemons for Cleaning.md",
+      "id": "a447b4af7f9b59af",
+      "type": "file"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "d74b679a0e9c5a8e"
+        ],
+        "groups": [
+          "b41f5d77d2587137"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "a8c82e1399aa0667",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "currentLoop": 0,
+        "dependencies": [
+          "313f7dba1ac082e7",
+          "c9ac27366825fb46",
+          "42e65836e7bc0d2d",
+          "9b09ade8a96fdc49",
+          "92dee3525bb5528a",
+          "65d12403b1902562",
+          "a447b4af7f9b59af"
+        ],
+        "groups": [
+          "cd5aefdec24485a6"
+        ],
+        "kind": "group",
+        "maxLoops": 3,
+        "originalObject": null,
+        "status": "pending",
+        "text": "3",
+        "type": "repeat"
+      },
+      "id": "a8db6171d1ed7037",
+      "label": "3",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "308eacb6bc673cc4",
+          "8bd344c2d351a946",
+          "4522c0d5f13ecbf2",
+          "08d62752b952d1b9",
+          "0209622577e4d8e4",
+          "a8c82e1399aa0667"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Feedback variables",
+        "type": "basic"
+      },
+      "id": "b41f5d77d2587137",
+      "label": "Feedback variables",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "ae86725de62f454c"
+        ],
+        "groups": [
+          "cd5aefdec24485a6"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "c19decb87eb68f4e",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "28dd5bf26534621f"
+        ],
+        "groups": [
+          "a8db6171d1ed7037",
+          "cd5aefdec24485a6"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "article",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "Are there any obvious improvements to this article?\n\n{{article}}",
+        "type": "choose"
+      },
+      "id": "c9ac27366825fb46",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "a8db6171d1ed7037",
+          "c9ac27366825fb46",
+          "42e65836e7bc0d2d",
+          "9b09ade8a96fdc49",
+          "92dee3525bb5528a",
+          "65d12403b1902562",
+          "c19decb87eb68f4e",
+          "a447b4af7f9b59af"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Conditional loop groups",
+        "type": "basic"
+      },
+      "id": "cd5aefdec24485a6",
+      "label": "Conditional loop groups",
+      "type": "group"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [
+          "308eacb6bc673cc4"
+        ],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "8bd344c2d351a946"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "a",
+        "type": "variable"
+      },
+      "fromNode": "8bd344c2d351a946",
+      "id": "01117e93ffd16810",
+      "label": "a",
+      "toNode": "4522c0d5f13ecbf2"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [
+          "308eacb6bc673cc4"
+        ],
+        "dependencies": [
+          "08d62752b952d1b9",
+          "308eacb6bc673cc4"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "08d62752b952d1b9",
+      "id": "09153b08d8afc249",
+      "toNode": "0209622577e4d8e4"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "9b09ade8a96fdc49"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "article",
+        "type": "variable"
+      },
+      "fromNode": "9b09ade8a96fdc49",
+      "id": "28dd5bf26534621f",
+      "label": "article",
+      "toNode": "c9ac27366825fb46"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "a447b4af7f9b59af"
+        ],
+        "isReflexive": true,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "variable"
+      },
+      "fromNode": "a447b4af7f9b59af",
+      "id": "313f7dba1ac082e7",
+      "label": "~",
+      "toNode": "a8db6171d1ed7037"
+    },
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "4522c0d5f13ecbf2"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "chat"
+      },
+      "fromNode": "4522c0d5f13ecbf2",
+      "id": "4705bd8c3ac7a1dd",
+      "toNode": "08d62752b952d1b9"
+    },
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "c9ac27366825fb46"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "no",
+        "type": "choice"
+      },
+      "color": "3",
+      "fromNode": "c9ac27366825fb46",
+      "id": "8e14d432eb6409d9",
+      "label": "no",
+      "toNode": "65d12403b1902562"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "08d62752b952d1b9"
+        ],
+        "isReflexive": true,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "a",
+        "type": "variable"
+      },
+      "fromNode": "08d62752b952d1b9",
+      "id": "98bface3c4272939",
+      "label": "a",
+      "toNode": "308eacb6bc673cc4"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [
+          "a8db6171d1ed7037"
+        ],
+        "dependencies": [
+          "92dee3525bb5528a",
+          "a8db6171d1ed7037"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "92dee3525bb5528a",
+      "id": "ae86725de62f454c",
+      "toNode": "c19decb87eb68f4e"
+    },
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "c9ac27366825fb46"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "yes",
+        "type": "choice"
+      },
+      "color": "3",
+      "fromNode": "c9ac27366825fb46",
+      "id": "cb414a8bed4cab51",
+      "label": "yes",
+      "toNode": "42e65836e7bc0d2d"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [
+          "308eacb6bc673cc4"
+        ],
+        "dependencies": [
+          "08d62752b952d1b9",
+          "308eacb6bc673cc4"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "08d62752b952d1b9",
+      "id": "d74b679a0e9c5a8e",
+      "toNode": "a8c82e1399aa0667"
+    },
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "42e65836e7bc0d2d"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "chat"
+      },
+      "fromNode": "42e65836e7bc0d2d",
+      "id": "e151468f90fae46f",
+      "toNode": "92dee3525bb5528a"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "92dee3525bb5528a"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "92dee3525bb5528a",
+      "id": "e9279e94dd7a9109",
+      "toNode": "a447b4af7f9b59af"
+    }
+  ]
+}

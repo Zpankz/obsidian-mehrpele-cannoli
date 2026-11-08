@@ -1,0 +1,8 @@
+node_modules/
+**/node_modules/
+main.js
+**/main.js
+**/build-report.json
+**/dist/
+*.map
+**/*.map

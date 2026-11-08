@@ -1,0 +1,221 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 2,
+          "promptTokens": 61.75
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "4cc364fe8b26d5fe": "complete",
+    "689e145cde7ec714": "complete",
+    "7be62958bc86b912": "complete",
+    "885ecd1433cb7016": "complete",
+    "a2a3d07c8e04b7fb": "complete",
+    "b258a15559b32956": "complete",
+    "b44dfaaff63347b5": "complete",
+    "d5deb032b93596f3": "complete",
+    "f6a6fc6a3202bc06": "complete",
+    "f853930eb8a28a12": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "a2a3d07c8e04b7fb"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "false",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "4cc364fe8b26d5fe",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "b44dfaaff63347b5"
+          ],
+          "groups": [
+            "a2a3d07c8e04b7fb"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "689e145cde7ec714",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "b258a15559b32956",
+            "885ecd1433cb7016"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Embedding images",
+          "type": "basic"
+        },
+        "id": "7be62958bc86b912",
+        "label": "Embedding images",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "f6a6fc6a3202bc06"
+          ],
+          "groups": [
+            "7be62958bc86b912"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "885ecd1433cb7016",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "f853930eb8a28a12",
+            "4cc364fe8b26d5fe",
+            "689e145cde7ec714"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Disabling vision",
+          "type": "basic"
+        },
+        "id": "a2a3d07c8e04b7fb",
+        "label": "Disabling vision",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "7be62958bc86b912"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "What is this?\n\n![nice](https://thisitaliankitchen.com/wp-content/uploads/2023/06/ricotta-cannolis.jpg)",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "b258a15559b32956",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "d5deb032b93596f3"
+          ],
+          "groups": [
+            "a2a3d07c8e04b7fb"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "What is this?\n\n![nice](https://static.scientificamerican.com/sciam/cache/file/41DF7DA0-EE58-4259-AA815A390FB37C55_source.jpg?w=900)",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "f853930eb8a28a12",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "f853930eb8a28a12"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "f853930eb8a28a12",
+        "id": "b44dfaaff63347b5",
+        "toNode": "689e145cde7ec714"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "false",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "4cc364fe8b26d5fe"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "enableVision",
+          "type": "config"
+        },
+        "color": "2",
+        "fromNode": "4cc364fe8b26d5fe",
+        "id": "d5deb032b93596f3",
+        "label": "enableVision",
+        "toNode": "f853930eb8a28a12"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "b258a15559b32956"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "b258a15559b32956",
+        "id": "f6a6fc6a3202bc06",
+        "toNode": "885ecd1433cb7016"
+      }
+    ]
+  }
+}

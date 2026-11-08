@@ -1,0 +1,19 @@
+# Extends the default gitleaks rules. Keep allowlists narrow and explain each one.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Placeholder bearer token in vendored cannoli-core curl examples (src/bake.ts)"
+regexTarget = "match"
+regexes = ['''Bearer YOUR_API_TOKEN''']
+
+# This generated field is a verified SHA-256 source checksum, not a credential.
+# Require both its metadata path and its exact key/value shape.
+[[rules]]
+id = "generic-api-key"
+  [[rules.allowlists]]
+  description = "Vendored secrets.ts checksum in upstream integrity metadata"
+  condition = "AND"
+  paths = ['''(^|/)packages/cannoli-core/UPSTREAM\.json$''']
+  regexTarget = "line"
+  regexes = ['''^\s*"src/secrets\.ts": "[a-f0-9]{64}",?\s*$''']

@@ -1,0 +1,49 @@
+{
+	"nodes": [
+		{
+			"id": "prompt",
+			"type": "text",
+			"text": "Say hi in 3 words",
+			"x": 0,
+			"y": 0,
+			"width": 260,
+			"height": 120,
+			"color": "6"
+		},
+		{
+			"id": "call",
+			"type": "text",
+			"text": "",
+			"x": 360,
+			"y": 0,
+			"width": 260,
+			"height": 120
+		},
+		{
+			"id": "output",
+			"type": "text",
+			"text": "",
+			"x": 720,
+			"y": 0,
+			"width": 260,
+			"height": 120,
+			"color": "6"
+		}
+	],
+	"edges": [
+		{
+			"id": "e1",
+			"fromNode": "prompt",
+			"fromSide": "right",
+			"toNode": "call",
+			"toSide": "left"
+		},
+		{
+			"id": "e2",
+			"fromNode": "call",
+			"fromSide": "right",
+			"toNode": "output",
+			"toSide": "left"
+		}
+	]
+}

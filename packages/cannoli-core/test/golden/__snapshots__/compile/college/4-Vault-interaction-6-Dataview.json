@@ -1,0 +1,427 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "866cf47b85828224"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Tell me about this table\n\n```dataview\nTABLE file.name,file.ctime\nFROM #cannoliArticle\n```",
+        "type": "standard-call"
+      },
+      "color": "0",
+      "id": "0a4607692e99ccc4",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "2ebd28fb6c5c101d"
+        ],
+        "groups": [
+          "866cf47b85828224"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "2a540f6685096f40",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "dc0fdfc897e3f0d4"
+        ],
+        "groups": [
+          "abdd7f206ec179b5"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "mostInteresting",
+            "shouldExtract": true,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "Do you find this note interesting?\n\n{{@mostInteresting}}",
+        "type": "standard-call"
+      },
+      "color": "0",
+      "id": "480170f0f0cf1c3d",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "8ee71d334a61b7db"
+        ],
+        "groups": [
+          "866cf47b85828224"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "4991b1a604f5b0c0",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "5c40358a63c8ae10"
+        ],
+        "groups": [
+          "abdd7f206ec179b5"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "522c7968323ab01f",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "86b5e262c31686a5",
+          "e00b70c20e8b5de4",
+          "9c168db7948ae50a",
+          "5fdb171ce82f69ef"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Embedding notes with Dataview",
+        "type": "basic"
+      },
+      "id": "54821284bfffa404",
+      "label": "Embedding notes with Dataview",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "a7d1263d7926e2df"
+        ],
+        "groups": [
+          "54821284bfffa404"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "5fdb171ce82f69ef",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "d496337fb835112d",
+          "0a4607692e99ccc4",
+          "2a540f6685096f40",
+          "4991b1a604f5b0c0"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Dataview Queries",
+        "type": "basic"
+      },
+      "id": "866cf47b85828224",
+      "label": "Dataview Queries",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "54821284bfffa404"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Read these notes and write a haiku about each one:\n\n{{\n```dataview\nLIST\nFROM #cannoliArticle\n```\n}}",
+        "type": "standard-call"
+      },
+      "color": "0",
+      "id": "86b5e262c31686a5",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "a9b3dffa5e282eac"
+        ],
+        "groups": [
+          "54821284bfffa404"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "9c168db7948ae50a",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "cdfbde60f7de0699",
+          "e05c95af482766e8",
+          "522c7968323ab01f",
+          "480170f0f0cf1c3d"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Selecting notes from Dataview queries",
+        "type": "basic"
+      },
+      "id": "abdd7f206ec179b5",
+      "label": "Selecting notes from Dataview queries",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "abdd7f206ec179b5"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Which of these notes looks most interesting:\n\n```dataview\nLIST\nFROM #cannoliArticle\n```",
+        "type": "standard-call"
+      },
+      "color": "0",
+      "id": "cdfbde60f7de0699",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "866cf47b85828224"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Here is a dataview query:\n```dataview\nLIST\nFROM #cannoliArticle\n```\nWhat do you think are inside these notes?",
+        "type": "standard-call"
+      },
+      "color": "0",
+      "id": "d496337fb835112d",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "54821284bfffa404"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Read these notes and write a haiku about each one:\n\n{{\n```dataview\nLIST\nFROM #cannoliArticle\n```\n!#}}",
+        "type": "standard-call"
+      },
+      "color": "0",
+      "id": "e00b70c20e8b5de4",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "c66428ad3bf6bee0"
+        ],
+        "groups": [
+          "abdd7f206ec179b5"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "e05c95af482766e8",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "d496337fb835112d"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "d496337fb835112d",
+      "id": "2ebd28fb6c5c101d",
+      "toNode": "2a540f6685096f40"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "480170f0f0cf1c3d"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "480170f0f0cf1c3d",
+      "id": "5c40358a63c8ae10",
+      "toNode": "522c7968323ab01f"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "0a4607692e99ccc4"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "0a4607692e99ccc4",
+      "id": "8ee71d334a61b7db",
+      "toNode": "4991b1a604f5b0c0"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "e00b70c20e8b5de4"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "e00b70c20e8b5de4",
+      "id": "a7d1263d7926e2df",
+      "toNode": "5fdb171ce82f69ef"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "86b5e262c31686a5"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "86b5e262c31686a5",
+      "id": "a9b3dffa5e282eac",
+      "toNode": "9c168db7948ae50a"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "480170f0f0cf1c3d"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "480170f0f0cf1c3d",
+      "id": "c66428ad3bf6bee0",
+      "toNode": "e05c95af482766e8"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "cdfbde60f7de0699"
+        ],
+        "edgeModifier": "note",
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "mostInteresting",
+        "type": "variable"
+      },
+      "fromNode": "cdfbde60f7de0699",
+      "id": "dc0fdfc897e3f0d4",
+      "label": "[mostInteresting",
+      "toNode": "480170f0f0cf1c3d"
+    }
+  ]
+}

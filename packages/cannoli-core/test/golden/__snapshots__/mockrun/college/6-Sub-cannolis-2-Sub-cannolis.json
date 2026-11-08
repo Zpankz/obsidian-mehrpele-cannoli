@@ -1,0 +1,223 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "error",
+      "message": "Could not find subcannoli canvas.",
+      "results": {},
+      "usage": {}
+    }
+  ],
+  "statuses": {
+    "0bd5ed15122bff0a": "complete",
+    "0c96fa7eee85ae17": "pending",
+    "2dcf15ce79b828d8": "error",
+    "36d3df7134384f1c": "pending",
+    "5264695914078a98": "pending",
+    "6c52ad5b31b27f43": "complete",
+    "710ae77b6549b368": "complete",
+    "7704e3a36e0d076c": "pending",
+    "c0a71176b04a13c6": "complete",
+    "c18fc5b1f7bb37e5": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "36d3df7134384f1c"
+          ],
+          "groups": [
+            "c0a71176b04a13c6"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "pending",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "0c96fa7eee85ae17",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "0bd5ed15122bff0a",
+            "710ae77b6549b368"
+          ],
+          "groups": [
+            "c0a71176b04a13c6"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "error",
+          "text": "{{[[Cannoli College/6. Sub-cannolis/1. Input and output nodes.canvas]]}}",
+          "type": "subcannoli"
+        },
+        "color": "2",
+        "file": "Cannoli College/6. Sub-cannolis/1. Input and output nodes.canvas",
+        "id": "2dcf15ce79b828d8",
+        "type": "file"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "7704e3a36e0d076c"
+          ],
+          "groups": [
+            "c0a71176b04a13c6"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "pending",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "5264695914078a98",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "c0a71176b04a13c6"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "rubiks cube",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "6c52ad5b31b27f43",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "2dcf15ce79b828d8",
+            "c18fc5b1f7bb37e5",
+            "6c52ad5b31b27f43",
+            "5264695914078a98",
+            "0c96fa7eee85ae17"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Sub-cannolis",
+          "type": "basic"
+        },
+        "id": "c0a71176b04a13c6",
+        "label": "Sub-cannolis",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "c0a71176b04a13c6"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "frog",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "c18fc5b1f7bb37e5",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "frog",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "c18fc5b1f7bb37e5"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "anInput",
+          "type": "variable"
+        },
+        "fromNode": "c18fc5b1f7bb37e5",
+        "id": "0bd5ed15122bff0a",
+        "label": "anInput",
+        "toNode": "2dcf15ce79b828d8"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "2dcf15ce79b828d8"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "pending",
+          "text": "anOutput",
+          "type": "variable"
+        },
+        "fromNode": "2dcf15ce79b828d8",
+        "id": "36d3df7134384f1c",
+        "label": "anOutput",
+        "toNode": "0c96fa7eee85ae17"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "rubiks cube",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "6c52ad5b31b27f43"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "anotherInput",
+          "type": "variable"
+        },
+        "fromNode": "6c52ad5b31b27f43",
+        "id": "710ae77b6549b368",
+        "label": "anotherInput",
+        "toNode": "2dcf15ce79b828d8"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "2dcf15ce79b828d8"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "pending",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "2dcf15ce79b828d8",
+        "id": "7704e3a36e0d076c",
+        "toNode": "5264695914078a98"
+      }
+    ]
+  }
+}

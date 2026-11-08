@@ -1,0 +1,356 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "4456b948335f3b94"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "No more Altoids",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "0f4591137e166313",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "837ba0cd52636e4c"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "The Truth About Hula Hoops",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "375c5de56f45d5e1",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "4c6e2bf4a9959f15",
+          "6b9ee922dd00451b",
+          "8372acb7e244fb15",
+          "0f4591137e166313",
+          "b0608205e7a748f6"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Defining path",
+        "type": "basic"
+      },
+      "id": "4456b948335f3b94",
+      "label": "Defining path",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "4456b948335f3b94"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Write an overly apologetic email about how we're out of altoids",
+        "type": "standard-call"
+      },
+      "id": "4c6e2bf4a9959f15",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "837ba0cd52636e4c"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Write a paragraph about a sinister history of hula hoops",
+        "type": "standard-call"
+      },
+      "id": "679af4d2d1190b6b",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "7aca371238d9f008",
+          "f2ab13710488acaa",
+          "f9e1ee261742cf86"
+        ],
+        "groups": [
+          "4456b948335f3b94"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "title",
+            "shouldExtract": true,
+            "type": "create-note"
+          }
+        ],
+        "status": "pending",
+        "text": "{{+@title}}",
+        "type": "reference"
+      },
+      "color": "6",
+      "id": "6b9ee922dd00451b",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "c0aea91c093cd031"
+        ],
+        "groups": [
+          "4456b948335f3b94"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "8372acb7e244fb15",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "fc94ad73861dd0b4",
+          "375c5de56f45d5e1",
+          "679af4d2d1190b6b",
+          "bd60374fe51f025d"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Creating notes",
+        "type": "basic"
+      },
+      "id": "837ba0cd52636e4c",
+      "label": "Creating notes",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "4456b948335f3b94"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "/Cannoli College/4. Vault interaction",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "b0608205e7a748f6",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "283a21bf831d34da"
+        ],
+        "groups": [
+          "837ba0cd52636e4c"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "bd60374fe51f025d",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "87857bf3a2254dec",
+          "a49c245f203702e6"
+        ],
+        "groups": [
+          "837ba0cd52636e4c"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "articleName",
+            "shouldExtract": true,
+            "type": "create-note"
+          }
+        ],
+        "status": "pending",
+        "text": "{{+@articleName}}",
+        "type": "reference"
+      },
+      "color": "6",
+      "id": "fc94ad73861dd0b4",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "fc94ad73861dd0b4"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "fc94ad73861dd0b4",
+      "id": "283a21bf831d34da",
+      "toNode": "bd60374fe51f025d"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "0f4591137e166313"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "title",
+        "type": "variable"
+      },
+      "fromNode": "0f4591137e166313",
+      "id": "7aca371238d9f008",
+      "label": "title",
+      "toNode": "6b9ee922dd00451b"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "375c5de56f45d5e1"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "articleName",
+        "type": "variable"
+      },
+      "fromNode": "375c5de56f45d5e1",
+      "id": "87857bf3a2254dec",
+      "label": "articleName",
+      "toNode": "fc94ad73861dd0b4"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "679af4d2d1190b6b"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "679af4d2d1190b6b",
+      "id": "a49c245f203702e6",
+      "toNode": "fc94ad73861dd0b4"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "6b9ee922dd00451b"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "6b9ee922dd00451b",
+      "id": "c0aea91c093cd031",
+      "toNode": "8372acb7e244fb15"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "4c6e2bf4a9959f15"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "4c6e2bf4a9959f15",
+      "id": "f2ab13710488acaa",
+      "toNode": "6b9ee922dd00451b"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "b0608205e7a748f6"
+        ],
+        "edgeModifier": "folder",
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "variable"
+      },
+      "fromNode": "b0608205e7a748f6",
+      "id": "f9e1ee261742cf86",
+      "label": "/",
+      "toNode": "6b9ee922dd00451b"
+    }
+  ]
+}

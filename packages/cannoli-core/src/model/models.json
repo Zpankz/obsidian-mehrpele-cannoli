@@ -1,0 +1,212 @@
+[
+  {
+    "ref": "anthropic:claude-sonnet-5-5",
+    "apiId": {
+      "anthropic": "claude-sonnet-5-5",
+      "openrouter": "anthropic/claude-sonnet-5.5"
+    },
+    "label": "Claude Sonnet 5.5",
+    "roles": [
+      "call"
+    ],
+    "contextWindow": null,
+    "maxOutput": null,
+    "supports": {
+      "tools": true,
+      "vision": true,
+      "structured": "native",
+      "reasoning": true,
+      "cache": "explicit"
+    },
+    "price": null
+  },
+  {
+    "ref": "anthropic:claude-opus-5-5",
+    "apiId": {
+      "anthropic": "claude-opus-5-5",
+      "openrouter": "anthropic/claude-opus-5.5"
+    },
+    "label": "Claude Opus 5.5",
+    "roles": [
+      "agent"
+    ],
+    "contextWindow": null,
+    "maxOutput": null,
+    "supports": {
+      "tools": true,
+      "vision": true,
+      "structured": "native",
+      "reasoning": true,
+      "cache": "explicit"
+    },
+    "price": null
+  },
+  {
+    "ref": "anthropic:claude-haiku-5-5",
+    "apiId": {
+      "anthropic": "claude-haiku-5-5",
+      "openrouter": "anthropic/claude-haiku-5.5"
+    },
+    "label": "Claude Haiku 5.5",
+    "roles": [
+      "router"
+    ],
+    "contextWindow": null,
+    "maxOutput": null,
+    "supports": {
+      "tools": true,
+      "vision": true,
+      "structured": "native",
+      "reasoning": true,
+      "cache": "explicit"
+    },
+    "price": null
+  },
+  {
+    "ref": "anthropic:claude-fable-5-1",
+    "apiId": {
+      "anthropic": "claude-fable-5-1",
+      "openrouter": "anthropic/claude-fable-5.1"
+    },
+    "label": "Claude Fable 5.1",
+    "roles": [
+      "orchestrator"
+    ],
+    "contextWindow": null,
+    "maxOutput": null,
+    "supports": {
+      "tools": true,
+      "vision": true,
+      "structured": "native",
+      "reasoning": true,
+      "cache": "explicit"
+    },
+    "price": null
+  },
+  {
+    "ref": "openai:gpt-6-astra",
+    "apiId": {
+      "openai": "gpt-6-astra",
+      "openrouter": "openai/gpt-6-astra"
+    },
+    "label": "GPT-6 Astra",
+    "roles": [
+      "call"
+    ],
+    "contextWindow": null,
+    "maxOutput": null,
+    "supports": {
+      "tools": true,
+      "vision": true,
+      "structured": "native",
+      "reasoning": true,
+      "cache": "automatic"
+    },
+    "price": null
+  },
+  {
+    "ref": "openai:gpt-6.1-sol",
+    "apiId": {
+      "openai": "gpt-6.1-sol",
+      "openrouter": "openai/gpt-6.1-sol"
+    },
+    "label": "GPT-6.1 Sol",
+    "roles": [
+      "agent"
+    ],
+    "contextWindow": null,
+    "maxOutput": null,
+    "supports": {
+      "tools": true,
+      "vision": true,
+      "structured": "native",
+      "reasoning": true,
+      "cache": "automatic"
+    },
+    "price": null
+  },
+  {
+    "ref": "openai:gpt-6-luna",
+    "apiId": {
+      "openai": "gpt-6-luna",
+      "openrouter": "openai/gpt-6-luna"
+    },
+    "label": "GPT-6 Luna",
+    "roles": [
+      "router"
+    ],
+    "contextWindow": null,
+    "maxOutput": null,
+    "supports": {
+      "tools": true,
+      "vision": true,
+      "structured": "native",
+      "reasoning": true,
+      "cache": "automatic"
+    },
+    "price": null
+  },
+  {
+    "ref": "google:gemini-4-argon",
+    "apiId": {
+      "google": "gemini-4-argon",
+      "openrouter": "google/gemini-4-argon"
+    },
+    "label": "Gemini 4 Argon",
+    "roles": [
+      "call",
+      "agent"
+    ],
+    "contextWindow": null,
+    "maxOutput": null,
+    "supports": {
+      "tools": true,
+      "vision": true,
+      "structured": "native",
+      "reasoning": true,
+      "cache": "automatic"
+    },
+    "price": null
+  },
+  {
+    "ref": "google:gemini-3.8-flash",
+    "apiId": {
+      "google": "gemini-3.8-flash",
+      "openrouter": "google/gemini-3.8-flash"
+    },
+    "label": "Gemini 3.8 Flash",
+    "roles": [
+      "router"
+    ],
+    "contextWindow": null,
+    "maxOutput": null,
+    "supports": {
+      "tools": true,
+      "vision": true,
+      "structured": "native",
+      "reasoning": true,
+      "cache": "automatic"
+    },
+    "price": null
+  },
+  {
+    "ref": "ollama:qwen3.5:4b",
+    "apiId": {
+      "ollama": "qwen3.5:4b"
+    },
+    "label": "Qwen 3.5 4B (Ollama)",
+    "roles": [
+      "local"
+    ],
+    "contextWindow": null,
+    "maxOutput": null,
+    "supports": {
+      "tools": true,
+      "vision": false,
+      "structured": "tool",
+      "reasoning": true,
+      "cache": "none"
+    },
+    "price": null
+  }
+]

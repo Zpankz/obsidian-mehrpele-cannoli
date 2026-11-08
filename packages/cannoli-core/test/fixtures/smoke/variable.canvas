@@ -1,0 +1,50 @@
+{
+	"nodes": [
+		{
+			"id": "topic",
+			"type": "text",
+			"text": "cannoli",
+			"x": 0,
+			"y": 0,
+			"width": 260,
+			"height": 120,
+			"color": "6"
+		},
+		{
+			"id": "call",
+			"type": "text",
+			"text": "Describe {{topic}} in one short sentence.",
+			"x": 360,
+			"y": 0,
+			"width": 260,
+			"height": 120
+		},
+		{
+			"id": "output",
+			"type": "text",
+			"text": "",
+			"x": 720,
+			"y": 0,
+			"width": 260,
+			"height": 120,
+			"color": "6"
+		}
+	],
+	"edges": [
+		{
+			"id": "e1",
+			"fromNode": "topic",
+			"fromSide": "right",
+			"toNode": "call",
+			"toSide": "left",
+			"label": "topic"
+		},
+		{
+			"id": "e2",
+			"fromNode": "call",
+			"fromSide": "right",
+			"toNode": "output",
+			"toSide": "left"
+		}
+	]
+}

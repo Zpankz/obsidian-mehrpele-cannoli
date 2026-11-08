@@ -1,0 +1,95 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {}
+    }
+  ],
+  "statuses": {
+    "563be2c3c1081b8a": "complete",
+    "8b3cfbb075627ed9": "complete",
+    "de16f9c06fb55838": "complete",
+    "ec4f6e82c79efa3a": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "de16f9c06fb55838"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "```mcp\nYou are an agent inside of an obsidian vault, executing one part of a script. Below is the current configuration for the mcp-mcp tool. If you suggest other configurations, make them fit this format:\n\n{\n  \"name\": \"mcp-mcp\",\n  \"enabled\": true,\n  \"type\": \"stdio\",\n  \"command\": \"uvx\",\n  \"args\": [\n    \"mcp-mcp\"\n  ],\n  \"env\": {}\n}\n\nPlease find an mcp server that can help me find me manage my obsidian vault. Write me the config JSON block if you can find the necessary info. If you use fetch to get more content, make sure you read enough to find the MCP config block.\n```",
+          "type": "http"
+        },
+        "color": "2",
+        "id": "8b3cfbb075627ed9",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "ec4f6e82c79efa3a",
+            "8b3cfbb075627ed9"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Goal nodes",
+          "type": "basic"
+        },
+        "id": "de16f9c06fb55838",
+        "label": "Goal nodes",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "563be2c3c1081b8a"
+          ],
+          "groups": [
+            "de16f9c06fb55838"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "This is a mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "ec4f6e82c79efa3a",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "This is a mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "8b3cfbb075627ed9"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "8b3cfbb075627ed9",
+        "id": "563be2c3c1081b8a",
+        "toNode": "ec4f6e82c79efa3a"
+      }
+    ]
+  }
+}

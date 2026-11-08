@@ -1,0 +1,583 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "b0c4a818e82c9a93"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "make a picture of a frog at a concert",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "1e284d74b857ee78",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "b0c4a818e82c9a93"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "guinea pig",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "31207a01ee6f6fa9",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "b0c4a818e82c9a93"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "disco",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "3a97e7dd58bd7da5",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "c18371e33307587f"
+        ],
+        "groups": [
+          "b0c4a818e82c9a93"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "dalle",
+        "type": "http"
+      },
+      "color": "2",
+      "id": "439ff93f8f2810fc",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "66da44c564b82a4c"
+        ],
+        "groups": [
+          "9c40004c1221b271"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "5d9f1d178f2e07a5",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "d1553808132c755c"
+        ],
+        "groups": [
+          "9c40004c1221b271"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "OPENAI_API_KEY",
+            "shouldExtract": false,
+            "type": "variable"
+          },
+          {
+            "name": "prompt",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "```json\n{\n    \"url\": \"https://api.openai.com/v1/chat/completions\",\n    \"method\": \"POST\",\n    \"headers\": {\n        \"Content-Type\": \"application/json\",\n        \"Authorization\": \"Bearer {{OPENAI_API_KEY}}\"\n    },\n    \"body\": {\n        \"model\": \"gpt-4o-mini\",\n        \"messages\": [\n            {\n                \"role\": \"user\",\n                \"content\": \"{{prompt}}\"\n            }\n        ]\n    }\n}\n```",
+        "type": "http"
+      },
+      "color": "2",
+      "displayOverride": true,
+      "id": "6e6fbee5bfb165f7",
+      "role": "",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "fc7740241923be0b"
+        ],
+        "groups": [
+          "9807f6e43d42b056"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "75b1c213e8314a7f",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "9807f6e43d42b056"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "https://api.chucknorris.io/jokes/random",
+        "type": "http"
+      },
+      "color": "2",
+      "id": "805230ed376e523a",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "9c40004c1221b271"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Who's the current king of France?",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "85c53cc8da22cfe8",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "c2071fd06a179e36"
+        ],
+        "groups": [
+          "b0c4a818e82c9a93"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "8b31f6b1680c71c3",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "805230ed376e523a",
+          "75b1c213e8314a7f",
+          "d05cd17ddae7b3ae"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Simple GET requests",
+        "type": "basic"
+      },
+      "id": "9807f6e43d42b056",
+      "label": "Simple GET requests",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "1d605dcd924a46c8",
+          "e05cba64d54b762e",
+          "6655ae09a0302e98"
+        ],
+        "groups": [
+          "b0c4a818e82c9a93"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "animal",
+            "shouldExtract": false,
+            "type": "variable"
+          },
+          {
+            "name": "event",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "[dalle]\nmake a picture of a {{animal}} at a {{event}}",
+        "type": "http"
+      },
+      "color": "2",
+      "id": "9928314d4e8f380c",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "85c53cc8da22cfe8",
+          "6e6fbee5bfb165f7",
+          "ab7ac45db968d052",
+          "5d9f1d178f2e07a5"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "HTTP request",
+        "type": "basic"
+      },
+      "id": "9c40004c1221b271",
+      "label": "HTTP request",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "a9a5933d9ac3b5aa"
+        ],
+        "groups": [
+          "9c40004c1221b271"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "displayOverride": true,
+      "id": "ab7ac45db968d052",
+      "role": "",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "31207a01ee6f6fa9",
+          "3a97e7dd58bd7da5",
+          "9928314d4e8f380c",
+          "cb4c9da73bf91322",
+          "e4e8f41b308f5557",
+          "1e284d74b857ee78",
+          "439ff93f8f2810fc",
+          "8b31f6b1680c71c3"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Built-in actions",
+        "type": "basic"
+      },
+      "id": "b0c4a818e82c9a93",
+      "label": "Built-in actions",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "b0c4a818e82c9a93"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "1024x1792",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "cb4c9da73bf91322",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "ca705e472c4191b2"
+        ],
+        "groups": [
+          "9807f6e43d42b056"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "d05cd17ddae7b3ae",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "be22a83cc0bbb224"
+        ],
+        "groups": [
+          "b0c4a818e82c9a93"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "e4e8f41b308f5557",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "3a97e7dd58bd7da5"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "3a97e7dd58bd7da5",
+      "id": "1d605dcd924a46c8",
+      "toNode": "9928314d4e8f380c"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "cb4c9da73bf91322"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "size",
+        "type": "variable"
+      },
+      "fromNode": "cb4c9da73bf91322",
+      "id": "6655ae09a0302e98",
+      "label": "size",
+      "toNode": "9928314d4e8f380c"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "6e6fbee5bfb165f7"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "choices[0].message.content",
+        "type": "variable"
+      },
+      "fromNode": "6e6fbee5bfb165f7",
+      "id": "66da44c564b82a4c",
+      "label": "choices[0].message.content",
+      "toNode": "5d9f1d178f2e07a5"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "6e6fbee5bfb165f7"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "usage.completion_tokens",
+        "type": "variable"
+      },
+      "fromNode": "6e6fbee5bfb165f7",
+      "id": "a9a5933d9ac3b5aa",
+      "label": "usage.completion_tokens",
+      "toNode": "ab7ac45db968d052"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "439ff93f8f2810fc"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "439ff93f8f2810fc",
+      "id": "be22a83cc0bbb224",
+      "toNode": "e4e8f41b308f5557"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "1e284d74b857ee78"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "prompt",
+        "type": "variable"
+      },
+      "fromNode": "1e284d74b857ee78",
+      "id": "c18371e33307587f",
+      "label": "prompt",
+      "toNode": "439ff93f8f2810fc"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "9928314d4e8f380c"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "9928314d4e8f380c",
+      "id": "c2071fd06a179e36",
+      "toNode": "8b31f6b1680c71c3"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "805230ed376e523a"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "805230ed376e523a",
+      "id": "ca705e472c4191b2",
+      "toNode": "d05cd17ddae7b3ae"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "85c53cc8da22cfe8"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "prompt",
+        "type": "variable"
+      },
+      "fromNode": "85c53cc8da22cfe8",
+      "id": "d1553808132c755c",
+      "label": "prompt",
+      "toNode": "6e6fbee5bfb165f7"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "31207a01ee6f6fa9"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "animal",
+        "type": "variable"
+      },
+      "fromNode": "31207a01ee6f6fa9",
+      "id": "e05cba64d54b762e",
+      "label": "animal",
+      "toNode": "9928314d4e8f380c"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "805230ed376e523a"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "value",
+        "type": "variable"
+      },
+      "fromNode": "805230ed376e523a",
+      "id": "fc7740241923be0b",
+      "label": "value",
+      "toNode": "75b1c213e8314a7f"
+    }
+  ]
+}

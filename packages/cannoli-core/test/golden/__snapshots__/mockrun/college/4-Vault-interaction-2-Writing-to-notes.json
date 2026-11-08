@@ -1,0 +1,659 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 6,
+          "promptTokens": 152.75
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "0561c9ae1669460f": "complete",
+    "1de6b113e5ad75c5": "complete",
+    "2160d3369fea2bcb": "complete",
+    "255a410c19a12e56": "complete",
+    "32c1cb193a6bfc19": "complete",
+    "38d8c5cd09414fe8": "complete",
+    "503b5af7f363b512": "complete",
+    "50c183ba68857287": "complete",
+    "5e54d6df61248d37": "complete",
+    "63db7ba6f5cb3524": "complete",
+    "6c3aaf24c1410da5": "complete",
+    "6e207e77a539fbd3": "complete",
+    "741c9e0b211241a2": "complete",
+    "790403f81a184f3b": "complete",
+    "92f439736587539d": "complete",
+    "94567e5a2b31c42b": "complete",
+    "996659a79f50e2da": "complete",
+    "9de536515698d256": "complete",
+    "9de84ebf983156f8": "complete",
+    "a81f6864d57513f0": "complete",
+    "ae32c84e56f650cb": "complete",
+    "b58f063da822b869": "complete",
+    "cc3989fddfc7607b": "complete",
+    "d283ed9e9d24b01d": "complete",
+    "d6552cf2b811cb0a": "complete",
+    "e19b655090530949": "complete",
+    "e339725c61ba4f0b": "complete",
+    "e7cd177b0fe4bf6b": "complete",
+    "f82f1adc99fcc4db": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "741c9e0b211241a2"
+          ],
+          "groups": [
+            "a81f6864d57513f0"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "Cannoli College/Example notes/Apple Trees",
+              "shouldExtract": true,
+              "type": "note"
+            }
+          ],
+          "status": "complete",
+          "text": "{{[[Cannoli College/Example notes/Apple Trees.md]]}}",
+          "type": "reference"
+        },
+        "file": "Cannoli College/Example notes/Apple Trees.md",
+        "id": "0561c9ae1669460f",
+        "type": "file"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "92f439736587539d"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Write a short article about using lemons for cleaning. It should have the title \"Lemons for Cleaning\" and use proper markdown.",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "1de6b113e5ad75c5",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "e339725c61ba4f0b"
+          ],
+          "groups": [
+            "92f439736587539d"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "Lemons for Cleaning",
+              "shouldExtract": true,
+              "type": "note"
+            }
+          ],
+          "status": "complete",
+          "text": "{{[[Lemons for Cleaning]]}}",
+          "type": "reference"
+        },
+        "color": "6",
+        "id": "2160d3369fea2bcb",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "cc3989fddfc7607b",
+            "6c3aaf24c1410da5"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Protecting properties",
+          "type": "basic"
+        },
+        "id": "255a410c19a12e56",
+        "label": "Protecting properties",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "ae32c84e56f650cb",
+            "b58f063da822b869",
+            "d283ed9e9d24b01d",
+            "f82f1adc99fcc4db"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Editing properties",
+          "type": "basic"
+        },
+        "id": "50c183ba68857287",
+        "label": "Editing properties",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "38d8c5cd09414fe8"
+          ],
+          "groups": [
+            "a81f6864d57513f0"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "Cannoli College/Example notes/Walking Poem",
+              "shouldExtract": true,
+              "type": "note"
+            }
+          ],
+          "status": "complete",
+          "text": "{{[[Cannoli College/Example notes/Walking Poem.md]]}}",
+          "type": "reference"
+        },
+        "file": "Cannoli College/Example notes/Walking Poem.md",
+        "id": "5e54d6df61248d37",
+        "type": "file"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "a81f6864d57513f0"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Outline and write a short article about growing apple trees.",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "63db7ba6f5cb3524",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "996659a79f50e2da"
+          ],
+          "groups": [
+            "255a410c19a12e56"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "includeProperties": false,
+              "name": "Meeting Notes",
+              "shouldExtract": true,
+              "type": "note"
+            }
+          ],
+          "status": "complete",
+          "text": "{{[[Meeting Notes]]!^}}",
+          "type": "reference"
+        },
+        "color": "6",
+        "id": "6c3aaf24c1410da5",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "e19b655090530949",
+            "1de6b113e5ad75c5",
+            "d6552cf2b811cb0a",
+            "2160d3369fea2bcb"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Reference nodes",
+          "type": "basic"
+        },
+        "id": "92f439736587539d",
+        "label": "Reference nodes",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "e7cd177b0fe4bf6b"
+          ],
+          "groups": [
+            "a81f6864d57513f0"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Ok, now respond with just the article\n\nThere should be nothing in your response other than the article",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "94567e5a2b31c42b",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "6e207e77a539fbd3"
+          ],
+          "groups": [
+            "a81f6864d57513f0"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock answer",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "9de536515698d256",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "a81f6864d57513f0"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Write a short poem about walking.",
+          "type": "form"
+        },
+        "color": "4",
+        "id": "9de84ebf983156f8",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "63db7ba6f5cb3524",
+            "9de84ebf983156f8",
+            "0561c9ae1669460f",
+            "9de536515698d256",
+            "94567e5a2b31c42b",
+            "5e54d6df61248d37"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Tips",
+          "type": "basic"
+        },
+        "id": "a81f6864d57513f0",
+        "label": "Tips",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "790403f81a184f3b"
+          ],
+          "groups": [
+            "50c183ba68857287"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "Meeting Notes",
+              "shouldExtract": true,
+              "type": "note"
+            }
+          ],
+          "status": "complete",
+          "text": "{{[[Meeting Notes]]}}",
+          "type": "reference"
+        },
+        "color": "6",
+        "id": "ae32c84e56f650cb",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "50c183ba68857287"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Tuesday",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "b58f063da822b869",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "255a410c19a12e56"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Write a sample meeting minutes",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "cc3989fddfc7607b",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "503b5af7f363b512"
+          ],
+          "groups": [
+            "50c183ba68857287"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "Meeting Notes",
+              "shouldExtract": true,
+              "type": "note"
+            }
+          ],
+          "status": "complete",
+          "text": "{{[[Meeting Notes]]}}",
+          "type": "reference"
+        },
+        "color": "6",
+        "id": "d283ed9e9d24b01d",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "32c1cb193a6bfc19"
+          ],
+          "groups": [
+            "92f439736587539d"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "Cannoli College/Example notes/Lemons for Cleaning",
+              "shouldExtract": true,
+              "type": "note"
+            }
+          ],
+          "status": "complete",
+          "text": "{{[[Cannoli College/Example notes/Lemons for Cleaning.md]]}}",
+          "type": "reference"
+        },
+        "file": "Cannoli College/Example notes/Lemons for Cleaning.md",
+        "id": "d6552cf2b811cb0a",
+        "type": "file"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "92f439736587539d"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Write a short article about using lemons for cleaning. It should have the title \"Lemons for Cleaning\" and use proper markdown.",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "e19b655090530949",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "50c183ba68857287"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "- jim\n- mary",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "f82f1adc99fcc4db",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "e19b655090530949"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "e19b655090530949",
+        "id": "32c1cb193a6bfc19",
+        "toNode": "d6552cf2b811cb0a"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock answer",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "9de84ebf983156f8"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "content",
+          "type": "field"
+        },
+        "color": "6",
+        "fromNode": "9de84ebf983156f8",
+        "id": "38d8c5cd09414fe8",
+        "label": "content",
+        "toNode": "5e54d6df61248d37"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "- jim\n- mary",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "f82f1adc99fcc4db"
+          ],
+          "edgeModifier": "property",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "tags",
+          "type": "variable"
+        },
+        "fromNode": "f82f1adc99fcc4db",
+        "id": "503b5af7f363b512",
+        "label": ":tags",
+        "toNode": "d283ed9e9d24b01d"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock answer",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "9de84ebf983156f8"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "title",
+          "type": "field"
+        },
+        "color": "6",
+        "fromNode": "9de84ebf983156f8",
+        "id": "6e207e77a539fbd3",
+        "label": "title",
+        "toNode": "9de536515698d256"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "94567e5a2b31c42b"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "94567e5a2b31c42b",
+        "id": "741c9e0b211241a2",
+        "toNode": "0561c9ae1669460f"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Tuesday",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "b58f063da822b869"
+          ],
+          "edgeModifier": "property",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "weekday",
+          "type": "variable"
+        },
+        "fromNode": "b58f063da822b869",
+        "id": "790403f81a184f3b",
+        "label": ":weekday",
+        "toNode": "ae32c84e56f650cb"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "cc3989fddfc7607b"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "cc3989fddfc7607b",
+        "id": "996659a79f50e2da",
+        "toNode": "6c3aaf24c1410da5"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "1de6b113e5ad75c5"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "1de6b113e5ad75c5",
+        "id": "e339725c61ba4f0b",
+        "toNode": "2160d3369fea2bcb"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "63db7ba6f5cb3524"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "Outline and write a short article about growing apple trees.",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "63db7ba6f5cb3524",
+        "id": "e7cd177b0fe4bf6b",
+        "toNode": "94567e5a2b31c42b"
+      }
+    ]
+  }
+}

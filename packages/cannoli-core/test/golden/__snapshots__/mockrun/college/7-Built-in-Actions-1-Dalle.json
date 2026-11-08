@@ -1,0 +1,352 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "error",
+      "message": "Could not get HTTP template with name \"dalle\" from floating nodes or pre-set templates.",
+      "results": {},
+      "usage": {}
+    }
+  ],
+  "statuses": {
+    "0a4a5477edeb0a9b": "complete",
+    "1cb415bf1256f272": "pending",
+    "4c9b9042079da5ed": "error",
+    "52b5f0705400f7d5": "complete",
+    "5b2a6b4b87c80207": "pending",
+    "6bed803745429637": "complete",
+    "7ef0ede979ae0cf7": "pending",
+    "8a701ef86405bac2": "error",
+    "9c131929cf9cd0ae": "complete",
+    "a2a83b896a844f8b": "complete",
+    "abab8814929330b2": "complete",
+    "b9ea77725ca55e8f": "complete",
+    "c36034b72096726f": "complete",
+    "e3be85b19da03b44": "complete",
+    "f2bde8c9ede6acdf": "pending",
+    "f66a3d132929fc8d": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "9c131929cf9cd0ae"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "guinea pig",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "0a4a5477edeb0a9b",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "f2bde8c9ede6acdf"
+          ],
+          "groups": [
+            "52b5f0705400f7d5"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "pending",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "1cb415bf1256f272",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "e3be85b19da03b44",
+            "abab8814929330b2",
+            "6bed803745429637"
+          ],
+          "groups": [
+            "9c131929cf9cd0ae"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "animal",
+              "shouldExtract": false,
+              "type": "variable"
+            },
+            {
+              "name": "event",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "error",
+          "text": "[dalle]\nmake a picture of a {{animal}} at a {{event}}",
+          "type": "http"
+        },
+        "color": "2",
+        "id": "4c9b9042079da5ed",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "b9ea77725ca55e8f",
+            "8a701ef86405bac2",
+            "1cb415bf1256f272"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Standard use",
+          "type": "basic"
+        },
+        "id": "52b5f0705400f7d5",
+        "label": "Standard use",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "7ef0ede979ae0cf7"
+          ],
+          "groups": [
+            "9c131929cf9cd0ae"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "pending",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "5b2a6b4b87c80207",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "a2a83b896a844f8b"
+          ],
+          "groups": [
+            "52b5f0705400f7d5"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "error",
+          "text": "dalle",
+          "type": "http"
+        },
+        "color": "2",
+        "id": "8a701ef86405bac2",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "c36034b72096726f",
+            "0a4a5477edeb0a9b",
+            "f66a3d132929fc8d",
+            "4c9b9042079da5ed",
+            "5b2a6b4b87c80207"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Template prompt",
+          "type": "basic"
+        },
+        "id": "9c131929cf9cd0ae",
+        "label": "Template prompt",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "52b5f0705400f7d5"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "make a picture of a frog at a concert",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "b9ea77725ca55e8f",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "9c131929cf9cd0ae"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "disco",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "c36034b72096726f",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "9c131929cf9cd0ae"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "1024x1792",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "f66a3d132929fc8d",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "disco",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "c36034b72096726f"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "event",
+          "type": "variable"
+        },
+        "fromNode": "c36034b72096726f",
+        "id": "6bed803745429637",
+        "label": "event",
+        "toNode": "4c9b9042079da5ed"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "4c9b9042079da5ed"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "pending",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "4c9b9042079da5ed",
+        "id": "7ef0ede979ae0cf7",
+        "toNode": "5b2a6b4b87c80207"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "make a picture of a frog at a concert",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "b9ea77725ca55e8f"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "prompt",
+          "type": "variable"
+        },
+        "fromNode": "b9ea77725ca55e8f",
+        "id": "a2a83b896a844f8b",
+        "label": "prompt",
+        "toNode": "8a701ef86405bac2"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "guinea pig",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "0a4a5477edeb0a9b"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "animal",
+          "type": "variable"
+        },
+        "fromNode": "0a4a5477edeb0a9b",
+        "id": "abab8814929330b2",
+        "label": "animal",
+        "toNode": "4c9b9042079da5ed"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "1024x1792",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "f66a3d132929fc8d"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "size",
+          "type": "variable"
+        },
+        "fromNode": "f66a3d132929fc8d",
+        "id": "e3be85b19da03b44",
+        "label": "size",
+        "toNode": "4c9b9042079da5ed"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "8a701ef86405bac2"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "pending",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "8a701ef86405bac2",
+        "id": "f2bde8c9ede6acdf",
+        "toNode": "1cb415bf1256f272"
+      }
+    ]
+  }
+}

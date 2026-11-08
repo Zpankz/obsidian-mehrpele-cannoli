@@ -1,0 +1,1404 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 4,
+          "promptTokens": 61.75
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "0305c934c9aace83": "complete",
+    "03f168ccb5370bb2-0": "rejected",
+    "03f168ccb5370bb2-1": "rejected",
+    "0caf1bba05c8aa27-0": "rejected",
+    "0caf1bba05c8aa27-1": "rejected",
+    "0d7740a882d40f92-0": "rejected",
+    "0d7740a882d40f92-1": "rejected",
+    "22d9b1ea6f478316": "rejected",
+    "425c2f28bb3e0b99-0": "rejected",
+    "425c2f28bb3e0b99-1": "rejected",
+    "432d78d795c6f4ec-0-0": "rejected",
+    "432d78d795c6f4ec-0-1": "rejected",
+    "432d78d795c6f4ec-1-0": "rejected",
+    "432d78d795c6f4ec-1-1": "rejected",
+    "48ca5d2dc4865bce-0": "complete",
+    "48ca5d2dc4865bce-1": "complete",
+    "5bd1086a494d6e32-0": "complete",
+    "5bd1086a494d6e32-1": "complete",
+    "607232d635891e37-0": "rejected",
+    "607232d635891e37-1": "rejected",
+    "60a2a625e8300dc9-0-0": "rejected",
+    "60a2a625e8300dc9-0-1": "rejected",
+    "60a2a625e8300dc9-1-0": "rejected",
+    "60a2a625e8300dc9-1-1": "rejected",
+    "65c66e6f113726aa": "complete",
+    "6c63c8db5daf8225-0": "rejected",
+    "6c63c8db5daf8225-1": "rejected",
+    "73233b93df26e03e-0": "rejected",
+    "73233b93df26e03e-1": "rejected",
+    "7565755b265a1759-0-0": "rejected",
+    "7565755b265a1759-0-1": "rejected",
+    "7565755b265a1759-1-0": "rejected",
+    "7565755b265a1759-1-1": "rejected",
+    "7b28e3a04655a650": "rejected",
+    "83456d09f082fe8a-0-0": "rejected",
+    "83456d09f082fe8a-0-1": "rejected",
+    "83456d09f082fe8a-1-0": "rejected",
+    "83456d09f082fe8a-1-1": "rejected",
+    "8b3843db8e3a0626": "complete",
+    "a582b0f31eb5b273": "complete",
+    "ad1b9b99f7179469-0": "rejected",
+    "ad1b9b99f7179469-1": "rejected",
+    "ae4c863a53cd9348-0": "complete",
+    "ae4c863a53cd9348-1": "complete",
+    "b3938cc38770d918": "complete",
+    "beb438d1c026fe71-0": "complete",
+    "beb438d1c026fe71-1": "complete",
+    "bf04efea7cb87629-0": "complete",
+    "bf04efea7cb87629-1": "complete",
+    "c0e7756d10aed69f": "complete",
+    "e0f003ced217a6f7": "complete",
+    "e92c8263c3cbedd9-0": "rejected",
+    "e92c8263c3cbedd9-1": "rejected",
+    "f28b98b566aff8a3": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "48ca5d2dc4865bce-0",
+            "48ca5d2dc4865bce-1"
+          ],
+          "groups": [
+            "a582b0f31eb5b273"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "# Version 0\n#### <u>User</u>:\nJust list the most popular events in the summer olympics\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n# Version 1\n#### <u>User</u>:\nJust list the most popular events in the winter olympics\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "0305c934c9aace83",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "73233b93df26e03e-0",
+            "425c2f28bb3e0b99-0"
+          ],
+          "groups": [
+            "6c63c8db5daf8225-0",
+            "65c66e6f113726aa"
+          ],
+          "kind": "node",
+          "originalObject": "03f168ccb5370bb2",
+          "references": [],
+          "status": "rejected",
+          "text": "Give an even more obscure term for it.",
+          "type": "standard-call"
+        },
+        "id": "03f168ccb5370bb2-0",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "73233b93df26e03e-1",
+            "425c2f28bb3e0b99-1"
+          ],
+          "groups": [
+            "6c63c8db5daf8225-1",
+            "65c66e6f113726aa"
+          ],
+          "kind": "node",
+          "originalObject": "03f168ccb5370bb2",
+          "references": [],
+          "status": "rejected",
+          "text": "Give an even more obscure term for it.",
+          "type": "standard-call"
+        },
+        "id": "03f168ccb5370bb2-1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 0,
+          "dependencies": [
+            "607232d635891e37-0",
+            "ad1b9b99f7179469-0",
+            "83456d09f082fe8a-0-0",
+            "60a2a625e8300dc9-0-0",
+            "83456d09f082fe8a-1-0",
+            "60a2a625e8300dc9-1-0"
+          ],
+          "fromForEach": true,
+          "groups": [
+            "e0f003ced217a6f7"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": "0d7740a882d40f92",
+          "status": "rejected",
+          "text": "2",
+          "type": "basic"
+        },
+        "color": "5",
+        "id": "0d7740a882d40f92-0",
+        "label": "2",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 1,
+          "dependencies": [
+            "607232d635891e37-1",
+            "ad1b9b99f7179469-1",
+            "83456d09f082fe8a-0-1",
+            "60a2a625e8300dc9-0-1",
+            "83456d09f082fe8a-1-1",
+            "60a2a625e8300dc9-1-1"
+          ],
+          "fromForEach": true,
+          "groups": [
+            "e0f003ced217a6f7"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": "0d7740a882d40f92",
+          "status": "rejected",
+          "text": "2",
+          "type": "basic"
+        },
+        "color": "5",
+        "id": "0d7740a882d40f92-1",
+        "label": "2",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "7565755b265a1759-0-0",
+            "7565755b265a1759-1-0",
+            "7565755b265a1759-0-1",
+            "7565755b265a1759-1-1"
+          ],
+          "groups": [
+            "e0f003ced217a6f7"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "rejected",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "22d9b1ea6f478316",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "432d78d795c6f4ec-0-0",
+            "607232d635891e37-0"
+          ],
+          "groups": [
+            "83456d09f082fe8a-0-0",
+            "0d7740a882d40f92-0",
+            "e0f003ced217a6f7"
+          ],
+          "kind": "node",
+          "originalObject": "60a2a625e8300dc9",
+          "references": [
+            {
+              "name": "substep",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "rejected",
+          "text": "Break this substep in making a PBJ sandwich into 2 sub-sub-steps (markdown list):\n{{substep}}",
+          "type": "standard-call"
+        },
+        "id": "60a2a625e8300dc9-0-0",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "432d78d795c6f4ec-0-1",
+            "607232d635891e37-1"
+          ],
+          "groups": [
+            "83456d09f082fe8a-0-1",
+            "0d7740a882d40f92-1",
+            "e0f003ced217a6f7"
+          ],
+          "kind": "node",
+          "originalObject": "60a2a625e8300dc9",
+          "references": [
+            {
+              "name": "substep",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "rejected",
+          "text": "Break this substep in making a PBJ sandwich into 2 sub-sub-steps (markdown list):\n{{substep}}",
+          "type": "standard-call"
+        },
+        "id": "60a2a625e8300dc9-0-1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "432d78d795c6f4ec-1-0",
+            "607232d635891e37-0"
+          ],
+          "groups": [
+            "83456d09f082fe8a-1-0",
+            "0d7740a882d40f92-0",
+            "e0f003ced217a6f7"
+          ],
+          "kind": "node",
+          "originalObject": "60a2a625e8300dc9",
+          "references": [
+            {
+              "name": "substep",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "rejected",
+          "text": "Break this substep in making a PBJ sandwich into 2 sub-sub-steps (markdown list):\n{{substep}}",
+          "type": "standard-call"
+        },
+        "id": "60a2a625e8300dc9-1-0",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "432d78d795c6f4ec-1-1",
+            "607232d635891e37-1"
+          ],
+          "groups": [
+            "83456d09f082fe8a-1-1",
+            "0d7740a882d40f92-1",
+            "e0f003ced217a6f7"
+          ],
+          "kind": "node",
+          "originalObject": "60a2a625e8300dc9",
+          "references": [
+            {
+              "name": "substep",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "rejected",
+          "text": "Break this substep in making a PBJ sandwich into 2 sub-sub-steps (markdown list):\n{{substep}}",
+          "type": "standard-call"
+        },
+        "id": "60a2a625e8300dc9-1-1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "f28b98b566aff8a3",
+            "7b28e3a04655a650",
+            "6c63c8db5daf8225-0",
+            "e92c8263c3cbedd9-0",
+            "03f168ccb5370bb2-0",
+            "6c63c8db5daf8225-1",
+            "e92c8263c3cbedd9-1",
+            "03f168ccb5370bb2-1"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Dynamic list input",
+          "type": "basic"
+        },
+        "id": "65c66e6f113726aa",
+        "label": "Dynamic list input",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 0,
+          "dependencies": [
+            "425c2f28bb3e0b99-0",
+            "e92c8263c3cbedd9-0",
+            "03f168ccb5370bb2-0"
+          ],
+          "fromForEach": true,
+          "groups": [
+            "65c66e6f113726aa"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": "6c63c8db5daf8225",
+          "status": "rejected",
+          "text": "2",
+          "type": "basic"
+        },
+        "color": "5",
+        "id": "6c63c8db5daf8225-0",
+        "label": "2",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 1,
+          "dependencies": [
+            "425c2f28bb3e0b99-1",
+            "e92c8263c3cbedd9-1",
+            "03f168ccb5370bb2-1"
+          ],
+          "fromForEach": true,
+          "groups": [
+            "65c66e6f113726aa"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": "6c63c8db5daf8225",
+          "status": "rejected",
+          "text": "2",
+          "type": "basic"
+        },
+        "color": "5",
+        "id": "6c63c8db5daf8225-1",
+        "label": "2",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "0caf1bba05c8aa27-0",
+            "0caf1bba05c8aa27-1"
+          ],
+          "groups": [
+            "65c66e6f113726aa"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "rejected",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "7b28e3a04655a650",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 0,
+          "dependencies": [
+            "432d78d795c6f4ec-0-0",
+            "607232d635891e37-0",
+            "60a2a625e8300dc9-0-0"
+          ],
+          "fromForEach": true,
+          "groups": [
+            "0d7740a882d40f92-0",
+            "e0f003ced217a6f7"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": "83456d09f082fe8a",
+          "status": "rejected",
+          "text": "2",
+          "type": "basic"
+        },
+        "color": "5",
+        "id": "83456d09f082fe8a-0-0",
+        "label": "2",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 0,
+          "dependencies": [
+            "432d78d795c6f4ec-0-1",
+            "607232d635891e37-1",
+            "60a2a625e8300dc9-0-1"
+          ],
+          "fromForEach": true,
+          "groups": [
+            "0d7740a882d40f92-1",
+            "e0f003ced217a6f7"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": "83456d09f082fe8a",
+          "status": "rejected",
+          "text": "2",
+          "type": "basic"
+        },
+        "color": "5",
+        "id": "83456d09f082fe8a-0-1",
+        "label": "2",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 1,
+          "dependencies": [
+            "432d78d795c6f4ec-1-0",
+            "607232d635891e37-0",
+            "60a2a625e8300dc9-1-0"
+          ],
+          "fromForEach": true,
+          "groups": [
+            "0d7740a882d40f92-0",
+            "e0f003ced217a6f7"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": "83456d09f082fe8a",
+          "status": "rejected",
+          "text": "2",
+          "type": "basic"
+        },
+        "color": "5",
+        "id": "83456d09f082fe8a-1-0",
+        "label": "2",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 1,
+          "dependencies": [
+            "432d78d795c6f4ec-1-1",
+            "607232d635891e37-1",
+            "60a2a625e8300dc9-1-1"
+          ],
+          "fromForEach": true,
+          "groups": [
+            "0d7740a882d40f92-1",
+            "e0f003ced217a6f7"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": "83456d09f082fe8a",
+          "status": "rejected",
+          "text": "2",
+          "type": "basic"
+        },
+        "color": "5",
+        "id": "83456d09f082fe8a-1-1",
+        "label": "2",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "a582b0f31eb5b273"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "- summer\n- winter",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "8b3843db8e3a0626",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "c0e7756d10aed69f",
+            "8b3843db8e3a0626",
+            "0305c934c9aace83",
+            "bf04efea7cb87629-0",
+            "beb438d1c026fe71-0",
+            "bf04efea7cb87629-1",
+            "beb438d1c026fe71-1"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Static list input",
+          "type": "basic"
+        },
+        "id": "a582b0f31eb5b273",
+        "label": "Static list input",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "607232d635891e37-0"
+          ],
+          "groups": [
+            "0d7740a882d40f92-0",
+            "e0f003ced217a6f7"
+          ],
+          "kind": "node",
+          "originalObject": "ad1b9b99f7179469",
+          "references": [
+            {
+              "name": "step",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "rejected",
+          "text": "Break this step in making a PBJ sandwich down into 2 sub-steps (markdown list):\n{{step}}",
+          "type": "standard-call"
+        },
+        "id": "ad1b9b99f7179469-0",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "607232d635891e37-1"
+          ],
+          "groups": [
+            "0d7740a882d40f92-1",
+            "e0f003ced217a6f7"
+          ],
+          "kind": "node",
+          "originalObject": "ad1b9b99f7179469",
+          "references": [
+            {
+              "name": "step",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "rejected",
+          "text": "Break this step in making a PBJ sandwich down into 2 sub-steps (markdown list):\n{{step}}",
+          "type": "standard-call"
+        },
+        "id": "ad1b9b99f7179469-1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "e0f003ced217a6f7"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "List the 3 steps to make a PBJ sandwich (markdown format)",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "b3938cc38770d918",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "5bd1086a494d6e32-0"
+          ],
+          "groups": [
+            "bf04efea7cb87629-0",
+            "a582b0f31eb5b273"
+          ],
+          "kind": "node",
+          "originalObject": "beb438d1c026fe71",
+          "references": [
+            {
+              "name": "season",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "Just list the most popular events in the {{season}} olympics",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "beb438d1c026fe71-0",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "5bd1086a494d6e32-1"
+          ],
+          "groups": [
+            "bf04efea7cb87629-1",
+            "a582b0f31eb5b273"
+          ],
+          "kind": "node",
+          "originalObject": "beb438d1c026fe71",
+          "references": [
+            {
+              "name": "season",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "Just list the most popular events in the {{season}} olympics",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "beb438d1c026fe71-1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 0,
+          "dependencies": [
+            "5bd1086a494d6e32-0",
+            "beb438d1c026fe71-0"
+          ],
+          "fromForEach": true,
+          "groups": [
+            "a582b0f31eb5b273"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": "bf04efea7cb87629",
+          "status": "complete",
+          "text": "2",
+          "type": "basic"
+        },
+        "color": "5",
+        "id": "bf04efea7cb87629-0",
+        "label": "2",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 1,
+          "dependencies": [
+            "5bd1086a494d6e32-1",
+            "beb438d1c026fe71-1"
+          ],
+          "fromForEach": true,
+          "groups": [
+            "a582b0f31eb5b273"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": "bf04efea7cb87629",
+          "status": "complete",
+          "text": "2",
+          "type": "basic"
+        },
+        "color": "5",
+        "id": "bf04efea7cb87629-1",
+        "label": "2",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "ae4c863a53cd9348-0",
+            "ae4c863a53cd9348-1"
+          ],
+          "groups": [
+            "a582b0f31eb5b273"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response\n\nMock response\n\n",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "c0e7756d10aed69f",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "22d9b1ea6f478316",
+            "b3938cc38770d918",
+            "0d7740a882d40f92-0",
+            "ad1b9b99f7179469-0",
+            "83456d09f082fe8a-0-0",
+            "60a2a625e8300dc9-0-0",
+            "83456d09f082fe8a-1-0",
+            "60a2a625e8300dc9-1-0",
+            "0d7740a882d40f92-1",
+            "ad1b9b99f7179469-1",
+            "83456d09f082fe8a-0-1",
+            "60a2a625e8300dc9-0-1",
+            "83456d09f082fe8a-1-1",
+            "60a2a625e8300dc9-1-1"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Nested parallel groups",
+          "type": "basic"
+        },
+        "id": "e0f003ced217a6f7",
+        "label": "Nested parallel groups",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "425c2f28bb3e0b99-0"
+          ],
+          "groups": [
+            "6c63c8db5daf8225-0",
+            "65c66e6f113726aa"
+          ],
+          "kind": "node",
+          "originalObject": "e92c8263c3cbedd9",
+          "references": [
+            {
+              "name": "color",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "rejected",
+          "text": "In a sentence, describe {{color}}.",
+          "type": "standard-call"
+        },
+        "id": "e92c8263c3cbedd9-0",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "425c2f28bb3e0b99-1"
+          ],
+          "groups": [
+            "6c63c8db5daf8225-1",
+            "65c66e6f113726aa"
+          ],
+          "kind": "node",
+          "originalObject": "e92c8263c3cbedd9",
+          "references": [
+            {
+              "name": "color",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "rejected",
+          "text": "In a sentence, describe {{color}}.",
+          "type": "standard-call"
+        },
+        "id": "e92c8263c3cbedd9-1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "65c66e6f113726aa"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Write a list of 5 obscure colors (markdown format)",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "f28b98b566aff8a3",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [
+            "6c63c8db5daf8225-0"
+          ],
+          "dependencies": [
+            "03f168ccb5370bb2-0",
+            "6c63c8db5daf8225-0"
+          ],
+          "edgeModifier": "table",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "0caf1bba05c8aa27",
+          "status": "rejected",
+          "text": "",
+          "type": "variable",
+          "versions": [
+            {
+              "header": null,
+              "subHeader": null
+            }
+          ]
+        },
+        "fromNode": "03f168ccb5370bb2-0",
+        "id": "0caf1bba05c8aa27-0",
+        "label": "_",
+        "toNode": "7b28e3a04655a650"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [
+            "6c63c8db5daf8225-1"
+          ],
+          "dependencies": [
+            "03f168ccb5370bb2-1",
+            "6c63c8db5daf8225-1"
+          ],
+          "edgeModifier": "table",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "0caf1bba05c8aa27",
+          "status": "rejected",
+          "text": "",
+          "type": "variable",
+          "versions": [
+            {
+              "header": null,
+              "subHeader": null
+            }
+          ]
+        },
+        "fromNode": "03f168ccb5370bb2-1",
+        "id": "0caf1bba05c8aa27-1",
+        "label": "_",
+        "toNode": "7b28e3a04655a650"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "f28b98b566aff8a3"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "425c2f28bb3e0b99",
+          "status": "rejected",
+          "text": "color",
+          "type": "item"
+        },
+        "color": "5",
+        "fromNode": "f28b98b566aff8a3",
+        "id": "425c2f28bb3e0b99-0",
+        "label": "color",
+        "toNode": "6c63c8db5daf8225-0"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "f28b98b566aff8a3"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "425c2f28bb3e0b99",
+          "status": "rejected",
+          "text": "color",
+          "type": "item"
+        },
+        "color": "5",
+        "fromNode": "f28b98b566aff8a3",
+        "id": "425c2f28bb3e0b99-1",
+        "label": "color",
+        "toNode": "6c63c8db5daf8225-1"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "ad1b9b99f7179469-0"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "432d78d795c6f4ec",
+          "status": "rejected",
+          "text": "substep",
+          "type": "item"
+        },
+        "color": "5",
+        "fromNode": "ad1b9b99f7179469-0",
+        "id": "432d78d795c6f4ec-0-0",
+        "label": "substep",
+        "toNode": "83456d09f082fe8a-0-0"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "ad1b9b99f7179469-1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "432d78d795c6f4ec",
+          "status": "rejected",
+          "text": "substep",
+          "type": "item"
+        },
+        "color": "5",
+        "fromNode": "ad1b9b99f7179469-1",
+        "id": "432d78d795c6f4ec-0-1",
+        "label": "substep",
+        "toNode": "83456d09f082fe8a-0-1"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "ad1b9b99f7179469-0"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "432d78d795c6f4ec",
+          "status": "rejected",
+          "text": "substep",
+          "type": "item"
+        },
+        "color": "5",
+        "fromNode": "ad1b9b99f7179469-0",
+        "id": "432d78d795c6f4ec-1-0",
+        "label": "substep",
+        "toNode": "83456d09f082fe8a-1-0"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "ad1b9b99f7179469-1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "432d78d795c6f4ec",
+          "status": "rejected",
+          "text": "substep",
+          "type": "item"
+        },
+        "color": "5",
+        "fromNode": "ad1b9b99f7179469-1",
+        "id": "432d78d795c6f4ec-1-1",
+        "label": "substep",
+        "toNode": "83456d09f082fe8a-1-1"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "# Version 0\n#### <u>User</u>:\nJust list the most popular events in the summer olympics\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "crossingInGroups": [],
+          "crossingOutGroups": [
+            "bf04efea7cb87629-0"
+          ],
+          "dependencies": [
+            "beb438d1c026fe71-0",
+            "bf04efea7cb87629-0"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "48ca5d2dc4865bce",
+          "status": "complete",
+          "text": "",
+          "type": "logging",
+          "versions": [
+            {
+              "header": null,
+              "subHeader": null
+            }
+          ]
+        },
+        "color": "2",
+        "fromNode": "beb438d1c026fe71-0",
+        "id": "48ca5d2dc4865bce-0",
+        "toNode": "0305c934c9aace83"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "# Version 1\n#### <u>User</u>:\nJust list the most popular events in the winter olympics\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "crossingInGroups": [],
+          "crossingOutGroups": [
+            "bf04efea7cb87629-1"
+          ],
+          "dependencies": [
+            "beb438d1c026fe71-1",
+            "bf04efea7cb87629-1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "48ca5d2dc4865bce",
+          "status": "complete",
+          "text": "",
+          "type": "logging",
+          "versions": [
+            {
+              "header": null,
+              "subHeader": null
+            }
+          ]
+        },
+        "color": "2",
+        "fromNode": "beb438d1c026fe71-1",
+        "id": "48ca5d2dc4865bce-1",
+        "toNode": "0305c934c9aace83"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "summer",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "8b3843db8e3a0626"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "5bd1086a494d6e32",
+          "status": "complete",
+          "text": "season",
+          "type": "item"
+        },
+        "color": "5",
+        "fromNode": "8b3843db8e3a0626",
+        "id": "5bd1086a494d6e32-0",
+        "label": "season",
+        "toNode": "bf04efea7cb87629-0"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "winter",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "8b3843db8e3a0626"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "5bd1086a494d6e32",
+          "status": "complete",
+          "text": "season",
+          "type": "item"
+        },
+        "color": "5",
+        "fromNode": "8b3843db8e3a0626",
+        "id": "5bd1086a494d6e32-1",
+        "label": "season",
+        "toNode": "bf04efea7cb87629-1"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "b3938cc38770d918"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "607232d635891e37",
+          "status": "rejected",
+          "text": "step",
+          "type": "item"
+        },
+        "color": "5",
+        "fromNode": "b3938cc38770d918",
+        "id": "607232d635891e37-0",
+        "label": "step",
+        "toNode": "0d7740a882d40f92-0"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "b3938cc38770d918"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "607232d635891e37",
+          "status": "rejected",
+          "text": "step",
+          "type": "item"
+        },
+        "color": "5",
+        "fromNode": "b3938cc38770d918",
+        "id": "607232d635891e37-1",
+        "label": "step",
+        "toNode": "0d7740a882d40f92-1"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "e92c8263c3cbedd9-0"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "73233b93df26e03e",
+          "status": "rejected",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "e92c8263c3cbedd9-0",
+        "id": "73233b93df26e03e-0",
+        "toNode": "03f168ccb5370bb2-0"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "e92c8263c3cbedd9-1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "73233b93df26e03e",
+          "status": "rejected",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "e92c8263c3cbedd9-1",
+        "id": "73233b93df26e03e-1",
+        "toNode": "03f168ccb5370bb2-1"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [
+            "83456d09f082fe8a-0-0",
+            "0d7740a882d40f92-0"
+          ],
+          "dependencies": [
+            "60a2a625e8300dc9-0-0",
+            "83456d09f082fe8a-0-0",
+            "0d7740a882d40f92-0"
+          ],
+          "edgeModifier": "list",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "7565755b265a1759",
+          "status": "rejected",
+          "text": "",
+          "type": "variable",
+          "versions": [
+            {
+              "header": null,
+              "subHeader": null
+            },
+            {
+              "header": null,
+              "subHeader": null
+            }
+          ]
+        },
+        "fromNode": "60a2a625e8300dc9-0-0",
+        "id": "7565755b265a1759-0-0",
+        "label": "-",
+        "toNode": "22d9b1ea6f478316"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [
+            "83456d09f082fe8a-0-1",
+            "0d7740a882d40f92-1"
+          ],
+          "dependencies": [
+            "60a2a625e8300dc9-0-1",
+            "83456d09f082fe8a-0-1",
+            "0d7740a882d40f92-1"
+          ],
+          "edgeModifier": "list",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "7565755b265a1759",
+          "status": "rejected",
+          "text": "",
+          "type": "variable",
+          "versions": [
+            {
+              "header": null,
+              "subHeader": null
+            },
+            {
+              "header": null,
+              "subHeader": null
+            }
+          ]
+        },
+        "fromNode": "60a2a625e8300dc9-0-1",
+        "id": "7565755b265a1759-0-1",
+        "label": "-",
+        "toNode": "22d9b1ea6f478316"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [
+            "83456d09f082fe8a-1-0",
+            "0d7740a882d40f92-0"
+          ],
+          "dependencies": [
+            "60a2a625e8300dc9-1-0",
+            "83456d09f082fe8a-1-0",
+            "0d7740a882d40f92-0"
+          ],
+          "edgeModifier": "list",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "7565755b265a1759",
+          "status": "rejected",
+          "text": "",
+          "type": "variable",
+          "versions": [
+            {
+              "header": null,
+              "subHeader": null
+            },
+            {
+              "header": null,
+              "subHeader": null
+            }
+          ]
+        },
+        "fromNode": "60a2a625e8300dc9-1-0",
+        "id": "7565755b265a1759-1-0",
+        "label": "-",
+        "toNode": "22d9b1ea6f478316"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [
+            "83456d09f082fe8a-1-1",
+            "0d7740a882d40f92-1"
+          ],
+          "dependencies": [
+            "60a2a625e8300dc9-1-1",
+            "83456d09f082fe8a-1-1",
+            "0d7740a882d40f92-1"
+          ],
+          "edgeModifier": "list",
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "7565755b265a1759",
+          "status": "rejected",
+          "text": "",
+          "type": "variable",
+          "versions": [
+            {
+              "header": null,
+              "subHeader": null
+            },
+            {
+              "header": null,
+              "subHeader": null
+            }
+          ]
+        },
+        "fromNode": "60a2a625e8300dc9-1-1",
+        "id": "7565755b265a1759-1-1",
+        "label": "-",
+        "toNode": "22d9b1ea6f478316"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [
+            "bf04efea7cb87629-0"
+          ],
+          "dependencies": [
+            "beb438d1c026fe71-0",
+            "bf04efea7cb87629-0"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "ae4c863a53cd9348",
+          "status": "complete",
+          "text": "",
+          "type": "write",
+          "versions": [
+            {
+              "header": "season",
+              "subHeader": "summer"
+            }
+          ]
+        },
+        "fromNode": "beb438d1c026fe71-0",
+        "id": "ae4c863a53cd9348-0",
+        "toNode": "c0e7756d10aed69f"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [
+            "bf04efea7cb87629-1"
+          ],
+          "dependencies": [
+            "beb438d1c026fe71-1",
+            "bf04efea7cb87629-1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": "ae4c863a53cd9348",
+          "status": "complete",
+          "text": "",
+          "type": "write",
+          "versions": [
+            {
+              "header": "season",
+              "subHeader": "winter"
+            }
+          ]
+        },
+        "fromNode": "beb438d1c026fe71-1",
+        "id": "ae4c863a53cd9348-1",
+        "toNode": "c0e7756d10aed69f"
+      }
+    ]
+  }
+}

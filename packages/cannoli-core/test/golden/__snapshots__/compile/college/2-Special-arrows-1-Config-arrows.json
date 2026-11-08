@@ -1,0 +1,308 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [
+          "a5ea03afb9e7519f"
+        ],
+        "groups": [
+          "50e47210c3597f2c"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "What's the weakest?",
+        "type": "standard-call"
+      },
+      "id": "01b6cd0557436d0d",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "3e19de32f2cf2234"
+        ],
+        "groups": [
+          "50e47210c3597f2c"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "18629c0795e99c52",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "b388b74fc76f9d5b"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "gpt-4",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "32895b9cbe65ebf5",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "01b6cd0557436d0d",
+          "cd8bccad9c0ff0e1",
+          "d90d1eda5b1cee39",
+          "18629c0795e99c52"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Logging Arrows",
+        "type": "basic"
+      },
+      "id": "50e47210c3597f2c",
+      "label": "Logging Arrows",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "4802b580405f5936",
+          "18f98f277862e948"
+        ],
+        "groups": [
+          "b388b74fc76f9d5b"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "When will gpt-5 come out?",
+        "type": "standard-call"
+      },
+      "id": "901e534d654dbe8d",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "f2066662ccfdf12b",
+          "901e534d654dbe8d",
+          "32895b9cbe65ebf5",
+          "f9768071dcaaf641"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Config Arrows",
+        "type": "basic"
+      },
+      "id": "b388b74fc76f9d5b",
+      "label": "Config Arrows",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "50e47210c3597f2c"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "You're an expert in metallurgy",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "cd8bccad9c0ff0e1",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "e60e398ffd796673"
+        ],
+        "groups": [
+          "50e47210c3597f2c"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "What's the strongest metal?",
+        "type": "standard-call"
+      },
+      "id": "d90d1eda5b1cee39",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "b388b74fc76f9d5b"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "1.5",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "f2066662ccfdf12b",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "44d9a85dc1209c3f"
+        ],
+        "groups": [
+          "b388b74fc76f9d5b"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "f9768071dcaaf641",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "32895b9cbe65ebf5"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "model",
+        "type": "config"
+      },
+      "color": "2",
+      "fromNode": "32895b9cbe65ebf5",
+      "id": "18f98f277862e948",
+      "label": "model",
+      "toNode": "901e534d654dbe8d"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "01b6cd0557436d0d"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "01b6cd0557436d0d",
+      "id": "3e19de32f2cf2234",
+      "toNode": "18629c0795e99c52"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "901e534d654dbe8d"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "901e534d654dbe8d",
+      "id": "44d9a85dc1209c3f",
+      "toNode": "f9768071dcaaf641"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "f2066662ccfdf12b"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "temperature",
+        "type": "config"
+      },
+      "color": "2",
+      "fromNode": "f2066662ccfdf12b",
+      "id": "4802b580405f5936",
+      "label": "temperature",
+      "toNode": "901e534d654dbe8d"
+    },
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "d90d1eda5b1cee39"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "chat"
+      },
+      "fromNode": "d90d1eda5b1cee39",
+      "id": "a5ea03afb9e7519f",
+      "toNode": "01b6cd0557436d0d"
+    },
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "cd8bccad9c0ff0e1"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "system-message"
+      },
+      "fromNode": "cd8bccad9c0ff0e1",
+      "id": "e60e398ffd796673",
+      "toNode": "d90d1eda5b1cee39"
+    }
+  ]
+}

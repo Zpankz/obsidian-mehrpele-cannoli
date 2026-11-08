@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [
+          "e1"
+        ],
+        "groups": [],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "standard-call"
+      },
+      "id": "call",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "e2"
+        ],
+        "groups": [],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "output",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Say hi in 3 words",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "prompt",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": true,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "prompt"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "system-message"
+      },
+      "fromNode": "prompt",
+      "id": "e1",
+      "toNode": "call"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "call"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "call",
+      "id": "e2",
+      "toNode": "output"
+    }
+  ]
+}

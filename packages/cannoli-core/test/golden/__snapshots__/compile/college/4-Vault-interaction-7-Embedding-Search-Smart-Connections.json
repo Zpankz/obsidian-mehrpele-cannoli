@@ -1,0 +1,369 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "b74952d80e6a6d39"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Here we've embedded the top 3 results of the similarity search:\n\n{{3\n```smart-connections\nAyy lmao\n```\n#@}}\n\nSummarize the first note",
+        "type": "standard-call"
+      },
+      "id": "38595c66057d2f38",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "8488abe3896113e6",
+          "73a455ab933fce60"
+        ],
+        "groups": [
+          "6343f06af4ec924a"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "bestFit",
+            "shouldExtract": true,
+            "type": "variable"
+          },
+          {
+            "name": "query",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "Here's a note that resulted from a search:\n\n{{@bestFit}}\n\nUse that note to answer this query: \"{{query}}\"",
+        "type": "standard-call"
+      },
+      "id": "44636ef212354a8b",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "b74952d80e6a6d39"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Here is a smart connections dynamic codeblock:\n\n```smart-connections\nAyy lmao\n```\nWhat's the most similar note probably about?",
+        "type": "standard-call"
+      },
+      "id": "46c4ce310ed88cf1",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "9c97bc5b033f7912"
+        ],
+        "groups": [
+          "b74952d80e6a6d39"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "48769029686ff688",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "e0bd7da21aff0c3d"
+        ],
+        "groups": [
+          "6343f06af4ec924a"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "5230a36585d39219",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "2df29e8ef4d81f5d"
+        ],
+        "groups": [
+          "6343f06af4ec924a"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "query",
+            "shouldExtract": false,
+            "type": "variable"
+          },
+          {
+            "name": "query",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "Which of the notes below fits the search query best?\n\nQuery: \"{{query}}\"\n\n{{4\n```smart-connections\n{{query}}\n```\n@}}",
+        "type": "standard-call"
+      },
+      "id": "5db01d3546fde562",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "6e728caab4a543a8",
+          "5db01d3546fde562",
+          "5230a36585d39219",
+          "44636ef212354a8b",
+          "79b80456d62de306"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Using Smart Connections to search",
+        "type": "basic"
+      },
+      "id": "6343f06af4ec924a",
+      "label": "Using Smart Connections to search",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "6343f06af4ec924a"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "What was the metaphor about the earth in that poem about walking?",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "6e728caab4a543a8",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "782881c8520b4911"
+        ],
+        "groups": [
+          "6343f06af4ec924a"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "79b80456d62de306",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "48769029686ff688",
+          "d244ad86313a5ef4",
+          "46c4ce310ed88cf1",
+          "38595c66057d2f38"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Rendering Smart Connection search",
+        "type": "basic"
+      },
+      "id": "b74952d80e6a6d39",
+      "label": "Rendering Smart Connection search",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "8780fbd775315770"
+        ],
+        "groups": [
+          "b74952d80e6a6d39"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "d244ad86313a5ef4",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "6e728caab4a543a8"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "query",
+        "type": "variable"
+      },
+      "fromNode": "6e728caab4a543a8",
+      "id": "2df29e8ef4d81f5d",
+      "label": "query",
+      "toNode": "5db01d3546fde562"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "6e728caab4a543a8"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "query",
+        "type": "variable"
+      },
+      "fromNode": "6e728caab4a543a8",
+      "id": "73a455ab933fce60",
+      "label": "query",
+      "toNode": "44636ef212354a8b"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "44636ef212354a8b"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "44636ef212354a8b",
+      "id": "782881c8520b4911",
+      "toNode": "79b80456d62de306"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "5db01d3546fde562"
+        ],
+        "edgeModifier": "note",
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "bestFit",
+        "type": "variable"
+      },
+      "fromNode": "5db01d3546fde562",
+      "id": "8488abe3896113e6",
+      "label": "[bestFit",
+      "toNode": "44636ef212354a8b"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "38595c66057d2f38"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "38595c66057d2f38",
+      "id": "8780fbd775315770",
+      "toNode": "d244ad86313a5ef4"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "46c4ce310ed88cf1"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "46c4ce310ed88cf1",
+      "id": "9c97bc5b033f7912",
+      "toNode": "48769029686ff688"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "44636ef212354a8b"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "logging"
+      },
+      "color": "2",
+      "fromNode": "44636ef212354a8b",
+      "id": "e0bd7da21aff0c3d",
+      "toNode": "5230a36585d39219"
+    }
+  ]
+}

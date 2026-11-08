@@ -1,0 +1,229 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 2,
+          "promptTokens": 47.25
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "2f201d9220f6ef3f": "complete",
+    "3ba3954eb0260bb0": "complete",
+    "4f1b8e3bd87e5bd8": "complete",
+    "7a909145058b7691": "complete",
+    "94f5f94475efad52": "complete",
+    "b9b423ce99fb31c9": "complete",
+    "be08a31884ecc768": "complete",
+    "e2163e206cbda905": "complete",
+    "f590014afea4fcd1": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "be08a31884ecc768",
+            "2f201d9220f6ef3f"
+          ],
+          "groups": [
+            "94f5f94475efad52"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "name",
+              "shouldExtract": false,
+              "type": "variable"
+            },
+            {
+              "name": "lines",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "\"\"Name: {{name}}\nLines:\n{{lines}}\"\"",
+          "type": "formatter"
+        },
+        "color": "6",
+        "id": "4f1b8e3bd87e5bd8",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "3ba3954eb0260bb0"
+          ],
+          "groups": [
+            "94f5f94475efad52"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Now write a list of 5 lines they might say.",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "7a909145058b7691",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "e2163e206cbda905",
+            "b9b423ce99fb31c9",
+            "4f1b8e3bd87e5bd8",
+            "7a909145058b7691"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Formatter nodes",
+          "type": "basic"
+        },
+        "id": "94f5f94475efad52",
+        "label": "Formatter nodes",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "f590014afea4fcd1"
+          ],
+          "groups": [
+            "94f5f94475efad52"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Name: Mock response\nLines:\nMock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "b9b423ce99fb31c9",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "94f5f94475efad52"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Respond with the name of a nosy villager character",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "e2163e206cbda905",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "7a909145058b7691"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "lines",
+          "type": "variable"
+        },
+        "fromNode": "7a909145058b7691",
+        "id": "2f201d9220f6ef3f",
+        "label": "lines",
+        "toNode": "4f1b8e3bd87e5bd8"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "e2163e206cbda905"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "Respond with the name of a nosy villager character",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "e2163e206cbda905",
+        "id": "3ba3954eb0260bb0",
+        "toNode": "7a909145058b7691"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "e2163e206cbda905"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "name",
+          "type": "variable"
+        },
+        "fromNode": "e2163e206cbda905",
+        "id": "be08a31884ecc768",
+        "label": "name",
+        "toNode": "4f1b8e3bd87e5bd8"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Name: Mock response\nLines:\nMock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "4f1b8e3bd87e5bd8"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "4f1b8e3bd87e5bd8",
+        "id": "f590014afea4fcd1",
+        "toNode": "b9b423ce99fb31c9"
+      }
+    ]
+  }
+}

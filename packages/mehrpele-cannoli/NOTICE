@@ -1,0 +1,16 @@
+Mehrpele Flows (mehrpele-cannoli)
+Copyright (c) 2026 Zpankz. MIT License; see LICENSE.
+
+Mehrpele Flows includes cannoli-core © 2023 Nicholas Golden and others (DeabLabs), MIT,
+modernised in Zpankz/cannoli.
+
+- Upstream: https://github.com/DeabLabs/cannoli
+- Modernised fork: https://github.com/Zpankz/cannoli
+- Vendored commit (packages/cannoli-core, from packages/cannoli-core/UPSTREAM.json):
+  bca688efd77a5460b2f5e97804f63852ad6ff30a
+
+The cannoli-core MIT licence is reproduced verbatim at the top of LICENSE and at the start
+of the shipped main.js.
+
+Third-party packages bundled into main.js keep their own licence comments, which esbuild
+collects at the end of main.js (legalComments: "eof").

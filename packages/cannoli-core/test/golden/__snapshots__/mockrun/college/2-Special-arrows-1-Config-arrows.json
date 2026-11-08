@@ -1,0 +1,373 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 2,
+          "promptTokens": 49.25
+        },
+        "gpt-4": {
+          "numberOfCalls": 1,
+          "promptTokens": 8
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "01b6cd0557436d0d": "complete",
+    "18629c0795e99c52": "complete",
+    "18f98f277862e948": "complete",
+    "32895b9cbe65ebf5": "complete",
+    "3e19de32f2cf2234": "complete",
+    "44d9a85dc1209c3f": "complete",
+    "4802b580405f5936": "complete",
+    "50e47210c3597f2c": "complete",
+    "901e534d654dbe8d": "complete",
+    "a5ea03afb9e7519f": "complete",
+    "b388b74fc76f9d5b": "complete",
+    "cd8bccad9c0ff0e1": "complete",
+    "d90d1eda5b1cee39": "complete",
+    "e60e398ffd796673": "complete",
+    "f2066662ccfdf12b": "complete",
+    "f9768071dcaaf641": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "a5ea03afb9e7519f"
+          ],
+          "groups": [
+            "50e47210c3597f2c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "What's the weakest?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "01b6cd0557436d0d",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "3e19de32f2cf2234"
+          ],
+          "groups": [
+            "50e47210c3597f2c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "#### <u>System</u>:\nYou're an expert in metallurgy\n#### <u>User</u>:\nWhat's the strongest metal?\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nWhat's the weakest?\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "18629c0795e99c52",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "b388b74fc76f9d5b"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "gpt-4",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "32895b9cbe65ebf5",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "01b6cd0557436d0d",
+            "cd8bccad9c0ff0e1",
+            "d90d1eda5b1cee39",
+            "18629c0795e99c52"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Logging Arrows",
+          "type": "basic"
+        },
+        "id": "50e47210c3597f2c",
+        "label": "Logging Arrows",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "4802b580405f5936",
+            "18f98f277862e948"
+          ],
+          "groups": [
+            "b388b74fc76f9d5b"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "When will gpt-5 come out?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "901e534d654dbe8d",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "f2066662ccfdf12b",
+            "901e534d654dbe8d",
+            "32895b9cbe65ebf5",
+            "f9768071dcaaf641"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Config Arrows",
+          "type": "basic"
+        },
+        "id": "b388b74fc76f9d5b",
+        "label": "Config Arrows",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "50e47210c3597f2c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "You're an expert in metallurgy",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "cd8bccad9c0ff0e1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "e60e398ffd796673"
+          ],
+          "groups": [
+            "50e47210c3597f2c"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "What's the strongest metal?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "d90d1eda5b1cee39",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "b388b74fc76f9d5b"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "1.5",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "f2066662ccfdf12b",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "44d9a85dc1209c3f"
+          ],
+          "groups": [
+            "b388b74fc76f9d5b"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "#### <u>User</u>:\nWhen will gpt-5 come out?\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: gpt-4\nbaseURL: http://127.0.0.1:9\nenableVision: true\ntemperature: 1.5\n\n",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "f9768071dcaaf641",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "gpt-4",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "32895b9cbe65ebf5"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "model",
+          "type": "config"
+        },
+        "color": "2",
+        "fromNode": "32895b9cbe65ebf5",
+        "id": "18f98f277862e948",
+        "label": "model",
+        "toNode": "901e534d654dbe8d"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "#### <u>System</u>:\nYou're an expert in metallurgy\n#### <u>User</u>:\nWhat's the strongest metal?\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nWhat's the weakest?\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "01b6cd0557436d0d"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "logging"
+        },
+        "color": "2",
+        "fromNode": "01b6cd0557436d0d",
+        "id": "3e19de32f2cf2234",
+        "toNode": "18629c0795e99c52"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "#### <u>User</u>:\nWhen will gpt-5 come out?\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: gpt-4\nbaseURL: http://127.0.0.1:9\nenableVision: true\ntemperature: 1.5\n\n",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "901e534d654dbe8d"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "logging"
+        },
+        "color": "2",
+        "fromNode": "901e534d654dbe8d",
+        "id": "44d9a85dc1209c3f",
+        "toNode": "f9768071dcaaf641"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "1.5",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "f2066662ccfdf12b"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "temperature",
+          "type": "config"
+        },
+        "color": "2",
+        "fromNode": "f2066662ccfdf12b",
+        "id": "4802b580405f5936",
+        "label": "temperature",
+        "toNode": "901e534d654dbe8d"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "d90d1eda5b1cee39"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "You're an expert in metallurgy",
+              "role": "system"
+            },
+            {
+              "content": "What's the strongest metal?",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "d90d1eda5b1cee39",
+        "id": "a5ea03afb9e7519f",
+        "toNode": "01b6cd0557436d0d"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "cd8bccad9c0ff0e1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "You're an expert in metallurgy",
+              "role": "system"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "system-message"
+        },
+        "fromNode": "cd8bccad9c0ff0e1",
+        "id": "e60e398ffd796673",
+        "toNode": "d90d1eda5b1cee39"
+      }
+    ]
+  }
+}

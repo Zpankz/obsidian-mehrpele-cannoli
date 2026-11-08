@@ -1,0 +1,691 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 23,
+          "promptTokens": 617.25
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "0064c11720e6cf20": "complete",
+    "007d49590f64ef9d": "complete",
+    "270794f37f25bb76": "complete",
+    "2a9251ad533d8576": "complete",
+    "2ae53ef6008eeb4e": "complete",
+    "33e7457728f9ef47": "complete",
+    "479bd3009fb464b0": "complete",
+    "4b6e4eac00d4ca2a": "complete",
+    "65ef095c89dded80": "complete",
+    "734208df80c9a33e": "complete",
+    "76b98e9977f73412": "complete",
+    "7b6747a24b1ed36e": "complete",
+    "81cdef3b9de52df9": "complete",
+    "896ace77fa0c6a7e": "complete",
+    "8c921de751762ac3": "complete",
+    "96f3935e8174877f": "complete",
+    "986991747df080b2": "complete",
+    "a1e4bbbafcec0850": "complete",
+    "adc29be9103fb02b": "complete",
+    "bc61ab59035be49d": "complete",
+    "c6b8d6a1f384022f": "complete",
+    "cdc967d2e777ade5": "complete",
+    "d09815f95971b8a6": "complete",
+    "d83bf39a509c67bd": "complete",
+    "df42bd1da1866b7f": "complete",
+    "f0286819a9f22127": "complete",
+    "fa5fd9941ce413fa": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "2ae53ef6008eeb4e",
+            "76b98e9977f73412",
+            "7b6747a24b1ed36e",
+            "a1e4bbbafcec0850",
+            "4b6e4eac00d4ca2a"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "The loop number variable",
+          "type": "basic"
+        },
+        "id": "0064c11720e6cf20",
+        "label": "The loop number variable",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "81cdef3b9de52df9"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "This message will be sent once",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "2a9251ad533d8576",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 2,
+          "dependencies": [
+            "76b98e9977f73412",
+            "a1e4bbbafcec0850",
+            "4b6e4eac00d4ca2a"
+          ],
+          "groups": [
+            "0064c11720e6cf20"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": null,
+          "status": "complete",
+          "text": "2/2",
+          "type": "repeat"
+        },
+        "id": "2ae53ef6008eeb4e",
+        "label": "2/2",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "df42bd1da1866b7f",
+            "d83bf39a509c67bd",
+            "d09815f95971b8a6",
+            "479bd3009fb464b0",
+            "cdc967d2e777ade5",
+            "bc61ab59035be49d"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Nested loop groups",
+          "type": "basic"
+        },
+        "id": "33e7457728f9ef47",
+        "label": "Nested loop groups",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "007d49590f64ef9d"
+          ],
+          "groups": [
+            "d83bf39a509c67bd",
+            "df42bd1da1866b7f",
+            "33e7457728f9ef47"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "This will be sent 4 times",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "479bd3009fb464b0",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "2ae53ef6008eeb4e",
+            "0064c11720e6cf20"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Hello there",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "4b6e4eac00d4ca2a",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 2,
+          "dependencies": [
+            "a1e4bbbafcec0850"
+          ],
+          "groups": [
+            "2ae53ef6008eeb4e",
+            "0064c11720e6cf20"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": null,
+          "status": "complete",
+          "text": "2/2",
+          "type": "repeat"
+        },
+        "id": "76b98e9977f73412",
+        "label": "2/2",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "734208df80c9a33e"
+          ],
+          "groups": [
+            "0064c11720e6cf20"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "# Loop 1.1\n#### <u>User</u>:\nHello there\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nInner loop number: 1\nOuter loop number: 1\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n\n# Loop 1.2\n#### <u>User</u>:\nHello there\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nInner loop number: 2\nOuter loop number: 1\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n\n# Loop 2.1\n#### <u>User</u>:\nHello there\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nInner loop number: 1\nOuter loop number: 2\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n\n# Loop 2.2\n#### <u>User</u>:\nHello there\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nInner loop number: 2\nOuter loop number: 2\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "7b6747a24b1ed36e",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "986991747df080b2",
+            "2a9251ad533d8576",
+            "896ace77fa0c6a7e",
+            "c6b8d6a1f384022f",
+            "96f3935e8174877f"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Loop groups",
+          "type": "basic"
+        },
+        "id": "81cdef3b9de52df9",
+        "label": "Loop groups",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "f0286819a9f22127"
+          ],
+          "groups": [
+            "986991747df080b2",
+            "81cdef3b9de52df9"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "This one will be sent 3 times",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "896ace77fa0c6a7e",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "270794f37f25bb76"
+          ],
+          "groups": [
+            "81cdef3b9de52df9"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock response",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "96f3935e8174877f",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 3,
+          "dependencies": [
+            "896ace77fa0c6a7e",
+            "c6b8d6a1f384022f"
+          ],
+          "groups": [
+            "81cdef3b9de52df9"
+          ],
+          "kind": "group",
+          "maxLoops": 3,
+          "originalObject": null,
+          "status": "complete",
+          "text": "3/3",
+          "type": "repeat"
+        },
+        "id": "986991747df080b2",
+        "label": "3/3",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "8c921de751762ac3"
+          ],
+          "groups": [
+            "76b98e9977f73412",
+            "2ae53ef6008eeb4e",
+            "0064c11720e6cf20"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "#",
+              "shouldExtract": false,
+              "type": "variable"
+            },
+            {
+              "name": "##",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "Inner loop number: {{#}}\nOuter loop number: {{##}}",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "a1e4bbbafcec0850",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "65ef095c89dded80"
+          ],
+          "groups": [
+            "d83bf39a509c67bd",
+            "df42bd1da1866b7f",
+            "33e7457728f9ef47"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Be careful with nested loop groups",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "bc61ab59035be49d",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "fa5fd9941ce413fa"
+          ],
+          "groups": [
+            "986991747df080b2",
+            "81cdef3b9de52df9"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Only the last response will be written to the content node outside the loop.",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "c6b8d6a1f384022f",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "adc29be9103fb02b"
+          ],
+          "groups": [
+            "33e7457728f9ef47"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "# Loop 1.1\n#### <u>User</u>:\nThis message will be sent 2 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nThis will be sent 4 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nBe careful with nested loop groups\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n\n# Loop 1.2\n#### <u>User</u>:\nThis message will be sent 2 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nThis will be sent 4 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nBe careful with nested loop groups\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n\n# Loop 2.1\n#### <u>User</u>:\nThis message will be sent 2 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nThis will be sent 4 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nBe careful with nested loop groups\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n\n# Loop 2.2\n#### <u>User</u>:\nThis message will be sent 2 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nThis will be sent 4 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nBe careful with nested loop groups\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "cdc967d2e777ade5",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "df42bd1da1866b7f",
+            "33e7457728f9ef47"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "This message will be sent 2 times",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "d09815f95971b8a6",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 2,
+          "dependencies": [
+            "479bd3009fb464b0",
+            "bc61ab59035be49d"
+          ],
+          "groups": [
+            "df42bd1da1866b7f",
+            "33e7457728f9ef47"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": null,
+          "status": "complete",
+          "text": "2/2",
+          "type": "repeat"
+        },
+        "id": "d83bf39a509c67bd",
+        "label": "2/2",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "currentLoop": 2,
+          "dependencies": [
+            "d83bf39a509c67bd",
+            "d09815f95971b8a6",
+            "479bd3009fb464b0",
+            "bc61ab59035be49d"
+          ],
+          "groups": [
+            "33e7457728f9ef47"
+          ],
+          "kind": "group",
+          "maxLoops": 2,
+          "originalObject": null,
+          "status": "complete",
+          "text": "2/2",
+          "type": "repeat"
+        },
+        "id": "df42bd1da1866b7f",
+        "label": "2/2",
+        "type": "group"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [
+            "d83bf39a509c67bd"
+          ],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "d09815f95971b8a6"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "This message will be sent 2 times",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "d09815f95971b8a6",
+        "id": "007d49590f64ef9d",
+        "toNode": "479bd3009fb464b0"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [
+            "986991747df080b2"
+          ],
+          "dependencies": [
+            "c6b8d6a1f384022f",
+            "986991747df080b2"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "c6b8d6a1f384022f",
+        "id": "270794f37f25bb76",
+        "toNode": "96f3935e8174877f"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "479bd3009fb464b0"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "This message will be sent 2 times",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            },
+            {
+              "content": "This will be sent 4 times",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "479bd3009fb464b0",
+        "id": "65ef095c89dded80",
+        "toNode": "bc61ab59035be49d"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "# Loop 1.1\n#### <u>User</u>:\nHello there\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nInner loop number: 1\nOuter loop number: 1\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n\n# Loop 1.2\n#### <u>User</u>:\nHello there\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nInner loop number: 2\nOuter loop number: 1\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n\n# Loop 2.1\n#### <u>User</u>:\nHello there\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nInner loop number: 1\nOuter loop number: 2\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n\n# Loop 2.2\n#### <u>User</u>:\nHello there\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nInner loop number: 2\nOuter loop number: 2\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "crossingInGroups": [],
+          "crossingOutGroups": [
+            "76b98e9977f73412",
+            "2ae53ef6008eeb4e"
+          ],
+          "dependencies": [
+            "a1e4bbbafcec0850",
+            "76b98e9977f73412",
+            "2ae53ef6008eeb4e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "logging"
+        },
+        "color": "2",
+        "fromNode": "a1e4bbbafcec0850",
+        "id": "734208df80c9a33e",
+        "toNode": "7b6747a24b1ed36e"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [
+            "76b98e9977f73412"
+          ],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "4b6e4eac00d4ca2a"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "Hello there",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "4b6e4eac00d4ca2a",
+        "id": "8c921de751762ac3",
+        "toNode": "a1e4bbbafcec0850"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "# Loop 1.1\n#### <u>User</u>:\nThis message will be sent 2 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nThis will be sent 4 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nBe careful with nested loop groups\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n\n# Loop 1.2\n#### <u>User</u>:\nThis message will be sent 2 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nThis will be sent 4 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nBe careful with nested loop groups\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n\n# Loop 2.1\n#### <u>User</u>:\nThis message will be sent 2 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nThis will be sent 4 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nBe careful with nested loop groups\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n\n# Loop 2.2\n#### <u>User</u>:\nThis message will be sent 2 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nThis will be sent 4 times\n#### <u>Assistant</u>:\nMock response\n#### <u>User</u>:\nBe careful with nested loop groups\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "crossingInGroups": [],
+          "crossingOutGroups": [
+            "d83bf39a509c67bd",
+            "df42bd1da1866b7f"
+          ],
+          "dependencies": [
+            "bc61ab59035be49d",
+            "d83bf39a509c67bd",
+            "df42bd1da1866b7f"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "logging"
+        },
+        "color": "2",
+        "fromNode": "bc61ab59035be49d",
+        "id": "adc29be9103fb02b",
+        "toNode": "cdc967d2e777ade5"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [
+            "986991747df080b2"
+          ],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "2a9251ad533d8576"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "This message will be sent once",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "2a9251ad533d8576",
+        "id": "f0286819a9f22127",
+        "toNode": "896ace77fa0c6a7e"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "896ace77fa0c6a7e"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "This message will be sent once",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            },
+            {
+              "content": "This one will be sent 3 times",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "896ace77fa0c6a7e",
+        "id": "fa5fd9941ce413fa",
+        "toNode": "c6b8d6a1f384022f"
+      }
+    ]
+  }
+}

@@ -1,0 +1,637 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 5,
+          "promptTokens": 63
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "0d6c132ba45af90d": "complete",
+    "19acdf8c5139a403": "complete",
+    "1a9662bf2fcaaeca": "complete",
+    "303f2609904e9a78": "complete",
+    "33807cb64cdd9cac": "complete",
+    "355f89d3338915a0": "complete",
+    "3e455995e5dff301": "complete",
+    "49bb3c2aaf878ecc": "complete",
+    "602c0eb10399429c": "complete",
+    "7f6b2d929334d325": "complete",
+    "7fcb2dd5de840465": "complete",
+    "84cfedc9449f5d42-biography": "complete",
+    "84cfedc9449f5d42-historical fiction": "complete",
+    "84cfedc9449f5d42-sci-fi": "complete",
+    "8eb5818084414bdc": "complete",
+    "8eee16509fba3a49": "complete",
+    "912a11d4e1afa3c1": "complete",
+    "9ada88b3cfd1c1a1": "complete",
+    "a36d2f1233705b2d": "complete",
+    "ac03334c4c9efbbf": "complete",
+    "b58f716ac95e1bd3": "complete",
+    "b9016ed068d8f3df": "complete",
+    "bb74df853c72868d": "complete",
+    "bf2f302f415a57a7": "complete",
+    "de82f8c9cc47e515": "complete",
+    "eea5e61d628a1f37": "complete",
+    "f243e7ecc26dddf0": "complete",
+    "fc3f0539962083c5": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [
+            "eea5e61d628a1f37"
+          ],
+          "groups": [
+            "bb74df853c72868d"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock answer",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "303f2609904e9a78",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "49bb3c2aaf878ecc"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Who are the most popular authors in each of these categories?",
+          "type": "form"
+        },
+        "color": "4",
+        "id": "33807cb64cdd9cac",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "de82f8c9cc47e515"
+          ],
+          "groups": [
+            "ac03334c4c9efbbf"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "battle 2",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "What makes the {{battle 2}} famous?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "355f89d3338915a0",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "33807cb64cdd9cac",
+            "a36d2f1233705b2d",
+            "8eb5818084414bdc"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Multi-arrows",
+          "type": "basic"
+        },
+        "id": "49bb3c2aaf878ecc",
+        "label": "Multi-arrows",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "0d6c132ba45af90d"
+          ],
+          "groups": [
+            "ac03334c4c9efbbf"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "{\"battle 1\":\"Battle of Waterloo\",\"battle 2\":\"Battle of Gettysburg\"}",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "602c0eb10399429c",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "1a9662bf2fcaaeca"
+          ],
+          "groups": [
+            "ac03334c4c9efbbf"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "#### <u>User</u>:\nWhat makes the {{battle 1}} famous?\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "7fcb2dd5de840465",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "9ada88b3cfd1c1a1"
+          ],
+          "groups": [
+            "49bb3c2aaf878ecc"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Sci-fi: {{sci-fi}}\nHistorical fiction: {{historical fiction}}\nBiography: Mock answer\n",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "8eb5818084414bdc",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "f243e7ecc26dddf0"
+          ],
+          "groups": [
+            "bb74df853c72868d"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock answer",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "8eee16509fba3a49",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "ac03334c4c9efbbf"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Rank the top 2 most famous historical battles",
+          "type": "form"
+        },
+        "color": "4",
+        "id": "912a11d4e1afa3c1",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "84cfedc9449f5d42-sci-fi",
+            "84cfedc9449f5d42-historical fiction",
+            "84cfedc9449f5d42-biography"
+          ],
+          "groups": [
+            "49bb3c2aaf878ecc"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "sci-fi",
+              "shouldExtract": false,
+              "type": "variable"
+            },
+            {
+              "name": "historical fiction",
+              "shouldExtract": false,
+              "type": "variable"
+            },
+            {
+              "name": "biography",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "\"\"Sci-fi: {{sci-fi}}\nHistorical fiction: {{historical fiction}}\nBiography: {{biography}}\n\"\"",
+          "type": "formatter"
+        },
+        "color": "6",
+        "id": "a36d2f1233705b2d",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "912a11d4e1afa3c1",
+            "7fcb2dd5de840465",
+            "b9016ed068d8f3df",
+            "b58f716ac95e1bd3",
+            "355f89d3338915a0",
+            "602c0eb10399429c"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Other details",
+          "type": "basic"
+        },
+        "id": "ac03334c4c9efbbf",
+        "label": "Other details",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "7f6b2d929334d325"
+          ],
+          "groups": [
+            "ac03334c4c9efbbf"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "#### <u>User</u>:\nWhat makes the {{battle 2}} famous?\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "b58f716ac95e1bd3",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "3e455995e5dff301"
+          ],
+          "groups": [
+            "ac03334c4c9efbbf"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "battle 1",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "What makes the {{battle 1}} famous?",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "b9016ed068d8f3df",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "bf2f302f415a57a7",
+            "8eee16509fba3a49",
+            "fc3f0539962083c5",
+            "303f2609904e9a78"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Field arrows",
+          "type": "basic"
+        },
+        "id": "bb74df853c72868d",
+        "label": "Field arrows",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "bb74df853c72868d"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "What's a good fruit to eat for each meal?",
+          "type": "form"
+        },
+        "color": "4",
+        "id": "bf2f302f415a57a7",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "19acdf8c5139a403"
+          ],
+          "groups": [
+            "bb74df853c72868d"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Mock answer",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "fc3f0539962083c5",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": {
+            "battle 1": "Mock answer",
+            "battle 2": "Mock answer"
+          },
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "912a11d4e1afa3c1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "912a11d4e1afa3c1",
+        "id": "0d6c132ba45af90d",
+        "toNode": "602c0eb10399429c"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock answer",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "bf2f302f415a57a7"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "lunch",
+          "type": "field"
+        },
+        "color": "6",
+        "fromNode": "bf2f302f415a57a7",
+        "id": "19acdf8c5139a403",
+        "label": "lunch",
+        "toNode": "fc3f0539962083c5"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "#### <u>User</u>:\nWhat makes the {{battle 1}} famous?\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "b9016ed068d8f3df"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "logging"
+        },
+        "color": "2",
+        "fromNode": "b9016ed068d8f3df",
+        "id": "1a9662bf2fcaaeca",
+        "toNode": "7fcb2dd5de840465"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "912a11d4e1afa3c1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "battle 1",
+          "type": "field"
+        },
+        "color": "6",
+        "fromNode": "912a11d4e1afa3c1",
+        "id": "3e455995e5dff301",
+        "label": "battle 1",
+        "toNode": "b9016ed068d8f3df"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "#### <u>User</u>:\nWhat makes the {{battle 2}} famous?\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: ollama\nmodel: mock-model\nbaseURL: http://127.0.0.1:9\nenableVision: true\n\n",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "355f89d3338915a0"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "logging"
+        },
+        "color": "2",
+        "fromNode": "355f89d3338915a0",
+        "id": "7f6b2d929334d325",
+        "toNode": "b58f716ac95e1bd3"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock answer",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "33807cb64cdd9cac"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "biography",
+          "type": "field"
+        },
+        "color": "6",
+        "fromNode": "33807cb64cdd9cac",
+        "id": "84cfedc9449f5d42-biography",
+        "label": "biography",
+        "toNode": "a36d2f1233705b2d"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "33807cb64cdd9cac"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "historical fiction",
+          "type": "field"
+        },
+        "color": "6",
+        "fromNode": "33807cb64cdd9cac",
+        "id": "84cfedc9449f5d42-historical fiction",
+        "label": "historical fiction",
+        "toNode": "a36d2f1233705b2d"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "33807cb64cdd9cac"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "sci-fi",
+          "type": "field"
+        },
+        "color": "6",
+        "fromNode": "33807cb64cdd9cac",
+        "id": "84cfedc9449f5d42-sci-fi",
+        "label": "sci-fi",
+        "toNode": "a36d2f1233705b2d"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Sci-fi: {{sci-fi}}\nHistorical fiction: {{historical fiction}}\nBiography: Mock answer\n",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "a36d2f1233705b2d"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "a36d2f1233705b2d",
+        "id": "9ada88b3cfd1c1a1",
+        "toNode": "8eb5818084414bdc"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "912a11d4e1afa3c1"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "battle 2",
+          "type": "field"
+        },
+        "color": "6",
+        "fromNode": "912a11d4e1afa3c1",
+        "id": "de82f8c9cc47e515",
+        "label": "battle 2|",
+        "toNode": "355f89d3338915a0"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock answer",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "bf2f302f415a57a7"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "dinner",
+          "type": "field"
+        },
+        "color": "6",
+        "fromNode": "bf2f302f415a57a7",
+        "id": "eea5e61d628a1f37",
+        "label": "dinner",
+        "toNode": "303f2609904e9a78"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock answer",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "bf2f302f415a57a7"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "breakfast",
+          "type": "field"
+        },
+        "color": "6",
+        "fromNode": "bf2f302f415a57a7",
+        "id": "f243e7ecc26dddf0",
+        "label": "breakfast",
+        "toNode": "8eee16509fba3a49"
+      }
+    ]
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [
+          "e1"
+        ],
+        "groups": [],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "note",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "Summarise this note:\n{{note}}",
+        "type": "standard-call"
+      },
+      "id": "call",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "Example notes/Apple Trees",
+            "shouldExtract": true,
+            "type": "note"
+          }
+        ],
+        "status": "pending",
+        "text": "{{[[Example notes/Apple Trees.md]]}}",
+        "type": "reference"
+      },
+      "file": "Example notes/Apple Trees.md",
+      "id": "note",
+      "type": "file"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "e2"
+        ],
+        "groups": [],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "output",
+      "type": "text"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "note"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "note",
+        "type": "variable"
+      },
+      "fromNode": "note",
+      "id": "e1",
+      "label": "note",
+      "toNode": "call"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "call"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "call",
+      "id": "e2",
+      "toNode": "output"
+    }
+  ]
+}

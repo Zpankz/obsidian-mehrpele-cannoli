@@ -1,0 +1,224 @@
+{
+  "message": null,
+  "objects": {
+    "0305c934c9aace83": {
+      "status": "complete",
+      "text": "# Version 0\n#### <u>User</u>:\nJust list the most popular events in the summer olympics\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: openai\nmodel: gpt-4o-mini\nenableVision: true\n\n# Version 1\n#### <u>User</u>:\nJust list the most popular events in the winter olympics\n#### <u>Assistant</u>:\nMock response\n#### Config\nprovider: openai\nmodel: gpt-4o-mini\nenableVision: true\n\n"
+    },
+    "03f168ccb5370bb2-0": {
+      "status": "rejected",
+      "text": "Give an even more obscure term for it."
+    },
+    "03f168ccb5370bb2-1": {
+      "status": "rejected",
+      "text": "Give an even more obscure term for it."
+    },
+    "0caf1bba05c8aa27-0": {
+      "status": "rejected",
+      "text": ""
+    },
+    "0caf1bba05c8aa27-1": {
+      "status": "rejected",
+      "text": ""
+    },
+    "0d7740a882d40f92-0": {
+      "status": "rejected",
+      "text": "2"
+    },
+    "0d7740a882d40f92-1": {
+      "status": "rejected",
+      "text": "2"
+    },
+    "22d9b1ea6f478316": {
+      "status": "rejected",
+      "text": ""
+    },
+    "425c2f28bb3e0b99-0": {
+      "status": "rejected",
+      "text": "color"
+    },
+    "425c2f28bb3e0b99-1": {
+      "status": "rejected",
+      "text": "color"
+    },
+    "432d78d795c6f4ec-0-0": {
+      "status": "rejected",
+      "text": "substep"
+    },
+    "432d78d795c6f4ec-0-1": {
+      "status": "rejected",
+      "text": "substep"
+    },
+    "432d78d795c6f4ec-1-0": {
+      "status": "rejected",
+      "text": "substep"
+    },
+    "432d78d795c6f4ec-1-1": {
+      "status": "rejected",
+      "text": "substep"
+    },
+    "48ca5d2dc4865bce-0": {
+      "status": "complete",
+      "text": ""
+    },
+    "48ca5d2dc4865bce-1": {
+      "status": "complete",
+      "text": ""
+    },
+    "5bd1086a494d6e32-0": {
+      "status": "complete",
+      "text": "season"
+    },
+    "5bd1086a494d6e32-1": {
+      "status": "complete",
+      "text": "season"
+    },
+    "607232d635891e37-0": {
+      "status": "rejected",
+      "text": "step"
+    },
+    "607232d635891e37-1": {
+      "status": "rejected",
+      "text": "step"
+    },
+    "60a2a625e8300dc9-0-0": {
+      "status": "rejected",
+      "text": "Break this substep in making a PBJ sandwich into 2 sub-sub-steps (markdown list):\n{{substep}}"
+    },
+    "60a2a625e8300dc9-0-1": {
+      "status": "rejected",
+      "text": "Break this substep in making a PBJ sandwich into 2 sub-sub-steps (markdown list):\n{{substep}}"
+    },
+    "60a2a625e8300dc9-1-0": {
+      "status": "rejected",
+      "text": "Break this substep in making a PBJ sandwich into 2 sub-sub-steps (markdown list):\n{{substep}}"
+    },
+    "60a2a625e8300dc9-1-1": {
+      "status": "rejected",
+      "text": "Break this substep in making a PBJ sandwich into 2 sub-sub-steps (markdown list):\n{{substep}}"
+    },
+    "65c66e6f113726aa": {
+      "status": "complete",
+      "text": "Dynamic list input"
+    },
+    "6c63c8db5daf8225-0": {
+      "status": "rejected",
+      "text": "2"
+    },
+    "6c63c8db5daf8225-1": {
+      "status": "rejected",
+      "text": "2"
+    },
+    "73233b93df26e03e-0": {
+      "status": "rejected",
+      "text": ""
+    },
+    "73233b93df26e03e-1": {
+      "status": "rejected",
+      "text": ""
+    },
+    "7565755b265a1759-0-0": {
+      "status": "rejected",
+      "text": ""
+    },
+    "7565755b265a1759-0-1": {
+      "status": "rejected",
+      "text": ""
+    },
+    "7565755b265a1759-1-0": {
+      "status": "rejected",
+      "text": ""
+    },
+    "7565755b265a1759-1-1": {
+      "status": "rejected",
+      "text": ""
+    },
+    "7b28e3a04655a650": {
+      "status": "rejected",
+      "text": ""
+    },
+    "83456d09f082fe8a-0-0": {
+      "status": "rejected",
+      "text": "2"
+    },
+    "83456d09f082fe8a-0-1": {
+      "status": "rejected",
+      "text": "2"
+    },
+    "83456d09f082fe8a-1-0": {
+      "status": "rejected",
+      "text": "2"
+    },
+    "83456d09f082fe8a-1-1": {
+      "status": "rejected",
+      "text": "2"
+    },
+    "8b3843db8e3a0626": {
+      "status": "complete",
+      "text": "- summer\n- winter"
+    },
+    "a582b0f31eb5b273": {
+      "status": "complete",
+      "text": "Static list input"
+    },
+    "ad1b9b99f7179469-0": {
+      "status": "rejected",
+      "text": "Break this step in making a PBJ sandwich down into 2 sub-steps (markdown list):\n{{step}}"
+    },
+    "ad1b9b99f7179469-1": {
+      "status": "rejected",
+      "text": "Break this step in making a PBJ sandwich down into 2 sub-steps (markdown list):\n{{step}}"
+    },
+    "ae4c863a53cd9348-0": {
+      "status": "complete",
+      "text": ""
+    },
+    "ae4c863a53cd9348-1": {
+      "status": "complete",
+      "text": ""
+    },
+    "b3938cc38770d918": {
+      "status": "complete",
+      "text": "List the 3 steps to make a PBJ sandwich (markdown format)"
+    },
+    "beb438d1c026fe71-0": {
+      "status": "complete",
+      "text": "Just list the most popular events in the {{season}} olympics"
+    },
+    "beb438d1c026fe71-1": {
+      "status": "complete",
+      "text": "Just list the most popular events in the {{season}} olympics"
+    },
+    "bf04efea7cb87629-0": {
+      "status": "complete",
+      "text": "2"
+    },
+    "bf04efea7cb87629-1": {
+      "status": "complete",
+      "text": "2"
+    },
+    "c0e7756d10aed69f": {
+      "status": "complete",
+      "text": "Mock response\n\nMock response\n\n"
+    },
+    "e0f003ced217a6f7": {
+      "status": "complete",
+      "text": "Nested parallel groups"
+    },
+    "e92c8263c3cbedd9-0": {
+      "status": "rejected",
+      "text": "In a sentence, describe {{color}}."
+    },
+    "e92c8263c3cbedd9-1": {
+      "status": "rejected",
+      "text": "In a sentence, describe {{color}}."
+    },
+    "f28b98b566aff8a3": {
+      "status": "complete",
+      "text": "Write a list of 5 obscure colors (markdown format)"
+    }
+  },
+  "reason": "complete",
+  "results": {},
+  "vaultLog": []
+}

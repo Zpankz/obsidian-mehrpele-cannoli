@@ -1,0 +1,179 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "complete",
+      "results": {},
+      "usage": {
+        "mock-model": {
+          "numberOfCalls": 2,
+          "promptTokens": 76.25
+        }
+      }
+    }
+  ],
+  "statuses": {
+    "329298ec10140a51": "complete",
+    "5246f4d07c4012a8": "complete",
+    "6221f4693ddb3417": "complete",
+    "848648ac1ab74998": "complete",
+    "867aca6f08aff01f": "complete",
+    "bfad0ddbfa29f18f": "complete",
+    "f33f402d10538f79": "complete"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "[Email Draft]\nLet me get back to you on that",
+          "type": "variable"
+        },
+        "id": "329298ec10140a51",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "bfad0ddbfa29f18f"
+          ],
+          "groups": [
+            "6221f4693ddb3417"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "Email Draft",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "{{Email Draft}}",
+          "type": "reference"
+        },
+        "color": "6",
+        "id": "5246f4d07c4012a8",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "867aca6f08aff01f",
+            "848648ac1ab74998",
+            "5246f4d07c4012a8"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Floating nodes",
+          "type": "basic"
+        },
+        "id": "6221f4693ddb3417",
+        "label": "Floating nodes",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "6221f4693ddb3417"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "Email Draft",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "complete",
+          "text": "Please critique and rewrite this email to be a bit more apologetic:\n{{Email Draft}}",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "848648ac1ab74998",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "f33f402d10538f79"
+          ],
+          "groups": [
+            "6221f4693ddb3417"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Now just write the new version by itself in your next response.",
+          "type": "standard-call"
+        },
+        "color": "4",
+        "id": "867aca6f08aff01f",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "867aca6f08aff01f"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "867aca6f08aff01f",
+        "id": "bfad0ddbfa29f18f",
+        "toNode": "5246f4d07c4012a8"
+      },
+      {
+        "cannoliData": {
+          "addMessages": true,
+          "content": "Mock response",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "848648ac1ab74998"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "messages": [
+            {
+              "content": "Please critique and rewrite this email to be a bit more apologetic:\nLet me get back to you on that",
+              "role": "user"
+            },
+            {
+              "content": "Mock response",
+              "role": "assistant"
+            }
+          ],
+          "originalObject": null,
+          "status": "complete",
+          "text": "",
+          "type": "chat"
+        },
+        "fromNode": "848648ac1ab74998",
+        "id": "f33f402d10538f79",
+        "toNode": "867aca6f08aff01f"
+      }
+    ]
+  }
+}

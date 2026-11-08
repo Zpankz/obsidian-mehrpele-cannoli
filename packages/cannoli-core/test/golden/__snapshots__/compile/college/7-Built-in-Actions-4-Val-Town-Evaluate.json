@@ -1,0 +1,318 @@
+{
+  "nodes": [
+    {
+      "cannoliData": {
+        "dependencies": [
+          "7a11cb94f7d0a8d9",
+          "49b6ae2b97ed3a38",
+          "8a0f1fa1e0365f15",
+          "50b7d8d43e23789d"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Standard use",
+        "type": "basic"
+      },
+      "id": "426db25be12ba40f",
+      "label": "Standard use",
+      "type": "group"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "e263ee8a71eb7e5d"
+        ],
+        "groups": [
+          "426db25be12ba40f"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "49b6ae2b97ed3a38",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "dbfc20e9c20d4ed0"
+        ],
+        "groups": [
+          "426db25be12ba40f"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "50b7d8d43e23789d",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "f8a5be321df2fbec"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "62",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "6ef4d0c132d7d762",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "426db25be12ba40f"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "Calculate the first 50 numbers in the Fibonacci sequence\n\nEnsure your code is valid JavaScript or TypeScript which directly returns a result by using immediately invoked function expressions or top-level return statements.",
+        "type": "standard-call"
+      },
+      "id": "7a11cb94f7d0a8d9",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "a7b3b55a2c457ab1"
+        ],
+        "groups": [
+          "426db25be12ba40f"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "valtown-eval",
+        "type": "http"
+      },
+      "color": "2",
+      "id": "8a0f1fa1e0365f15",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "d70989613dcd001b",
+          "f13dcc3d02c075e0"
+        ],
+        "groups": [
+          "f8a5be321df2fbec"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [
+          {
+            "name": "x",
+            "shouldExtract": false,
+            "type": "variable"
+          },
+          {
+            "name": "y",
+            "shouldExtract": false,
+            "type": "variable"
+          }
+        ],
+        "status": "pending",
+        "text": "[valtown-eval]\n{{x}} + {{y}}",
+        "type": "http"
+      },
+      "color": "2",
+      "id": "c3dcd82eb0f1017b",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "9499a9b78e4f5769"
+        ],
+        "groups": [
+          "f8a5be321df2fbec"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "",
+        "type": "output"
+      },
+      "color": "6",
+      "id": "dae97d54e71fc555",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [],
+        "groups": [
+          "f8a5be321df2fbec"
+        ],
+        "kind": "node",
+        "originalObject": null,
+        "references": [],
+        "status": "pending",
+        "text": "45",
+        "type": "input"
+      },
+      "color": "6",
+      "id": "eadd2c38885af3d9",
+      "type": "text"
+    },
+    {
+      "cannoliData": {
+        "dependencies": [
+          "c3dcd82eb0f1017b",
+          "eadd2c38885af3d9",
+          "6ef4d0c132d7d762",
+          "dae97d54e71fc555"
+        ],
+        "groups": [],
+        "kind": "group",
+        "originalObject": null,
+        "status": "complete",
+        "text": "Template code",
+        "type": "basic"
+      },
+      "id": "f8a5be321df2fbec",
+      "label": "Template code",
+      "type": "group"
+    }
+  ],
+  "edges": [
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "c3dcd82eb0f1017b"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "c3dcd82eb0f1017b",
+      "id": "9499a9b78e4f5769",
+      "toNode": "dae97d54e71fc555"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "7a11cb94f7d0a8d9"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "code",
+        "type": "variable"
+      },
+      "fromNode": "7a11cb94f7d0a8d9",
+      "id": "a7b3b55a2c457ab1",
+      "label": "code",
+      "toNode": "8a0f1fa1e0365f15"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "eadd2c38885af3d9"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "x",
+        "type": "variable"
+      },
+      "fromNode": "eadd2c38885af3d9",
+      "id": "d70989613dcd001b",
+      "label": "x",
+      "toNode": "c3dcd82eb0f1017b"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "8a0f1fa1e0365f15"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "8a0f1fa1e0365f15",
+      "id": "dbfc20e9c20d4ed0",
+      "toNode": "50b7d8d43e23789d"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "7a11cb94f7d0a8d9"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "",
+        "type": "write"
+      },
+      "fromNode": "7a11cb94f7d0a8d9",
+      "id": "e263ee8a71eb7e5d",
+      "toNode": "49b6ae2b97ed3a38"
+    },
+    {
+      "cannoliData": {
+        "addMessages": false,
+        "crossingInGroups": [],
+        "crossingOutGroups": [],
+        "dependencies": [
+          "6ef4d0c132d7d762"
+        ],
+        "isReflexive": false,
+        "kind": "edge",
+        "originalObject": null,
+        "status": "pending",
+        "text": "y",
+        "type": "variable"
+      },
+      "fromNode": "6ef4d0c132d7d762",
+      "id": "f13dcc3d02c075e0",
+      "label": "y",
+      "toNode": "c3dcd82eb0f1017b"
+    }
+  ]
+}

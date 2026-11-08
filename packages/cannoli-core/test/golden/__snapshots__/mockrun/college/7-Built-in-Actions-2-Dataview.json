@@ -1,0 +1,347 @@
+{
+  "finished": true,
+  "stoppages": [
+    {
+      "reason": "error",
+      "message": "Could not get HTTP template with name \"dataview\" from floating nodes or pre-set templates.",
+      "results": {},
+      "usage": {}
+    }
+  ],
+  "statuses": {
+    "0915de73d2a47fc4": "complete",
+    "100e3d66407985a5": "error",
+    "20d6e49a7368b908": "complete",
+    "2b10baa2c609a70a": "complete",
+    "304c8c5e68c78157": "pending",
+    "4ab88afc5fa0b412": "complete",
+    "50b6daa0957a1bd3": "pending",
+    "70a335690d6f3304": "complete",
+    "857d57b6ba48ce87": "complete",
+    "a8a5608da79cbd7c": "pending",
+    "acb78f98d8b00913": "complete",
+    "b4cf20d89df45ecf": "complete",
+    "b5af2401aa1d2e2e": "complete",
+    "ca796e31dd6ef529": "complete",
+    "cb66f2c70f112232": "error",
+    "f77904f417984d33": "pending"
+  },
+  "canvas": {
+    "nodes": [
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "70a335690d6f3304"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "Cannoli College",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "0915de73d2a47fc4",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "b4cf20d89df45ecf",
+            "20d6e49a7368b908",
+            "ca796e31dd6ef529"
+          ],
+          "groups": [
+            "70a335690d6f3304"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [
+            {
+              "name": "folder",
+              "shouldExtract": false,
+              "type": "variable"
+            }
+          ],
+          "status": "error",
+          "text": "[dataview]\nLIST\nFROM \"{{folder}}\"",
+          "type": "http"
+        },
+        "color": "2",
+        "id": "100e3d66407985a5",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "acb78f98d8b00913"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "LIST",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "2b10baa2c609a70a",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "a8a5608da79cbd7c"
+          ],
+          "groups": [
+            "acb78f98d8b00913"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "pending",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "304c8c5e68c78157",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "70a335690d6f3304"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "false",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "4ab88afc5fa0b412",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "857d57b6ba48ce87",
+            "4ab88afc5fa0b412",
+            "100e3d66407985a5",
+            "0915de73d2a47fc4",
+            "f77904f417984d33"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Template query",
+          "type": "basic"
+        },
+        "id": "70a335690d6f3304",
+        "label": "Template query",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [],
+          "groups": [
+            "70a335690d6f3304"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "complete",
+          "text": "1",
+          "type": "input"
+        },
+        "color": "6",
+        "id": "857d57b6ba48ce87",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "2b10baa2c609a70a",
+            "cb66f2c70f112232",
+            "304c8c5e68c78157"
+          ],
+          "groups": [],
+          "kind": "group",
+          "originalObject": null,
+          "status": "complete",
+          "text": "Standard use",
+          "type": "basic"
+        },
+        "id": "acb78f98d8b00913",
+        "label": "Standard use",
+        "type": "group"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "b5af2401aa1d2e2e"
+          ],
+          "groups": [
+            "acb78f98d8b00913"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "error",
+          "text": "dataview",
+          "type": "http"
+        },
+        "color": "2",
+        "id": "cb66f2c70f112232",
+        "type": "text"
+      },
+      {
+        "cannoliData": {
+          "dependencies": [
+            "50b6daa0957a1bd3"
+          ],
+          "groups": [
+            "70a335690d6f3304"
+          ],
+          "kind": "node",
+          "originalObject": null,
+          "references": [],
+          "status": "pending",
+          "text": "",
+          "type": "output"
+        },
+        "color": "6",
+        "id": "f77904f417984d33",
+        "type": "text"
+      }
+    ],
+    "edges": [
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "false",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "4ab88afc5fa0b412"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "extract",
+          "type": "variable"
+        },
+        "fromNode": "4ab88afc5fa0b412",
+        "id": "20d6e49a7368b908",
+        "label": "extract",
+        "toNode": "100e3d66407985a5"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "100e3d66407985a5"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "pending",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "100e3d66407985a5",
+        "id": "50b6daa0957a1bd3",
+        "toNode": "f77904f417984d33"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "cb66f2c70f112232"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "pending",
+          "text": "",
+          "type": "write"
+        },
+        "fromNode": "cb66f2c70f112232",
+        "id": "a8a5608da79cbd7c",
+        "toNode": "304c8c5e68c78157"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "1",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "857d57b6ba48ce87"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "limit",
+          "type": "variable"
+        },
+        "fromNode": "857d57b6ba48ce87",
+        "id": "b4cf20d89df45ecf",
+        "label": "limit",
+        "toNode": "100e3d66407985a5"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "LIST",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "2b10baa2c609a70a"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "query",
+          "type": "variable"
+        },
+        "fromNode": "2b10baa2c609a70a",
+        "id": "b5af2401aa1d2e2e",
+        "label": "query",
+        "toNode": "cb66f2c70f112232"
+      },
+      {
+        "cannoliData": {
+          "addMessages": false,
+          "content": "Cannoli College",
+          "crossingInGroups": [],
+          "crossingOutGroups": [],
+          "dependencies": [
+            "0915de73d2a47fc4"
+          ],
+          "isReflexive": false,
+          "kind": "edge",
+          "originalObject": null,
+          "status": "complete",
+          "text": "folder",
+          "type": "variable"
+        },
+        "fromNode": "0915de73d2a47fc4",
+        "id": "ca796e31dd6ef529",
+        "label": "folder",
+        "toNode": "100e3d66407985a5"
+      }
+    ]
+  }
+}
